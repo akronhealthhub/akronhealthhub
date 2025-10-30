@@ -363,42 +363,9 @@
         }
       ],
      "media_pages": []
-        },
-   
+        }, 
 
-
-{
-      "name": "Minority Behavioral Health Group",
-      "position": "12",
-      "latitude": "41.083637",
-      "longitude": "-81.5686201",
-      "overlay": "",
-      "virtual_object": "",
-      "isSubHotspot": false,
-      "panorama_image": "360minoritybehavioralhealth-l.jpg",
-      "overlay_size": 5,
-      "overlay_offset_x": 0,
-      "overlay_offset_y": 0,
-      "start_audio": "",
     
-      "main_pages": [
-        {
-          "title": "SERVICES",
-          "description": "Minority Behavioral Health Group (MBHG) is a community health agency that consists of psychologists, counselors, pastors, case managers, and administrative personnel who are committed to providing culturally appropriate and comprehensive behavioral health services to Summit, Portage, Stark, Franklin and Cuyahoga counties. MBHG was the first and only African-American nationally accredited and state certified community mental health agency in the state of Ohio. \n \nMBHG provides a variety of counseling services, including individual and group therapy (informed by Belief Systems Analysis, which is grounded in African philosophy and an African-centered worldview), assessments, psychological testing, school consultations (for youth), and external referrals.",
-          "background_image": "AHHgenericbg.jpg",
-          "descriptive_audio": ""
-        },
-        {
-          "title": "CONTACT",
-          "description": "Phone: 330-374-1199 \n \nWebsite: https://mbhg.org/ \n \nAddress: 1293 Copley Rd., Akron, OH 44320 \n \nBusiness Hours: Mon-Thurs 9:00A-5:00P   |||   Fri 9:00A-3:00P",
-          "background_image": "AHHgenericbg.jpg",
-          "descriptive_audio": ""
-        }
-      ],
-     "media_pages": []
-        },
-   
-
 
 {
       "name": "Hope & Healing Survivor Resource Center",
@@ -695,4 +662,5 @@
      "media_pages": []
         }
 ]
+
 }

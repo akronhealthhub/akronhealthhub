@@ -322,7 +322,6 @@
      * The compiled React code ignores pin_color (iconUrl is hardcoded),
      * so we swap the icon via DOM after Leaflet renders the markers.
      */
-    var ownerMarkerHighlighted = false;
     var OWNER_NAME = 'Bayard Rustin LGBTQ+ Center | Akron AIDS Collaborative';
 
     // Red map pin as inline SVG data URI (no external dependency)
@@ -335,8 +334,6 @@
     );
 
     function highlightOwnerMarker() {
-        if (ownerMarkerHighlighted) return;
-
         // Only run on the map page
         var mapContainer = document.querySelector('.leaflet-container');
         if (!mapContainer) return;
@@ -346,7 +343,9 @@
         for (var i = 0; i < markers.length; i++) {
             var marker = markers[i];
             if (marker.getAttribute('title') === OWNER_NAME) {
-                ownerMarkerHighlighted = true;
+                // If it's already our custom SVG, skip to avoid MutationObserver loop
+                if (marker.src && marker.src.indexOf('data:image/svg') !== -1) continue;
+
                 marker.src = RED_PIN_SVG;
                 marker.style.width = '23px';
                 marker.style.height = '41px';
@@ -360,7 +359,7 @@
                     document.head.appendChild(style);
                 }
                 marker.style.animation = 'ahh-pulse 2s ease-in-out infinite';
-                break;
+                // Do not 'break' if there are multiple overlapping markers for the same org
             }
         }
     }
@@ -398,7 +397,6 @@
         origPushMenu.apply(this, arguments);
         badgeInjected = false;
         overlayBtnsEnhanced = false;
-        ownerMarkerHighlighted = false;
         contentBackInjected = false;
         // Reset menu enhanced so org name gets re-checked
         var mc = document.querySelector('.menu-content');
@@ -412,7 +410,6 @@
     window.addEventListener('popstate', function () {
         badgeInjected = false;
         overlayBtnsEnhanced = false;
-        ownerMarkerHighlighted = false;
         contentBackInjected = false;
         // Reset menu enhanced so org name gets re-checked
         var mc = document.querySelector('.menu-content');

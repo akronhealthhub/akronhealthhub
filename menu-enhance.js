@@ -6,19 +6,53 @@
 (function () {
     'use strict';
 
+    // --- Prevent the "BEGIN TOUR" button from triggering fullscreen ---
+    // The app uses the screenfull library which calls requestFullscreen().
+    // Override all vendor-prefixed versions to be a no-op.
+    var noop = function () { return Promise.resolve(); };
+    if (Element.prototype.requestFullscreen) Element.prototype.requestFullscreen = noop;
+    if (Element.prototype.webkitRequestFullscreen) Element.prototype.webkitRequestFullscreen = noop;
+    if (Element.prototype.mozRequestFullScreen) Element.prototype.mozRequestFullScreen = noop;
+    if (Element.prototype.msRequestFullscreen) Element.prototype.msRequestFullscreen = noop;
+    if (document.documentElement.requestFullscreen) document.documentElement.requestFullscreen = noop;
+
+    // --- Prevent the scroll hack that causes black gaps ---
+    // The app's g() function calls scrollTo(0, document.body.scrollHeight)
+    // to hide mobile browser chrome; without fullscreen this shows black.
+    var origScrollTo = window.scrollTo.bind(window);
+    window.scrollTo = function (x, y) {
+        // Only block the "scroll to bottom" pattern used by g()
+        if (y === document.body.scrollHeight || y === 1) return;
+        origScrollTo(x, y);
+    };
+
     var debounceTimer = null;
     var overlayBtnsEnhanced = false;
     var overlayCloseSetup = false;
+    var contentBackInjected = false;
+    var lastKnownOrgName = null;
 
     /**
-     * Get the current organization name from the hotspot title
+     * Get the current organization name from the hotspot title.
+     * Caches the name so it persists across page navigations.
      */
     function getOrgName() {
         var titleEl = document.getElementById('title-ctn');
-        if (titleEl && titleEl.textContent) {
-            return titleEl.textContent.trim();
+        if (titleEl && titleEl.textContent && titleEl.textContent.trim()) {
+            lastKnownOrgName = titleEl.textContent.trim();
+            return lastKnownOrgName;
         }
-        return null;
+        // Also try from URL param
+        if (!lastKnownOrgName) {
+            try {
+                var params = new URLSearchParams(window.location.search);
+                var name = params.get('name');
+                if (name) {
+                    lastKnownOrgName = decodeURIComponent(name);
+                }
+            } catch (e) { }
+        }
+        return lastKnownOrgName;
     }
 
     /**
@@ -26,7 +60,18 @@
      */
     function enhanceMenu() {
         var menuContent = document.querySelector('.menu-content');
-        if (!menuContent || menuContent.dataset.enhanced) return;
+        if (!menuContent) return;
+
+        // Always re-check org name even if menu was already enhanced
+        var existingOrgEl = menuContent.querySelector('.ahh-menu-org-name');
+        var orgName = getOrgName();
+
+        // If org name element exists but is wrong or empty, update it
+        if (existingOrgEl && orgName && existingOrgEl.textContent !== orgName) {
+            existingOrgEl.textContent = orgName;
+        }
+
+        if (menuContent.dataset.enhanced) return;
 
         menuContent.dataset.enhanced = 'true';
 
@@ -171,6 +216,54 @@
     /**
    * Debounced check — only runs if the overlay is currently visible
    */
+    /**
+     * Inject a back button on content pages (Services, Contact & Hours, Help)
+     * and forcefully strip Framer Motion inline styles.
+     */
+    function injectContentBackButton() {
+        var isContentPage = document.body.classList.contains('scrollable-body');
+        var isHelpPage = document.body.classList.contains('help-body');
+
+        if (!isContentPage && !isHelpPage) {
+            contentBackInjected = false;
+            return;
+        }
+
+        // Forcefully strip Framer Motion inline styles from text container
+        if (isContentPage) {
+            var textContainers = document.querySelectorAll('.textCtn, main > div[style]');
+            for (var i = 0; i < textContainers.length; i++) {
+                var el = textContainers[i];
+                el.style.setProperty('background', 'transparent', 'important');
+                el.style.setProperty('background-color', 'transparent', 'important');
+                el.style.setProperty('background-image', 'none', 'important');
+                el.style.setProperty('box-shadow', 'none', 'important');
+                el.style.setProperty('border', 'none', 'important');
+                el.style.setProperty('opacity', '1', 'important');
+                el.style.setProperty('width', '100%', 'important');
+                el.style.setProperty('max-width', '800px', 'important');
+                el.style.setProperty('transform', 'none', 'important');
+            }
+        }
+
+        if (contentBackInjected || document.querySelector('.ahh-content-back')) return;
+        contentBackInjected = true;
+
+        var backBtn = document.createElement('button');
+        backBtn.className = 'ahh-content-back';
+        backBtn.innerHTML =
+            '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">' +
+            '<path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/>' +
+            '</svg>' +
+            '<span>Back</span>';
+
+        backBtn.addEventListener('click', function () {
+            window.history.back();
+        });
+
+        document.body.appendChild(backBtn);
+    }
+
     function debouncedCheck() {
         if (debounceTimer) return;
         debounceTimer = setTimeout(function () {
@@ -186,6 +279,8 @@
             enhanceHamburger();
             // Highlight owner marker on map
             highlightOwnerMarker();
+            // Inject back button on content pages
+            injectContentBackButton();
         }, 150);
     }
 
@@ -304,13 +399,27 @@
         badgeInjected = false;
         overlayBtnsEnhanced = false;
         ownerMarkerHighlighted = false;
-        setTimeout(function () { inject360Badge(); enhanceOverlayButtons(); }, 600);
+        contentBackInjected = false;
+        // Reset menu enhanced so org name gets re-checked
+        var mc = document.querySelector('.menu-content');
+        if (mc) mc.removeAttribute('data-enhanced');
+        // Remove old back button if leaving content page
+        var oldBack = document.querySelector('.ahh-content-back');
+        if (oldBack) oldBack.parentNode.removeChild(oldBack);
+        setTimeout(function () { inject360Badge(); enhanceOverlayButtons(); injectContentBackButton(); }, 600);
     };
 
     window.addEventListener('popstate', function () {
         badgeInjected = false;
         overlayBtnsEnhanced = false;
         ownerMarkerHighlighted = false;
-        setTimeout(function () { inject360Badge(); enhanceOverlayButtons(); }, 600);
+        contentBackInjected = false;
+        // Reset menu enhanced so org name gets re-checked
+        var mc = document.querySelector('.menu-content');
+        if (mc) mc.removeAttribute('data-enhanced');
+        // Remove old back button if leaving content page
+        var oldBack = document.querySelector('.ahh-content-back');
+        if (oldBack) oldBack.parentNode.removeChild(oldBack);
+        setTimeout(function () { inject360Badge(); enhanceOverlayButtons(); injectContentBackButton(); }, 600);
     });
 })();

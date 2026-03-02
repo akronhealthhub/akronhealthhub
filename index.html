@@ -9,11 +9,16 @@
   <style>
     html,
     body {
-      height: 100%;
+      height: 100vh;
       width: 100%;
-      background: black;
-      background-color: black;
-
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      background: #f8f9fa;
+      /* Light background for the main site */
+      overflow: hidden;
+      /* Prevent parent scrolling, let iframe scroll */
     }
 
     * {
@@ -151,6 +156,13 @@
       width: 100%;
       top: 20%;
     }
+
+    /* Make iframe fill the rest of the height */
+    .iframe-new {
+      flex: 1 1 auto;
+      width: 100%;
+      border: none;
+    }
   </style>
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -165,28 +177,14 @@
 
 
 <body>
-  <!-- Navigation bar -->
-  <header class="d-flex flex-wrap justify-content-center py-3 mb-4 bg-primary text-white">
+  <!-- Navigation bar (removed mb-4 to eliminate bottom gap) -->
+  <header class="d-flex flex-wrap justify-content-center py-3 bg-primary text-white" style="flex: 0 0 auto;">
     <a class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none bg-primary text-white"
       onclick="navigate('./info_acc.html')" type="button">
       <img src="icon.png" alt="Logo" width="50" height="50" class="bi me-2 bg-primary text-white">
       <span class="fs-4 bg-primary text-white">Akron Health Hub</span>
     </a>
     <ul class="nav nav-pills bg-primary text-white">
-      <li class="nav-item bg-primary text-white">
-        <button class="nav-link active bg-primary text-white"
-          onclick="window.open('https://www.kent.edu/cpph/akron-health-hub', '_blank')">About us</button>
-      </li>
-      <li class="nav-item bg-primary text-white">
-        <button class="nav-link active bg-primary text-white"
-          onclick="navigate('https://kent.qualtrics.com/jfe/form/SV_07eJdctqEg38QMC')">Feedback</button>
-      </li>
-      <li class="nav-item bg-primary text-white">
-        <button class="nav-link active bg-primary text-white" onclick="navigate('phonenumbers.html')">Hotlines</button>
-      </li>
-      <li class="nav-item bg-primary text-white">
-        <button class="nav-link active bg-primary text-white" onclick="navigate('help.html')">Help</button>
-      </li>
       <li class="nav-item dropdown bg-primary text-white">
         <a class="nav-link dropdown-toggle bg-primary text-white" href="#" role="button" data-bs-toggle="dropdown"
           aria-expanded="false">
@@ -211,12 +209,25 @@
               onclick="navigate('./Disability_Resources')">Disability Resources</button></li>
         </ul>
       </li>
+      <li class="nav-item bg-primary text-white">
+        <button class="nav-link active bg-primary text-white"
+          onclick="window.open('https://www.kent.edu/cpph/akron-health-hub', '_blank')">About us</button>
+      </li>
+      <li class="nav-item bg-primary text-white">
+        <button class="nav-link active bg-primary text-white"
+          onclick="navigate('https://kent.qualtrics.com/jfe/form/SV_07eJdctqEg38QMC')">Feedback</button>
+      </li>
+      <li class="nav-item bg-primary text-white">
+        <button class="nav-link active bg-primary text-white" onclick="navigate('phonenumbers.html')">Hotlines</button>
+      </li>
+      <li class="nav-item bg-primary text-white">
+        <button class="nav-link active bg-primary text-white" onclick="navigate('help.html')">Help</button>
+      </li>
     </ul>
   </header>
 
   <!-- Content iframe -->
-  <iframe id="mainFrame" class="iframe-new" name="mainFrame" src="about:blank" width="100%" height="70%"
-    allowfullscreen="false"></iframe>
+  <iframe id="mainFrame" class="iframe-new" name="mainFrame" src="about:blank" allowfullscreen="false"></iframe>
 
 
 
@@ -263,22 +274,7 @@
     document.addEventListener('webkitfullscreenchange', onFullScreenChange);
 
 
-    function makeAllBackgroundsBlack() {
-      // Select all elements on the page
-      const allElements = document.querySelectorAll('*');
-
-      // Loop through each element and set its background to black
-      allElements.forEach(element => {
-        element.style.backgroundColor = 'black';
-      });
-
-      // Also set the body and html background just in case
-      document.body.style.backgroundColor = 'black';
-      document.documentElement.style.backgroundColor = 'black';
-    }
-
-    // Call the function
-    makeAllBackgroundsBlack()
+    // Start navigation
     navigate("./info_acc.html")
   </script>
 

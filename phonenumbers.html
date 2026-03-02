@@ -1,122 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Emergency & Support Hotlines</title>
   <style>
+    /* Premium, minimal, professional theme */
     body {
-      font-family: Arial, sans-serif;
-      background-color: #f4f6f8;
+      background-color: #f7f9fc;
       color: #333;
-      padding: 20px;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
       line-height: 1.6;
+      padding: 60px 20px;
+      margin: 0;
     }
+
+    .container {
+      max-width: 680px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 50px 60px;
+      border-radius: 16px;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.03);
+      border: 1px solid rgba(0, 0, 0, 0.04);
+    }
+
     h1 {
-      color: #c0392b;
+      text-align: center;
+      color: #111;
+      font-family: 'Inter', 'Roboto', sans-serif;
+      font-size: 2.2rem;
+      font-weight: 700;
+      margin-top: 0;
+      margin-bottom: 40px;
+      letter-spacing: -0.03em;
     }
+
     .hotline {
-      background-color: #fff;
-      border-left: 6px solid #3498db;
-      padding: 10px 15px;
-      margin-bottom: 15px;
-      border-radius: 6px;
-      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+      padding: 24px 0;
+      border-bottom: 1px solid #f0f0f0;
+      display: flex;
+      flex-direction: column;
     }
+
+    .hotline:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+
     .hotline h2 {
-      margin: 0 0 5px;
-      font-size: 1.1em;
-      color: #2c3e50;
+      margin: 0 0 4px;
+      font-size: 1.15rem;
+      color: #111;
+      font-weight: 600;
+      letter-spacing: -0.01em;
     }
+
     .hotline h3 {
-      margin: 0 0 5px;
-      font-size: 0.9em;
-      color: #2c3e50;
+      margin: 0 0 12px;
+      font-size: 0.9rem;
+      color: #666;
+      font-weight: 400;
+      line-height: 1.4;
     }
+
+    .hotline p {
+      margin: 8px 0 0;
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
     a {
-      color: #2980b9;
+      color: #0d6efd;
       text-decoration: none;
+      font-weight: 500;
+      font-size: 0.95rem;
+      display: inline-flex;
+      align-items: center;
+      padding: 8px 16px;
+      background: #f4f8ff;
+      border-radius: 8px;
+      transition: all 0.2s ease;
+      border: 1px solid rgba(13, 110, 253, 0.1);
     }
+
     a:hover {
-      text-decoration: underline;
+      background: #e6f0ff;
+      color: #0a58ca;
+      border-color: rgba(13, 110, 253, 0.2);
+    }
+
+    /* Mobile Responsive */
+    @media (max-width: 600px) {
+      body {
+        padding: 30px 15px;
+      }
+
+      .container {
+        padding: 30px 20px;
+        border-radius: 12px;
+      }
+
+      h1 {
+        font-size: 1.8rem;
+        margin-bottom: 30px;
+      }
+
+      .hotline {
+        padding: 20px 0;
+      }
     }
   </style>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
-  <h1>Emergency & Support Hotlines</h1>
+  <div class="container">
 
-  <div class="hotline">
-    <h2>United Way Summit County for all Basic Needs Resources</h2>
-    <p><a href="tel:211">Call: 211</a></p>
-  </div>
+    <h1>Emergency & Support Hotlines</h1>
 
-  <div class="hotline">
-    <h2>Emergencies</h2>
-    <p><a href="tel:911">Call: 911</a></p>
-  </div>
+    <div class="hotline">
+      <h2>United Way Summit County for all Basic Needs Resources</h2>
+      <p><a href="tel:211">Call: 211</a></p>
+    </div>
 
-  <div class="hotline">
-    <h2>Suicide and Crisis Hotline</h2>
-    <p><a href="tel:988">Call: 988</a></p>
-  </div>
+    <div class="hotline">
+      <h2>Emergencies</h2>
+      <p><a href="tel:911">Call: 911</a></p>
+    </div>
 
-  <div class="hotline">
-    <h2>Summit County Mental Health Crisis Line</h2>
-    <p><a href="tel:3304349144">Call: 330-434-9144</a></p>
-    <p><a href="sms:741741">Text: 741741</a></p>
-  </div>
+    <div class="hotline">
+      <h2>Suicide and Crisis Hotline</h2>
+      <p><a href="tel:988">Call: 988</a></p>
+    </div>
 
-  <div class="hotline">
-    <h2>Alcohol and Other Drug Emergencies</h2>
-    <p><a href="tel:3309967730">Call: 330-996-7730</a></p>
-  </div>
+    <div class="hotline">
+      <h2>Summit County Mental Health Crisis Line</h2>
+      <p><a href="tel:3304349144">Call: 330-434-9144</a></p>
+      <p><a href="sms:741741">Text: 741741</a></p>
+    </div>
 
-  <div class="hotline">
-    <h2>Children Mental Health Emergencies</h2>
-    <p><a href="tel:3305437472">Call: 330-543-7472</a></p>
-  </div>
+    <div class="hotline">
+      <h2>Alcohol and Other Drug Emergencies</h2>
+      <p><a href="tel:3309967730">Call: 330-996-7730</a></p>
+    </div>
 
-  <div class="hotline">
-    <h2>Battered Women’s Shelter Akron</h2>
-    <p><a href="tel:3303741111">Call: 330-374-1111</a></p>
-  </div>
+    <div class="hotline">
+      <h2>Children Mental Health Emergencies</h2>
+      <p><a href="tel:3305437472">Call: 330-543-7472</a></p>
+    </div>
 
-  <div class="hotline">
-    <h2>Rape Crisis Hotline</h2>
-    <p><a href="tel:3304347273">Call: 330-434-7273</a></p>
-  </div>
+    <div class="hotline">
+      <h2>Battered Women’s Shelter Akron</h2>
+      <p><a href="tel:3303741111">Call: 330-374-1111</a></p>
+    </div>
 
-  <div class="hotline">
-    <h2>Victim Assistance Program of Summit County</h2>
-    <p><a href="tel:3303760040">Call: 330-376-0040</a></p>
-  </div>
+    <div class="hotline">
+      <h2>Rape Crisis Hotline</h2>
+      <p><a href="tel:3304347273">Call: 330-434-7273</a></p>
+    </div>
 
-  <div class="hotline">
-    <h2>Homeless Hotline</h2>
-    <p><a href="tel:3306150577">Call: 330-615-0577</a></p>
-    <h3>Operated by United Way of Summit County (Monday-Friday 8AM-4PM)</h3>
-  </div>
+    <div class="hotline">
+      <h2>Victim Assistance Program of Summit County</h2>
+      <p><a href="tel:3303760040">Call: 330-376-0040</a></p>
+    </div>
 
-  <div class="hotline">
-    <h2>Runaway/Homeless Youth Hotline</h2>
-    <p><a href="tel:3307847200">Call: 330-784-7200</a></p>
-  </div>
+    <div class="hotline">
+      <h2>Homeless Hotline</h2>
+      <p><a href="tel:3306150577">Call: 330-615-0577</a></p>
+      <h3>Operated by United Way of Summit County (Monday-Friday 8AM-4PM)</h3>
+    </div>
 
-  <div class="hotline">
-    <h2>LGBT National Hotline</h2>
-    <p><a href="tel:8888434564">Call: 888-843-4564</a></p>
-  </div>
+    <div class="hotline">
+      <h2>Runaway/Homeless Youth Hotline</h2>
+      <p><a href="tel:3307847200">Call: 330-784-7200</a></p>
+    </div>
 
-  <div class="hotline">
-    <h2>Trans Lifeline</h2>
-    <p><a href="tel:8775658860">Call: 877-565-8860</a></p>
-  </div>
+    <div class="hotline">
+      <h2>LGBT National Hotline</h2>
+      <p><a href="tel:8888434564">Call: 888-843-4564</a></p>
+    </div>
 
-  <div class="hotline">
-    <h2>TrevorLifeline for LGBTQ Youth</h2>
-    <p><a href="tel:8664887386">Call: 866-488-7386</a></p>
-  </div>
+    <div class="hotline">
+      <h2>Trans Lifeline</h2>
+      <p><a href="tel:8775658860">Call: 877-565-8860</a></p>
+    </div>
+
+    <div class="hotline">
+      <h2>TrevorLifeline for LGBTQ Youth</h2>
+      <p><a href="tel:8664887386">Call: 866-488-7386</a></p>
+    </div>
+
+  </div> <!-- Close .container -->
 
 </body>
 

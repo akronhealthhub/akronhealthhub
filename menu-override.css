@@ -1,4 +1,90 @@
 /* ============================================================
+   FIX BLACK BARS — Override fullscreen-era layout assumptions
+   ONLY applies to tour pages (homepage, map, tour, intro)
+   ============================================================ */
+
+/* Root fills viewport only when inside tour app */
+#root {
+  height: 100% !important;
+  overflow: hidden !important;
+}
+
+/* Main element fills all space */
+#root > main {
+  height: 100% !important;
+  position: relative !important;
+}
+
+/* Homepage (BEGIN TOUR) — fill all available space */
+body.homepage {
+  height: 100% !important;
+  overflow: hidden !important;
+  background-size: cover !important;
+  background-position: center !important;
+}
+
+body.homepage .homepage {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  height: auto !important;
+}
+
+/* Root div fills all space */
+#root {
+  height: 100% !important;
+  overflow: hidden !important;
+}
+
+/* Main element fills all space */
+#root > main {
+  height: 100% !important;
+  position: relative !important;
+}
+
+/* Map page — leaflet fills all available space */
+.leaflet-container {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  height: auto !important;
+  width: auto !important;
+  z-index: 1 !important;
+}
+
+/* Tour/360 container — fill all available space */
+#container {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  height: auto !important;
+  width: auto !important;
+  overflow: hidden !important;
+}
+
+/* Canvas (three.js) — fill container */
+#canvas {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  height: auto !important;
+  width: auto !important;
+}
+
+/* Back button on map */
+#overlaybuttonback {
+  z-index: 10 !important;
+}
+
+/* ============================================================
    MENU OVERRIDE — Akron Health Hub
    Side drawer menu, simple, matches app design
    ============================================================ */
@@ -212,8 +298,11 @@ a[class^="menu-item"]:focus {
 }
 
 #overlay-content > div[style*="left"][style*="top"] > .overlay-icon {
-  font-size: 1.4rem !important;
   color: #fff !important;
+  width: 100% !important;
+  height: 100% !important;
+  padding: 10px !important;
+  box-sizing: border-box !important;
 }
 
 /* ============================================================
@@ -542,3 +631,341 @@ div[class^="overlay-ctn-"] {
     font-size: 0.6rem;
   }
 }
+
+/* ============================================================
+   CONTENT PAGES — Services, Contact & Hours, Help
+   Clean, consistent, responsive redesign
+   ============================================================ */
+
+/* --- Force dark background, remove any background image --- */
+body.scrollable-body {
+  background-image: none !important;
+  background: #0e1117 !important;
+  background-color: #0e1117 !important;
+  padding: 0 !important;
+  overflow-x: hidden !important;
+}
+
+/* --- Hide the X close button on content pages (Services/Contact) --- */
+body.scrollable-body .closeBtn,
+body.scrollable-body main > .closeBtn,
+body.scrollable-body .overlay-icon.closeBtn {
+  display: none !important;
+}
+
+/* --- Hide the refresh/reset view button on content pages --- */
+body.scrollable-body .overlay-ctn-show {
+  display: none !important;
+}
+
+/* --- Hide the map button container on content pages --- */
+body.scrollable-body .overlay-ctn-map {
+  display: none !important;
+}
+
+/* --- Hide the original back button on content pages --- */
+body.scrollable-body #overlaybuttonback {
+  display: none !important;
+}
+
+/* --- Nuke the Framer Frame / textCtn background and inline styles --- */
+body.scrollable-body .textCtn,
+body.scrollable-body main > .textCtn,
+body.scrollable-body main > div[style],
+body.scrollable-body main > div[class*="textCtn"],
+body.scrollable-body div[style*="opacity"] {
+  position: relative !important;
+  opacity: 1 !important;
+  width: 100% !important;
+  max-width: 800px !important;
+  margin: 0 auto !important;
+  padding: 60px 20px 100px !important;
+  transform: none !important;
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  box-sizing: border-box !important;
+  overflow-x: hidden !important;
+}
+
+/* --- Prevent long URLs from overflowing --- */
+body.scrollable-body #text,
+body.scrollable-body #text a {
+  overflow-wrap: break-word !important;
+  word-break: break-word !important;
+}
+
+/* --- Title on content pages --- */
+body.scrollable-body #title,
+body.scrollable-body h1#title {
+  font-family: 'Raleway', sans-serif !important;
+  font-size: 1.8em !important;
+  font-weight: 700 !important;
+  color: #8bd2cf !important;
+  letter-spacing: 0.08em !important;
+  text-transform: uppercase !important;
+  margin: 0 0 24px 0 !important;
+  padding-bottom: 16px !important;
+  border-bottom: 2px solid rgba(139, 210, 207, 0.3) !important;
+  text-align: left !important;
+  background: transparent !important;
+}
+
+/* --- Text body on content pages --- */
+body.scrollable-body #text,
+body.scrollable-body p#text {
+  font-family: 'Roboto', sans-serif !important;
+  font-size: 1.1em !important;
+  font-weight: 400 !important;
+  color: #e4e4e7 !important;
+  line-height: 1.8 !important;
+  text-align: left !important;
+  white-space: pre-wrap !important;
+  word-wrap: break-word !important;
+  background: transparent !important;
+}
+
+/* --- Links inside content text --- */
+body.scrollable-body #text a {
+  color: #8bd2cf !important;
+  text-decoration: underline !important;
+  text-underline-offset: 3px !important;
+  transition: color 0.2s ease !important;
+}
+
+body.scrollable-body #text a:hover {
+  color: #a8e6cf !important;
+}
+
+/* --- Audio footer styling on content pages --- */
+body.scrollable-body #fixed-footer {
+  position: fixed !important;
+  bottom: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  background: rgba(14, 17, 23, 0.95) !important;
+  backdrop-filter: blur(10px) !important;
+  -webkit-backdrop-filter: blur(10px) !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.08) !important;
+  padding: 8px 16px !important;
+  z-index: 9999 !important;
+}
+
+/* --- Back button (injected by JS) --- */
+.ahh-content-back {
+  position: fixed;
+  top: 16px;
+  left: 16px;
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 10px;
+  padding: 10px 18px;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.15s ease;
+  text-decoration: none;
+}
+
+.ahh-content-back:hover {
+  background: rgba(255, 255, 255, 0.18);
+  transform: translateX(-2px);
+}
+
+.ahh-content-back:active {
+  transform: scale(0.96);
+}
+
+.ahh-content-back svg {
+  width: 18px;
+  height: 18px;
+  fill: #8bd2cf;
+  flex-shrink: 0;
+}
+
+/* ============================================================
+   HELP PAGE — Consistent styling with Services/Contact
+   ============================================================ */
+body.help-body {
+  background-image: none !important;
+  background: #0e1117 !important;
+  background-color: #0e1117 !important;
+  padding: 0 !important;
+  overflow-y: auto !important;
+  box-sizing: border-box !important;
+}
+
+body.help-body .title,
+body.help-body h1.title {
+  font-family: 'Raleway', sans-serif !important;
+  font-size: 1.8em !important;
+  font-weight: 700 !important;
+  color: #8bd2cf !important;
+  letter-spacing: 0.08em !important;
+  text-transform: uppercase !important;
+  text-align: left !important;
+  margin: 0 !important;
+  padding: 60px 28px 12px !important;
+  max-width: 800px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  border: none !important;
+  border-bottom: 2px solid rgba(139, 210, 207, 0.3) !important;
+  padding-bottom: 14px !important;
+}
+
+body.help-body .subtitle,
+body.help-body h2.subtitle {
+  font-family: 'Roboto', sans-serif !important;
+  font-size: 1.1em !important;
+  font-weight: 500 !important;
+  color: #e4e4e7 !important;
+  text-align: left !important;
+  margin: 0 !important;
+  padding: 8px 28px 18px !important;
+  max-width: 800px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  border: none !important;
+  border-bottom: none !important;
+}
+
+body.help-body .rules {
+  font-family: 'Roboto', sans-serif !important;
+  font-size: 1.05em !important;
+  color: #e4e4e7 !important;
+  line-height: 1.8 !important;
+  padding: 20px 20px 100px 20px !important;
+  max-width: 800px !important;
+  margin: 0 auto !important;
+  width: 100% !important;
+  box-sizing: border-box !important;
+}
+
+body.help-body .rules li {
+  margin-bottom: 16px !important;
+  padding-left: 4px !important;
+}
+
+/* Make the 1. 2. 3. counter numbers smaller */
+body.help-body .rules > li::before {
+  font-size: 1em !important;
+  font-weight: 600 !important;
+}
+
+/* Hide close button on help page */
+body.help-body .closeBtn,
+body.help-body .overlay-icon.closeBtn {
+  display: none !important;
+}
+
+/* ============================================================
+   CONTENT PAGES — Mobile Responsive
+   ============================================================ */
+@media screen and (max-width: 768px) {
+  body.scrollable-body .textCtn,
+  body.scrollable-body main > .textCtn,
+  body.scrollable-body main > div[style] {
+    padding: 56px 20px 90px !important;
+    max-width: 100% !important;
+  }
+
+  body.scrollable-body #title,
+  body.scrollable-body h1#title {
+    font-size: 1.5em !important;
+  }
+
+  body.scrollable-body #text,
+  body.scrollable-body p#text {
+    font-size: 1.02em !important;
+    line-height: 1.75 !important;
+  }
+
+  .ahh-content-back {
+    top: 12px;
+    left: 12px;
+    padding: 8px 14px;
+    font-size: 0.85rem;
+  }
+
+  body.help-body .title,
+  body.help-body h1.title {
+    font-size: 1.5em !important;
+    padding: 56px 20px 12px !important;
+  }
+
+  body.help-body .subtitle,
+  body.help-body h2.subtitle {
+    font-size: 1em !important;
+    padding: 6px 20px 14px !important;
+  }
+
+  body.help-body .rules {
+    font-size: 0.95em !important;
+    padding: 16px 16px 90px 32px !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  body.scrollable-body .textCtn,
+  body.scrollable-body main > .textCtn,
+  body.scrollable-body main > div[style] {
+    padding: 52px 16px 80px !important;
+  }
+
+  body.scrollable-body #title,
+  body.scrollable-body h1#title {
+    font-size: 1.3em !important;
+    margin: 0 0 18px 0 !important;
+  }
+
+  body.scrollable-body #text,
+  body.scrollable-body p#text {
+    font-size: 0.95em !important;
+    line-height: 1.7 !important;
+  }
+
+  .ahh-content-back {
+    top: 10px;
+    left: 10px;
+    padding: 6px 12px;
+    font-size: 0.8rem;
+    gap: 6px;
+  }
+
+  .ahh-content-back svg {
+    width: 15px;
+    height: 15px;
+  }
+
+  body.help-body .title,
+  body.help-body h1.title {
+    font-size: 1.3em !important;
+    padding: 52px 16px 10px !important;
+  }
+
+  body.help-body .subtitle,
+  body.help-body h2.subtitle {
+    font-size: 0.92em !important;
+    padding: 4px 16px 12px !important;
+  }
+
+  body.help-body .rules {
+    font-size: 0.88em !important;
+    padding: 14px 12px 80px 28px !important;
+  }
+
+  body.help-body .rules li {
+    margin-bottom: 12px !important;
+  }
+}
+

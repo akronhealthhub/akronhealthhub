@@ -1,76 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Help - Akron Health Hub</title>
   <style>
+    /* Premium, minimal, professional theme */
     body {
-      background-color: #000;
-      color: #fff;
-      font-family: Arial, sans-serif;
+      background-color: #f7f9fc;
+      color: #333;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
       line-height: 1.6;
-      padding: 30px;
+      padding: 60px 20px;
+      margin: 0;
+    }
+
+    .container {
+      max-width: 680px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 50px 60px;
+      border-radius: 16px;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.03);
+      border: 1px solid rgba(0, 0, 0, 0.04);
     }
 
     h1 {
       text-align: center;
-      color: #ffffff;
-      font-size: 2em;
-      margin-bottom: 30px;
+      color: #111;
+      font-family: 'Inter', 'Roboto', sans-serif;
+      font-size: 2.2rem;
+      font-weight: 700;
+      margin-top: 0;
+      margin-bottom: 40px;
+      letter-spacing: -0.03em;
     }
 
     h2 {
-      color: #ffffff;
-      font-size: 1.5em;
-      margin-top: 30px;
-      margin-bottom: 15px;
+      color: #111;
+      font-size: 1.25rem;
+      margin-top: 40px;
+      margin-bottom: 20px;
+      font-weight: 600;
+      letter-spacing: -0.01em;
     }
 
-    ul {
-      list-style-type: disc;
-      margin-left: 25px;
+    .help-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
     }
 
-    li {
-      margin-bottom: 12px;
+    .help-list>li {
+      padding: 24px 0;
+      border-bottom: 1px solid #f0f0f0;
+      font-size: 1.05rem;
+      color: #444;
+      line-height: 1.7;
+    }
+
+    .help-list>li:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+
+    .help-list ul {
+      margin-top: 16px;
+      margin-bottom: 0;
+      padding-left: 20px;
+      list-style-type: circle;
+    }
+
+    .help-list ul li {
+      margin-bottom: 8px;
+      color: #555;
+    }
+
+    strong {
+      color: #111;
+      font-weight: 600;
+    }
+
+    img {
+      vertical-align: middle;
+      height: 22px;
+      margin: 0 8px;
+      border-radius: 6px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+      background: white;
+      padding: 4px;
+      border: 1px solid rgba(0, 0, 0, 0.05);
     }
 
     .icon {
       font-weight: bold;
-      color: #66ccff;
+      color: #0d6efd;
     }
 
-    a {
-      color: #66ccff;
-      text-decoration: none;
-    }
+    /* Mobile Responsive */
+    @media (max-width: 600px) {
+      body {
+        padding: 30px 15px;
+      }
 
-    a:hover {
-      text-decoration: underline;
+      .container {
+        padding: 30px 20px;
+        border-radius: 12px;
+      }
+
+      h1 {
+        font-size: 1.8rem;
+        margin-bottom: 30px;
+      }
+
+      .help-list>li {
+        padding: 20px 0;
+      }
     }
   </style>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
-  <h1>HELP</h1>
+  <div class="container">
+    <h1>Help Guide</h1>
 
-  <h2>How to Use the Akron Health Hub:</h2>
-  <ul>
-    <li>Click into a <strong>Service Category Tour</strong> to view a map of organizations that provide services in that category.</li>
-    <li>Click on each hotspot <img src="blue-dot.png" alt="Trulli" > on the map to access Augmented Reality images and information about the services provided at that location.</li>
-    <li>Once in an organizations hotspot, click and drag with your mouse to look around the 360 image of the organizations location. Arrows have been added to label key details, like the entrance.</li>
-    <li>Click the <img src="threelines.png" > to access each hotspots <strong>Menu</strong>. The Menu will contain links to the organizations Services and Contact/Hours, as well as a page with:
-      <ul>
-        <li>Hotline information</li>
-        <li>How to use the Akron Health Hub</li>
-        <li>A link to leave us feedback</li>
-      </ul>
-    </li>
-    <li>Within the Menus pages, use the <img src="back.png" > icon to go back to the last page you were on.</li>
-    <li>Click the <img src="eye.png" > to center your view of the 360 image.</li>
-    <li>Click the <img src="map.png" >  to return to the map of services in the tour you are viewing.</li>
-  </ul>
+    <h2>How to Use the Akron Health Hub:</h2>
+    <ul class="help-list">
+      <li>Click into a <strong>Service Category Tour</strong> to view a map of organizations that provide services in
+        that category.</li>
+
+      <li>Click on each hotspot <img src="blue-dot.png" alt="Map Pin"> on the map to access Augmented Reality images and
+        information about the services provided at that location.</li>
+
+      <li>Once in an organization's hotspot, click and drag with your mouse (or swipe on mobile) to look around the 360°
+        image of the location. Arrows have been added to label key details, like the entrance.</li>
+
+      <li>Click the <img src="threelines.png" alt="Menu Icon"> to access the <strong>hotspot Menu</strong>. The Menu
+        contains links to the organization's Services and Contact/Hours, as well as:
+        <ul>
+          <li>Hotline information</li>
+          <li>How to use the Akron Health Hub</li>
+          <li>A link to leave us feedback</li>
+        </ul>
+      </li>
+
+      <li>Within the Menu's pages, use the <img src="back.png" alt="Back Icon"> icon to go back to the last page you
+        were on.</li>
+
+      <li>Click the <img src="eye.png" alt="View Icon"> icon to center your view of the 360° image.</li>
+
+      <li>Click the <img src="map.png" alt="Map Icon"> icon to return to the map of services in the tour you are
+        viewing.</li>
+    </ul>
+  </div>
 
 </body>
+
 </html>

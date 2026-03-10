@@ -1,37 +1,67 @@
 {
-  "project_name": "Disability Resources",
-  "intro_audio": "",
-  "homepage_image": "mainmenubackground.jpg",
-  "ga_tracking_id": "UA-162868232-1",
-  "hotspots": [
-    {
-      "name": "United Disability Services – Akron",
-      "position": "1",
-      "latitude": "41.0833389",
-      "longitude": "-81.5172646",
-      "overlay": "",
-      "virtual_object": "",
-      "isSubHotspot": false,
-      "panorama_image": "360udservices-l.jpg",
-      "overlay_size": 5,
-      "overlay_offset_x": 0,
-      "overlay_offset_y": 0,
-      "start_audio": "",
-      "main_pages": [
+    "project_name": "Disability Resources",
+    "intro_audio": "",
+    "homepage_image": "mainmenubackground.jpg",
+    "ga_tracking_id": "UA-162868232-1",
+    "hotspots": [
         {
-          "title": "SERVICES",
-          "description": "United Disability Services (UDS) offers support services for individuals living with physical, cognitive, and/or developmental disabilities, including adult daytime programming, inclusive sports, employment services, community living services, low vision services, a Toy & Resource Center, and some transportation assistance. \n \nFirst, UDS Akron offers a variety of adults daytime programs, detailed at https://www.udsakron.org/programs-services/adult-day-services/. Their services can assist in developing community integration, social, and employment skills (BraVo! and Prevocational Services); coordinating personal care attendants (Prevocational Services); and maintaining good physical health (CHAMPS). They also offer social, recreational, and therapeutic activities for individuals over the age of 18 through their SociAbilities program. \n \nSecond, the UDS All-Star Training Club provides integrated, competitive sports where everyone, regardless of ability, is encouraged to participate, try different sports and learn new skills. All-Star Training Club is a sanctioned Special Olympics program and provides the opportunity for everyone to become a rising star. Eleven different sports are currently offered. Learn more at https://www.udsakron.org/programs-services/all-star-camp/. \n \nThird, UDS offers multiple employment services. Individuals are referred to Community Employment Services by Opportunities for Ohioan with Disabilities (OOD) or their County Board of Developmental Disabilities. UDS Akron also offers youth transition services, including Pre-Employment Transition Services, a Summer Youth Career Exploration, and a Summer Youth Work Experience. Learn more at https://www.udsakron.org/programs-services/transitional-youth-services/. \n \nFourth, UDS Akron offers various community living services. Residential Services provides services in a variety of settings including shared living and semi-independent living depending on the needs and preferences of the individuals served. Shared Living is when an individual, couple or family in the community opens their home to a person with a disability to live together and share life experiences. The person with a disability becomes a part of the family, and a member of the community, as they participate in social events and activities together. \n \nFifth, UDS Akron offers Low Vision Services to help both children and adults with visual impairments recognize and achieve their potential for independent living through education and rehabilitation. Most individuals who experience vision problems that cannot be corrected by medical treatment, surgery or conventional glasses are good candidates for these specialized services, which will identify visual needs, provide education, determine the best visual aid, and provide instruction and practice on how to use the aid. \n \nSixth, the Toy & Resource Center loans developmental toys and resource materials to preschools, therapists, parents, grandparents and anyone working with a child from birth to six years of age. One of the largest in the state, UDS Akron’s Center has 4,200 toys kids love to play with that help foster essential developmental skills. They also have a large number of items adapted for children with special needs, including new toys that are beneficial to individuals on the autism spectrum. \n \nSeventh, UDS Akron provides transportation to their adult day programming, Non-Emergency Transportation (NET) for qualified individuals to medical appointments, and special event transportation on a contractual basis. For more information, visit https://www.udsakron.org/programs-services/transportation-services-disabled/. \n \nUDS Akron also provides services in the Shelter, Housing, & Utilities; Work, Financial, & Legal Support; and Transportation categories.",
-          "background_image": "AHHgenericbg.jpg",
-          "descriptive_audio": ""
+            "name": "United Disability Services \u2013 Akron",
+            "position": "1",
+            "latitude": "41.0833389",
+            "longitude": "-81.5172646",
+            "overlay": "",
+            "virtual_object": "",
+            "isSubHotspot": false,
+            "panorama_image": "360udservices-l.jpg",
+            "overlay_size": 5,
+            "overlay_offset_x": 0,
+            "overlay_offset_y": 0,
+            "start_audio": "",
+            "main_pages": [
+                {
+                    "title": "SERVICES",
+                    "description": "United Disability Services (UDS) offers support services for individuals living with physical, cognitive, and/or developmental disabilities, including adult daytime programming, inclusive sports, employment services, community living services, low vision services, a Toy & Resource Center, and some transportation assistance. \n \nFirst, UDS Akron offers a variety of adults daytime programs, detailed at https://www.udsakron.org/programs-services/adult-day-services/. Their services can assist in developing community integration, social, and employment skills (BraVo! and Prevocational Services); coordinating personal care attendants (Prevocational Services); and maintaining good physical health (CHAMPS). They also offer social, recreational, and therapeutic activities for individuals over the age of 18 through their SociAbilities program. \n \nSecond, the UDS All-Star Training Club provides integrated, competitive sports where everyone, regardless of ability, is encouraged to participate, try different sports and learn new skills. All-Star Training Club is a sanctioned Special Olympics program and provides the opportunity for everyone to become a rising star. Eleven different sports are currently offered. Learn more at https://www.udsakron.org/programs-services/all-star-camp/. \n \nThird, UDS offers multiple employment services. Individuals are referred to Community Employment Services by Opportunities for Ohioan with Disabilities (OOD) or their County Board of Developmental Disabilities. UDS Akron also offers youth transition services, including Pre-Employment Transition Services, a Summer Youth Career Exploration, and a Summer Youth Work Experience. Learn more at https://www.udsakron.org/programs-services/transitional-youth-services/. \n \nFourth, UDS Akron offers various community living services. Residential Services provides services in a variety of settings including shared living and semi-independent living depending on the needs and preferences of the individuals served. Shared Living is when an individual, couple or family in the community opens their home to a person with a disability to live together and share life experiences. The person with a disability becomes a part of the family, and a member of the community, as they participate in social events and activities together. \n \nFifth, UDS Akron offers Low Vision Services to help both children and adults with visual impairments recognize and achieve their potential for independent living through education and rehabilitation. Most individuals who experience vision problems that cannot be corrected by medical treatment, surgery or conventional glasses are good candidates for these specialized services, which will identify visual needs, provide education, determine the best visual aid, and provide instruction and practice on how to use the aid. \n \nSixth, the Toy & Resource Center loans developmental toys and resource materials to preschools, therapists, parents, grandparents and anyone working with a child from birth to six years of age. One of the largest in the state, UDS Akron\u2019s Center has 4,200 toys kids love to play with that help foster essential developmental skills. They also have a large number of items adapted for children with special needs, including new toys that are beneficial to individuals on the autism spectrum. \n \nSeventh, UDS Akron provides transportation to their adult day programming, Non-Emergency Transportation (NET) for qualified individuals to medical appointments, and special event transportation on a contractual basis. For more information, visit https://www.udsakron.org/programs-services/transportation-services-disabled/. \n \nUDS Akron also provides services in the Shelter, Housing, & Utilities; Work, Financial, & Legal Support; and Transportation categories.",
+                    "background_image": "AHHgenericbg.jpg",
+                    "descriptive_audio": ""
+                },
+                {
+                    "title": "CONTACT & HOURS",
+                    "description": "Phone: 330-762-9755 \n\nWebsite: https://www.udsakron.org/ \n\nAddress: 701 S. Main St., Akron, OH 44311 \n\nBusiness Hours: Mon-Fri 8:00A-4:30P \n\nToy Resource Center Hours: Tues & Weds 2:00P-5:00P; Thurs 11:00A-2:00P",
+                    "background_image": "AHHgenericbg.jpg",
+                    "descriptive_audio": ""
+                }
+            ],
+            "media_pages": []
         },
         {
-          "title": "CONTACT & HOURS",
-          "description": "Phone: 330-762-9755 \n\nWebsite: https://www.udsakron.org/ \n\nAddress: 701 S. Main St., Akron, OH 44311 \n\nBusiness Hours: Mon-Fri 8:00A-4:30P \n\nToy Resource Center Hours: Tues & Weds 2:00P-5:00P; Thurs 11:00A-2:00P",
-          "background_image": "AHHgenericbg.jpg",
-          "descriptive_audio": ""
+            "name": "Bayard Rustin LGBTQ+ Center | Akron AIDS Collaborative",
+            "position": "10",
+            "latitude": "41.0882752",
+            "longitude": "-81.5409204",
+            "overlay": "",
+            "virtual_object": "",
+            "isSubHotspot": false,
+            "panorama_image": "360bayardrustin-l.jpg",
+            "overlay_size": 5,
+            "overlay_offset_x": 0,
+            "overlay_offset_y": 0,
+            "start_audio": "",
+            "pin_color": "e63946",
+            "main_pages": [
+                {
+                    "title": "SERVICES",
+                    "description": "The Bayard Rustin Center, home of the Akron AIDS Collaborative (AAC), strengthens advocacy efforts for individuals living with HIV/AIDS and the broader LGBTQ+ community, including those who have experienced stigma tied to their sexual orientation or gender identity. As Ohio's only LGBTQ+ drop-in facility, they offer a wide range of culturally inclusive supports, including HIV testing, medical and housing referrals, a food pantry and clothing closet, community meals, mail order pharmacy services, a banned book library, and, as partners with TransJoy Akron, transgender support services. The AAC team is unwavering in its commitment to fostering a welcoming space where the LGBTQ+ and HIV/AIDS communities can access the support and resources they need to thrive.",
+                    "background_image": "AHHgenericbg.jpg",
+                    "descriptive_audio": ""
+                },
+                {
+                    "title": "CONTACT & HOURS",
+                    "description": "Phone: 330-983-4044 \n \nBayard Rustin Center Website: https://www.rustincenter.org/  \n \nAkron AIDS Collaborative Website: https://ohioaac.org/ \n \nAddress: 652 W. Exchange St., Akron, OH 44302 \n \nBusiness Hours: Mon-Fri 10:00 AM - 4:00 PM",
+                    "background_image": "AHHgenericbg.jpg",
+                    "descriptive_audio": ""
+                }
+            ],
+            "media_pages": []
         }
-      ],
-      "media_pages": []
-    }
-  ]
+    ]
 }

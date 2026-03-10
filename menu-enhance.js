@@ -30,28 +30,34 @@
     var overlayBtnsEnhanced = false;
     var overlayCloseSetup = false;
     var contentBackInjected = false;
-    var lastKnownOrgName = null;
+    var lastKnownOrgName = sessionStorage.getItem('ahh_lastOrgName') || null;
+
+    /** Save org name to both variable and sessionStorage */
+    function setOrgName(name) {
+        if (name) {
+            lastKnownOrgName = name;
+            try { sessionStorage.setItem('ahh_lastOrgName', name); } catch (e) { }
+        }
+    }
 
     /**
      * Get the current organization name from the hotspot title.
-     * Caches the name so it persists across page navigations.
+     * Checks DOM, URL params, and sessionStorage for persistence.
      */
     function getOrgName() {
         var titleEl = document.getElementById('title-ctn');
         if (titleEl && titleEl.textContent && titleEl.textContent.trim()) {
-            lastKnownOrgName = titleEl.textContent.trim();
+            setOrgName(titleEl.textContent.trim());
             return lastKnownOrgName;
         }
         // Also try from URL param
-        if (!lastKnownOrgName) {
-            try {
-                var params = new URLSearchParams(window.location.search);
-                var name = params.get('name');
-                if (name) {
-                    lastKnownOrgName = decodeURIComponent(name);
-                }
-            } catch (e) { }
-        }
+        try {
+            var params = new URLSearchParams(window.location.search);
+            var name = params.get('name');
+            if (name) {
+                setOrgName(decodeURIComponent(name));
+            }
+        } catch (e) { }
         return lastKnownOrgName;
     }
 
@@ -217,19 +223,211 @@
    * Debounced check — only runs if the overlay is currently visible
    */
     /**
-     * Inject a back button on content pages (Services, Contact & Hours, Help)
-     * and forcefully strip Framer Motion inline styles.
+     * Inject a persistent hamburger menu on content pages (Services, Contact & Hours, Help),
+     * the map page, and keep it available everywhere except the 360 tour page
+     * (which has its own React-managed menu).
      */
-    function injectContentBackButton() {
+    var persistentMenuInjected = false;
+    var persistentDrawerOpen = false;
+
+    function getMarkerDataForMenu() {
+        // Get current marker name from URL params
+        var params;
+        try { params = new URLSearchParams(window.location.search); } catch (e) { return null; }
+        var name = params.get('name');
+        if (!name) name = lastKnownOrgName;
+        if (!name) return null;
+
+        // Get marker data from localStorage
+        var rawData = localStorage.getItem('markerData');
+        if (!rawData) return null;
+        try {
+            var data = JSON.parse(rawData);
+            var hotspots = data.hotspots || [];
+            for (var i = 0; i < hotspots.length; i++) {
+                if (hotspots[i].name === name) return hotspots[i];
+            }
+        } catch (e) { }
+        return null;
+    }
+
+    function getBasePath() {
+        // Get the SPA basename from the URL (e.g., '/medical' from '/medical/main')
+        var path = window.location.pathname;
+        var parts = path.split('/').filter(Boolean);
+        return parts.length > 0 ? '/' + parts[0] : '';
+    }
+
+    function navigateSPA(targetPath) {
+        var base = getBasePath();
+        var fullPath = base + targetPath;
+        window.history.pushState({}, '', fullPath);
+        window.dispatchEvent(new PopStateEvent('popstate'));
+        closePersistentDrawer();
+    }
+
+    function closePersistentDrawer() {
+        persistentDrawerOpen = false;
+        var drawer = document.getElementById('ahh-persistent-drawer');
+        var overlay = document.getElementById('ahh-persistent-overlay');
+        if (drawer) drawer.classList.remove('ahh-drawer-open');
+        if (overlay) overlay.classList.remove('ahh-overlay-visible');
+        setTimeout(function () {
+            if (overlay) overlay.style.display = 'none';
+        }, 300);
+    }
+
+    function openPersistentDrawer() {
+        persistentDrawerOpen = true;
+        var drawer = document.getElementById('ahh-persistent-drawer');
+        var overlay = document.getElementById('ahh-persistent-overlay');
+        if (overlay) { overlay.style.display = 'block'; }
+
+        // Populate menu items dynamically
+        populateDrawerMenu();
+
+        // Use rAF to trigger CSS transition
+        requestAnimationFrame(function () {
+            if (drawer) drawer.classList.add('ahh-drawer-open');
+            if (overlay) overlay.classList.add('ahh-overlay-visible');
+        });
+    }
+
+    function populateDrawerMenu() {
+        var menuItems = document.getElementById('ahh-drawer-items');
+        if (!menuItems) return;
+
+        var marker = getMarkerDataForMenu();
+        var orgNameEl = document.getElementById('ahh-drawer-org-name');
+
+        if (marker && orgNameEl) {
+            orgNameEl.textContent = marker.name;
+            orgNameEl.style.display = 'block';
+        } else if (orgNameEl) {
+            // Try lastKnownOrgName
+            if (lastKnownOrgName) {
+                orgNameEl.textContent = lastKnownOrgName;
+                orgNameEl.style.display = 'block';
+            } else {
+                orgNameEl.style.display = 'none';
+            }
+        }
+
+        // Build menu links from marker's main_pages
+        menuItems.innerHTML = '';
+
+        if (marker && marker.main_pages) {
+            for (var i = 0; i < marker.main_pages.length; i++) {
+                var page = marker.main_pages[i];
+                var link = document.createElement('a');
+                link.className = 'ahh-drawer-link';
+                link.textContent = page.title;
+                link.href = '#';
+                link.dataset.type = page.title;
+                link.dataset.name = marker.name;
+                link.addEventListener('click', (function (pageName, markerName) {
+                    return function (e) {
+                        e.preventDefault();
+                        setOrgName(markerName);
+                        navigateSPA('/main?name=' + encodeURIComponent(markerName) + '&type=' + encodeURIComponent(pageName));
+                    };
+                })(page.title, marker.name));
+                menuItems.appendChild(link);
+            }
+        }
+
+        // Help link
+        var helpLink = document.createElement('a');
+        helpLink.className = 'ahh-drawer-link';
+        helpLink.textContent = 'HELP';
+        helpLink.href = '#';
+        helpLink.addEventListener('click', function (e) {
+            e.preventDefault();
+            navigateSPA('/help');
+        });
+        menuItems.appendChild(helpLink);
+
+    }
+
+    function injectPersistentMenu() {
+        // Don't inject on the 360 tour page (it has its own React menu)
+        var isTourPage = !!document.getElementById('container');
         var isContentPage = document.body.classList.contains('scrollable-body');
         var isHelpPage = document.body.classList.contains('help-body');
 
-        if (!isContentPage && !isHelpPage) {
-            contentBackInjected = false;
+        // Remove persistent menu if on tour page or map page (React handles tour, map doesn't need it)
+        if (isTourPage) {
+            var existingHamburger = document.getElementById('ahh-persistent-hamburger');
+            if (existingHamburger) existingHamburger.style.display = 'none';
+            var existingBack = document.getElementById('ahh-back-to-map');
+            if (existingBack) existingBack.style.display = 'none';
             return;
         }
 
-        // Forcefully strip Framer Motion inline styles from text container
+        if (!isContentPage && !isHelpPage) {
+            var existingHamburger2 = document.getElementById('ahh-persistent-hamburger');
+            if (existingHamburger2) existingHamburger2.style.display = 'none';
+            var existingBack2 = document.getElementById('ahh-back-to-map');
+            if (existingBack2) existingBack2.style.display = 'none';
+            return;
+        }
+
+        // Show hamburger + back button if already injected
+        var existingHamburger3 = document.getElementById('ahh-persistent-hamburger');
+        var existingBack3 = document.getElementById('ahh-back-to-map');
+        if (existingHamburger3) {
+            existingHamburger3.style.display = 'flex';
+            if (existingBack3) existingBack3.style.display = 'flex';
+            return;
+        }
+
+        // --- Create Overlay ---
+        var overlay = document.createElement('div');
+        overlay.id = 'ahh-persistent-overlay';
+        overlay.addEventListener('click', closePersistentDrawer);
+        document.body.appendChild(overlay);
+
+        // --- Create Drawer ---
+        var drawer = document.createElement('div');
+        drawer.id = 'ahh-persistent-drawer';
+        drawer.innerHTML =
+            '<div class="ahh-drawer-header">' +
+            '  <span class="ahh-drawer-title">MENU</span>' +
+            '  <button id="ahh-drawer-close" class="ahh-drawer-close-btn">&times;</button>' +
+            '</div>' +
+            '<p id="ahh-drawer-org-name" class="ahh-drawer-org"></p>' +
+            '<div id="ahh-drawer-items" class="ahh-drawer-items"></div>';
+        document.body.appendChild(drawer);
+
+        document.getElementById('ahh-drawer-close').addEventListener('click', closePersistentDrawer);
+
+        // --- Create Hamburger Button ---
+        var hamburger = document.createElement('button');
+        hamburger.id = 'ahh-persistent-hamburger';
+        hamburger.innerHTML =
+            '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">' +
+            '<path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>' +
+            '</svg>';
+        hamburger.addEventListener('click', function () {
+            if (persistentDrawerOpen) closePersistentDrawer();
+            else openPersistentDrawer();
+        });
+        document.body.appendChild(hamburger);
+
+        // --- Create standalone Back to Map button ---
+        var backBtn = document.createElement('button');
+        backBtn.id = 'ahh-back-to-map';
+        backBtn.innerHTML =
+            '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">' +
+            '<path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/>' +
+            '</svg>' +
+            '<span>BACK TO MAP</span>';
+        backBtn.addEventListener('click', function () {
+            navigateSPA('/');
+        });
+        document.body.appendChild(backBtn);
+
+        // Force strip Framer Motion inline styles on content pages
         if (isContentPage) {
             var textContainers = document.querySelectorAll('.textCtn, main > div[style]');
             for (var i = 0; i < textContainers.length; i++) {
@@ -245,29 +443,14 @@
                 el.style.setProperty('transform', 'none', 'important');
             }
         }
-
-        if (contentBackInjected || document.querySelector('.ahh-content-back')) return;
-        contentBackInjected = true;
-
-        var backBtn = document.createElement('button');
-        backBtn.className = 'ahh-content-back';
-        backBtn.innerHTML =
-            '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">' +
-            '<path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/>' +
-            '</svg>' +
-            '<span>Back</span>';
-
-        backBtn.addEventListener('click', function () {
-            window.history.back();
-        });
-
-        document.body.appendChild(backBtn);
     }
 
     function debouncedCheck() {
         if (debounceTimer) return;
         debounceTimer = setTimeout(function () {
             debounceTimer = null;
+            // Proactively capture org name from DOM/URL whenever possible
+            getOrgName();
             if (document.querySelector('.ReactModal__Overlay')) {
                 enhanceMenu();
             }
@@ -279,8 +462,8 @@
             enhanceHamburger();
             // Highlight owner marker on map
             highlightOwnerMarker();
-            // Inject back button on content pages
-            injectContentBackButton();
+            // Inject persistent menu on content/map pages
+            injectPersistentMenu();
         }, 150);
     }
 
@@ -397,26 +580,22 @@
         origPushMenu.apply(this, arguments);
         badgeInjected = false;
         overlayBtnsEnhanced = false;
-        contentBackInjected = false;
         // Reset menu enhanced so org name gets re-checked
         var mc = document.querySelector('.menu-content');
         if (mc) mc.removeAttribute('data-enhanced');
-        // Remove old back button if leaving content page
-        var oldBack = document.querySelector('.ahh-content-back');
-        if (oldBack) oldBack.parentNode.removeChild(oldBack);
-        setTimeout(function () { inject360Badge(); enhanceOverlayButtons(); injectContentBackButton(); }, 600);
+        // Close persistent drawer on navigation
+        closePersistentDrawer();
+        setTimeout(function () { inject360Badge(); enhanceOverlayButtons(); injectPersistentMenu(); }, 600);
     };
 
     window.addEventListener('popstate', function () {
         badgeInjected = false;
         overlayBtnsEnhanced = false;
-        contentBackInjected = false;
         // Reset menu enhanced so org name gets re-checked
         var mc = document.querySelector('.menu-content');
         if (mc) mc.removeAttribute('data-enhanced');
-        // Remove old back button if leaving content page
-        var oldBack = document.querySelector('.ahh-content-back');
-        if (oldBack) oldBack.parentNode.removeChild(oldBack);
-        setTimeout(function () { inject360Badge(); enhanceOverlayButtons(); injectContentBackButton(); }, 600);
+        // Close persistent drawer on navigation
+        closePersistentDrawer();
+        setTimeout(function () { inject360Badge(); enhanceOverlayButtons(); injectPersistentMenu(); }, 600);
     });
 })();

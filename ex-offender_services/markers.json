@@ -1,153 +1,183 @@
 {
-  "project_name": "Ex-Offender Services",
-  "intro_audio": "",
-  "homepage_image": "mainmenubackground.jpg",
-  "ga_tracking_id": "UA-162868232-1",
-  "hotspots": [
-    {
-      "name": "Restoration House – South Street Ministries",
-      "position": "1",
-      "latitude": "41.0609935",
-      "longitude": "-81.5177477",
-      "overlay": "",
-      "virtual_object": "",
-      "isSubHotspot": false,
-      "panorama_image": "360restorationhouse-l.jpg",
-      "overlay_size": 5,
-      "overlay_offset_x": 0,
-      "overlay_offset_y": 0,
-      "start_audio": "",
-      "main_pages": [
+    "project_name": "Ex-Offender Services",
+    "intro_audio": "",
+    "homepage_image": "mainmenubackground.jpg",
+    "ga_tracking_id": "UA-162868232-1",
+    "hotspots": [
         {
-          "title": "SERVICES",
-          "description": "Restoration House, guided by Donovan Harris, Reentry-Housing Director, embodies a transformative journey for women returning from incarceration. It centers around the 3 R’s: Reentry, Redirection, and Restoration. This approach recognizes the need for changing thought patterns, lifestyles, and habits as part of a comprehensive process toward positive change. Restoration, as the ultimate goal, focuses on reintegrating individuals into society with a renewed focus on family, home, business, and Christian faith. \nRestoration House serves as a crucial emergency and transitional shelter, also functioning as a drop-in center, where numerous women have already found support, peer connections, and nurturing guidance. This space is more than just a shelter; it’s a pivotal step towards a restored life, offering a haven for peer support and soulful conversations, laying the foundation for a hopeful future. \n \nSouth Street Ministries also offers other services in the Ex-Offender category and services in the Mental Health, Addiction, & Family Services and Transportation categories.",
-          "background_image": "AHHgenericbg.jpg",
-          "descriptive_audio": ""
+            "name": "Restoration House \u2013 South Street Ministries",
+            "position": "1",
+            "latitude": "41.0609935",
+            "longitude": "-81.5177477",
+            "overlay": "",
+            "virtual_object": "",
+            "isSubHotspot": false,
+            "panorama_image": "360restorationhouse-l.jpg",
+            "overlay_size": 5,
+            "overlay_offset_x": 0,
+            "overlay_offset_y": 0,
+            "start_audio": "",
+            "main_pages": [
+                {
+                    "title": "SERVICES",
+                    "description": "Restoration House, guided by Donovan Harris, Reentry-Housing Director, embodies a transformative journey for women returning from incarceration. It centers around the 3 R\u2019s: Reentry, Redirection, and Restoration. This approach recognizes the need for changing thought patterns, lifestyles, and habits as part of a comprehensive process toward positive change. Restoration, as the ultimate goal, focuses on reintegrating individuals into society with a renewed focus on family, home, business, and Christian faith. \nRestoration House serves as a crucial emergency and transitional shelter, also functioning as a drop-in center, where numerous women have already found support, peer connections, and nurturing guidance. This space is more than just a shelter; it\u2019s a pivotal step towards a restored life, offering a haven for peer support and soulful conversations, laying the foundation for a hopeful future. \n \nSouth Street Ministries also offers other services in the Ex-Offender category and services in the Mental Health, Addiction, & Family Services and Transportation categories.",
+                    "background_image": "AHHgenericbg.jpg",
+                    "descriptive_audio": ""
+                },
+                {
+                    "title": "CONTACT & HOURS",
+                    "description": "Phone: 330-761-1992 \n \nWebsite: https://southstreetministries.org/restoration-house/ \n \nAddress: 801 Grant St., Akron, OH 44311 \n \nBusiness Hours: Mon-Fri 9:00A-5:00P",
+                    "background_image": "AHHgenericbg.jpg",
+                    "descriptive_audio": ""
+                }
+            ],
+            "media_pages": []
         },
         {
-          "title": "CONTACT & HOURS",
-          "description": "Phone: 330-761-1992 \n \nWebsite: https://southstreetministries.org/restoration-house/ \n \nAddress: 801 Grant St., Akron, OH 44311 \n \nBusiness Hours: Mon-Fri 9:00A-5:00P",
-          "background_image": "AHHgenericbg.jpg",
-          "descriptive_audio": ""
-        }
-      ],
-      "media_pages": []
-    },
-    {
-      "name": "The Front Porch – South Street Ministries",
-      "position": "2",
-      "latitude": "41.0610425",
-      "longitude": "-81.5182799",
-      "overlay": "",
-      "virtual_object": "",
-      "isSubHotspot": false,
-      "panorama_image": "360thefrontporch-l.jpg",
-      "overlay_size": 5,
-      "overlay_offset_x": 0,
-      "overlay_offset_y": 0,
-      "start_audio": "",
-      "main_pages": [
-        {
-          "title": "SERVICES",
-          "description": "The Front Porch is a community gathering place that supports individuals in transition by providing recreational activities, drug and alcohol recovery meetings, employment assistance, and more. Operated by South Street Ministries, this facility is home to support groups where previously incarcerated individuals can receive encouragement and reentry tips to assist their return to the community, enhancing their ability to remain crime-free.  \n \nThe Front Porch also hosts peer-to-peer Re-Entry Support Services every Tuesday. Each session varies, featuring speakers, Q&A sessions, guest presenters, and always concluding with a communal meal, Christian prayer, and an affirmation of love. \n \nThe Front Porch is also home to Porch Light Coffee Co., offering a place of hospitality, equity, and diversity alongside crafted coffee beverages and café food options. Please visit https://southstreetministries.org/the-front-porch/ for complete support group schedules.  \n \nSouth Street Ministries also offers other services in the Ex-Offender category and services in the Mental Health, Addiction, & Family Services and Transportation categories.",
-          "background_image": "AHHgenericbg.jpg",
-          "descriptive_audio": ""
+            "name": "The Front Porch \u2013 South Street Ministries",
+            "position": "2",
+            "latitude": "41.0610425",
+            "longitude": "-81.5182799",
+            "overlay": "",
+            "virtual_object": "",
+            "isSubHotspot": false,
+            "panorama_image": "360thefrontporch-l.jpg",
+            "overlay_size": 5,
+            "overlay_offset_x": 0,
+            "overlay_offset_y": 0,
+            "start_audio": "",
+            "main_pages": [
+                {
+                    "title": "SERVICES",
+                    "description": "The Front Porch is a community gathering place that supports individuals in transition by providing recreational activities, drug and alcohol recovery meetings, employment assistance, and more. Operated by South Street Ministries, this facility is home to support groups where previously incarcerated individuals can receive encouragement and reentry tips to assist their return to the community, enhancing their ability to remain crime-free.  \n \nThe Front Porch also hosts peer-to-peer Re-Entry Support Services every Tuesday. Each session varies, featuring speakers, Q&A sessions, guest presenters, and always concluding with a communal meal, Christian prayer, and an affirmation of love. \n \nThe Front Porch is also home to Porch Light Coffee Co., offering a place of hospitality, equity, and diversity alongside crafted coffee beverages and caf\u00e9 food options. Please visit https://southstreetministries.org/the-front-porch/ for complete support group schedules.  \n \nSouth Street Ministries also offers other services in the Ex-Offender category and services in the Mental Health, Addiction, & Family Services and Transportation categories.",
+                    "background_image": "AHHgenericbg.jpg",
+                    "descriptive_audio": ""
+                },
+                {
+                    "title": "CONTACT & HOURS",
+                    "description": "Phone: 330-375-1991 \n \nWebsite: https://southstreetministries.org/the-front-porch/ \n \nAddress: 798 Grant St., Akron, OH  44311 \n \nBusiness Hours (may vary): Mon-Fri 9:00A-3:00P \n \nPorchlight Coffeehouse Hours: Mon-Weds 7:00A-3:00P   |||   Thurs-Fri 7:00A-6:00P \n \nMen's Re-Entry Support Group: Tues 4:00P-5:30P \n \nWomen\u2019s Re-entry Support Group: Tues 7:00P-8:00P",
+                    "background_image": "AHHgenericbg.jpg",
+                    "descriptive_audio": ""
+                }
+            ],
+            "media_pages": []
         },
         {
-          "title": "CONTACT & HOURS",
-          "description": "Phone: 330-375-1991 \n \nWebsite: https://southstreetministries.org/the-front-porch/ \n \nAddress: 798 Grant St., Akron, OH  44311 \n \nBusiness Hours (may vary): Mon-Fri 9:00A-3:00P \n \nPorchlight Coffeehouse Hours: Mon-Weds 7:00A-3:00P   |||   Thurs-Fri 7:00A-6:00P \n \nMen's Re-Entry Support Group: Tues 4:00P-5:30P \n \nWomen’s Re-entry Support Group: Tues 7:00P-8:00P",
-          "background_image": "AHHgenericbg.jpg",
-          "descriptive_audio": ""
-        }
-      ],
-      "media_pages": []
-    },
-    {
-      "name": "Special Housing Adjustment Residential Program (SHARP)",
-      "position": "3",
-      "latitude": "41.0958436",
-      "longitude": "-81.5132242",
-      "overlay": "",
-      "virtual_object": "",
-      "isSubHotspot": false,
-      "panorama_image": "360orianasharp-l.jpg",
-      "overlay_size": 5,
-      "overlay_offset_x": 0,
-      "overlay_offset_y": 0,
-      "start_audio": "",
-      "main_pages": [
-        {
-          "title": "SERVICES",
-          "description": "The Special Housing Adjustment Residential Program (SHARP) program provides a structured living environment for community corrections clients who have mental illness and may also need substance use treatment. The program partners with providers of mental health services to integrate the client into the community and arrange for stable housing.  \n \nOperated by Oriana House, residential services are offered at separate locations to men and women in Summit County who have been referred by the court system. Oriana House is dedicated to helping people triumph over addiction and mental illness and provides community corrections programming that helps individuals develop productive, responsible, and law-abiding lives.",
-          "background_image": "AHHgenericbg.jpg",
-          "descriptive_audio": ""
+            "name": "Special Housing Adjustment Residential Program (SHARP)",
+            "position": "3",
+            "latitude": "41.0958436",
+            "longitude": "-81.5132242",
+            "overlay": "",
+            "virtual_object": "",
+            "isSubHotspot": false,
+            "panorama_image": "360orianasharp-l.jpg",
+            "overlay_size": 5,
+            "overlay_offset_x": 0,
+            "overlay_offset_y": 0,
+            "start_audio": "",
+            "main_pages": [
+                {
+                    "title": "SERVICES",
+                    "description": "The Special Housing Adjustment Residential Program (SHARP) program provides a structured living environment for community corrections clients who have mental illness and may also need substance use treatment. The program partners with providers of mental health services to integrate the client into the community and arrange for stable housing.  \n \nOperated by Oriana House, residential services are offered at separate locations to men and women in Summit County who have been referred by the court system. Oriana House is dedicated to helping people triumph over addiction and mental illness and provides community corrections programming that helps individuals develop productive, responsible, and law-abiding lives.",
+                    "background_image": "AHHgenericbg.jpg",
+                    "descriptive_audio": ""
+                },
+                {
+                    "title": "CONTACT & HOURS",
+                    "description": "Phone (Oriana House):  330-535-8116 \n \nPhone (SHARP): 330-996-2222 \n \nWebsite: https://www.orianahouse.org/  \n \nAddress: 55 E. Glenwood Ave., Akron, OH 44304 \n \nBusiness Hours: Mon-Fri 8:00A-4:00P",
+                    "background_image": "AHHgenericbg.jpg",
+                    "descriptive_audio": ""
+                }
+            ],
+            "media_pages": []
         },
         {
-          "title": "CONTACT & HOURS",
-          "description": "Phone (Oriana House):  330-535-8116 \n \nPhone (SHARP): 330-996-2222 \n \nWebsite: https://www.orianahouse.org/  \n \nAddress: 55 E. Glenwood Ave., Akron, OH 44304 \n \nBusiness Hours: Mon-Fri 8:00A-4:00P",
-          "background_image": "AHHgenericbg.jpg",
-          "descriptive_audio": ""
-        }
-      ],
-      "media_pages": []
-    },
-    {
-      "name": "Akron Urban League",
-      "position": "4",
-      "latitude": "41.0725709",
-      "longitude": "-81.5397443",
-      "overlay": "",
-      "virtual_object": "",
-      "isSubHotspot": false,
-      "panorama_image": "360akronurbanleague-l.jpg",
-      "overlay_size": 5,
-      "overlay_offset_x": 0,
-      "overlay_offset_y": 0,
-      "start_audio": "",
-      "main_pages": [
-        {
-          "title": "SERVICES",
-          "description": "The Akron Urban League offers a Recidivism Program for any adult affected by the criminal justice system, which will assist with job placement, job readiness, and case management.  \n \nThe Akron Urban League also offers services in the Work, Financial, & Legal Support category.",
-          "background_image": "AHHgenericbg.jpg",
-          "descriptive_audio": ""
+            "name": "Akron Urban League",
+            "position": "4",
+            "latitude": "41.0725709",
+            "longitude": "-81.5397443",
+            "overlay": "",
+            "virtual_object": "",
+            "isSubHotspot": false,
+            "panorama_image": "360akronurbanleague-l.jpg",
+            "overlay_size": 5,
+            "overlay_offset_x": 0,
+            "overlay_offset_y": 0,
+            "start_audio": "",
+            "main_pages": [
+                {
+                    "title": "SERVICES",
+                    "description": "The Akron Urban League offers a Recidivism Program for any adult affected by the criminal justice system, which will assist with job placement, job readiness, and case management.  \n \nThe Akron Urban League also offers services in the Work, Financial, & Legal Support category.",
+                    "background_image": "AHHgenericbg.jpg",
+                    "descriptive_audio": ""
+                },
+                {
+                    "title": "CONTACT & HOURS",
+                    "description": "Phone: 330-434-3101 \n \nWebsite: https://www.akronurbanleague.org/ \n \nAddress: 440 Vernon Odom Blvd., Akron, OH 44307 \n \nBusiness Hours: Mon-Fri 8:00A-4:30P \n \nWalk-in Closet: Tues 9:00A-11:00A   |||   Thurs 2:00P-4:00P",
+                    "background_image": "AHHgenericbg.jpg",
+                    "descriptive_audio": ""
+                }
+            ],
+            "media_pages": []
         },
         {
-          "title": "CONTACT & HOURS",
-          "description": "Phone: 330-434-3101 \n \nWebsite: https://www.akronurbanleague.org/ \n \nAddress: 440 Vernon Odom Blvd., Akron, OH 44307 \n \nBusiness Hours: Mon-Fri 8:00A-4:30P \n \nWalk-in Closet: Tues 9:00A-11:00A   |||   Thurs 2:00P-4:00P",
-          "background_image": "AHHgenericbg.jpg",
-          "descriptive_audio": ""
-        }
-      ],
-      "media_pages": []
-    },
-    {
-      "name": "Ohio Means Jobs – Summit County",
-      "position": "5",
-      "latitude": "41.0998722",
-      "longitude": "-81.4772613",
-      "overlay": "",
-      "virtual_object": "",
-      "isSubHotspot": false,
-      "panorama_image": "360ohiomeansjobssummit-l.jpg",
-      "overlay_size": 5,
-      "overlay_offset_x": 0,
-      "overlay_offset_y": 0,
-      "start_audio": "",
-      "main_pages": [
-        {
-          "title": "SERVICES",
-          "description": "Ohio Means Jobs Summit County provides comprehensive employment and training services as home to several workforce providers under one roof for businesses and job seekers, including assistive services for job seekers with a criminal record. They also provide vocational assessments, youth and veteran employment programs, and special programs detailed in the Workforce Innovation and Opportunities Act, including skills assessments, on-the-job-training opportunities, and career workshops. \n \nFor more information on job searching with a criminal record, job searching with a criminal history, legal barriers facing restored citizens, and plans for re-entry, visit https://ohiomeansjobs.ohio.gov/job-seekers/build-your-career/for-restored-citizens. \n \nOhio Means Jobs Summit County also provides services in the Work, Financial, & Legal Support category.",
-          "background_image": "AHHgenericbg.jpg",
-          "descriptive_audio": ""
+            "name": "Ohio Means Jobs \u2013 Summit County",
+            "position": "5",
+            "latitude": "41.0998722",
+            "longitude": "-81.4772613",
+            "overlay": "",
+            "virtual_object": "",
+            "isSubHotspot": false,
+            "panorama_image": "360ohiomeansjobssummit-l.jpg",
+            "overlay_size": 5,
+            "overlay_offset_x": 0,
+            "overlay_offset_y": 0,
+            "start_audio": "",
+            "main_pages": [
+                {
+                    "title": "SERVICES",
+                    "description": "Ohio Means Jobs Summit County provides comprehensive employment and training services as home to several workforce providers under one roof for businesses and job seekers, including assistive services for job seekers with a criminal record. They also provide vocational assessments, youth and veteran employment programs, and special programs detailed in the Workforce Innovation and Opportunities Act, including skills assessments, on-the-job-training opportunities, and career workshops. \n \nFor more information on job searching with a criminal record, job searching with a criminal history, legal barriers facing restored citizens, and plans for re-entry, visit https://ohiomeansjobs.ohio.gov/job-seekers/build-your-career/for-restored-citizens. \n \nOhio Means Jobs Summit County also provides services in the Work, Financial, & Legal Support category.",
+                    "background_image": "AHHgenericbg.jpg",
+                    "descriptive_audio": ""
+                },
+                {
+                    "title": "CONTACT & HOURS",
+                    "description": "Phone: 330-633-1050 \n \nWebsite: https://ohiomeansjobs.ohio.gov/   |||    https://ohiomeansjobs.ohio.gov/job-seekers/find-a-job/local-help/summit-county  \n \nAddress: 1040 E. Tallmadge Ave., Akron, OH 44310 \n \nBusiness Hours: Mon-Fri 8:00A-4:00P by appointment only",
+                    "background_image": "AHHgenericbg.jpg",
+                    "descriptive_audio": ""
+                }
+            ],
+            "media_pages": []
         },
         {
-          "title": "CONTACT & HOURS",
-          "description": "Phone: 330-633-1050 \n \nWebsite: https://ohiomeansjobs.ohio.gov/   |||    https://ohiomeansjobs.ohio.gov/job-seekers/find-a-job/local-help/summit-county  \n \nAddress: 1040 E. Tallmadge Ave., Akron, OH 44310 \n \nBusiness Hours: Mon-Fri 8:00A-4:00P by appointment only",
-          "background_image": "AHHgenericbg.jpg",
-          "descriptive_audio": ""
+            "name": "Bayard Rustin LGBTQ+ Center | Akron AIDS Collaborative",
+            "position": "10",
+            "latitude": "41.0882752",
+            "longitude": "-81.5409204",
+            "overlay": "",
+            "virtual_object": "",
+            "isSubHotspot": false,
+            "panorama_image": "360bayardrustin-l.jpg",
+            "overlay_size": 5,
+            "overlay_offset_x": 0,
+            "overlay_offset_y": 0,
+            "start_audio": "",
+            "pin_color": "e63946",
+            "main_pages": [
+                {
+                    "title": "SERVICES",
+                    "description": "The Bayard Rustin Center, home of the Akron AIDS Collaborative (AAC), strengthens advocacy efforts for individuals living with HIV/AIDS and the broader LGBTQ+ community, including those who have experienced stigma tied to their sexual orientation or gender identity. As Ohio's only LGBTQ+ drop-in facility, they offer a wide range of culturally inclusive supports, including HIV testing, medical and housing referrals, a food pantry and clothing closet, community meals, mail order pharmacy services, a banned book library, and, as partners with TransJoy Akron, transgender support services. The AAC team is unwavering in its commitment to fostering a welcoming space where the LGBTQ+ and HIV/AIDS communities can access the support and resources they need to thrive.",
+                    "background_image": "AHHgenericbg.jpg",
+                    "descriptive_audio": ""
+                },
+                {
+                    "title": "CONTACT & HOURS",
+                    "description": "Phone: 330-983-4044 \n \nBayard Rustin Center Website: https://www.rustincenter.org/  \n \nAkron AIDS Collaborative Website: https://ohioaac.org/ \n \nAddress: 652 W. Exchange St., Akron, OH 44302 \n \nBusiness Hours: Mon-Fri 10:00 AM - 4:00 PM",
+                    "background_image": "AHHgenericbg.jpg",
+                    "descriptive_audio": ""
+                }
+            ],
+            "media_pages": []
         }
-      ],
-      "media_pages": []
-    }
-  ]
+    ]
 }

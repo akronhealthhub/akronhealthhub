@@ -1,182 +1,212 @@
 {
-  "project_name": "Medical Care",
-  "intro_audio": "",
-  "homepage_image": "mainmenubackground.jpg",
-  "ga_tracking_id": "UA-162868232-1",
-  "hotspots": [
-    {
-      "name": "Equitas Health – Akron Health Center",
-      "position": "1",
-      "latitude": "41.0873718",
-      "longitude": "-81.5416457",
-      "overlay": "",
-      "virtual_object": "",
-      "isSubHotspot": false,
-      "panorama_image": "360akronequitas-l.jpg",
-      "overlay_size": 5,
-      "overlay_offset_x": 0,
-      "overlay_offset_y": 0,
-      "start_audio": "",
-      "main_pages": [
+    "project_name": "Medical Care",
+    "intro_audio": "",
+    "homepage_image": "mainmenubackground.jpg",
+    "ga_tracking_id": "UA-162868232-1",
+    "hotspots": [
         {
-          "title": "SERVICES",
-          "description": "The Equitas Health Akron Health Center provides a variety of holistic healthcare services, including Primary Care, Gender Affirming Care, HIV/STI Testing, HIV Specialty Care, PrEP Care, Mental Health Counseling, Recovery & Addiction Care, an on-site Pharmacy, and more.  \n \nServices through the Equitas Health Akron Health Center are primarily available on-site in Akron. Some medical, psychiatry, and counseling services are also available through telehealth (learn more at https://equitashealth.com/patient-resources/telehealth/).",
-          "background_image": "AHHgenericbg.jpg",
-          "descriptive_audio": ""
+            "name": "Equitas Health \u2013 Akron Health Center",
+            "position": "1",
+            "latitude": "41.0873718",
+            "longitude": "-81.5416457",
+            "overlay": "",
+            "virtual_object": "",
+            "isSubHotspot": false,
+            "panorama_image": "360akronequitas-l.jpg",
+            "overlay_size": 5,
+            "overlay_offset_x": 0,
+            "overlay_offset_y": 0,
+            "start_audio": "",
+            "main_pages": [
+                {
+                    "title": "SERVICES",
+                    "description": "The Equitas Health Akron Health Center provides a variety of holistic healthcare services, including Primary Care, Gender Affirming Care, HIV/STI Testing, HIV Specialty Care, PrEP Care, Mental Health Counseling, Recovery & Addiction Care, an on-site Pharmacy, and more.  \n \nServices through the Equitas Health Akron Health Center are primarily available on-site in Akron. Some medical, psychiatry, and counseling services are also available through telehealth (learn more at https://equitashealth.com/patient-resources/telehealth/).",
+                    "background_image": "AHHgenericbg.jpg",
+                    "descriptive_audio": ""
+                },
+                {
+                    "title": "CONTACT & HOURS",
+                    "description": "Phone: 330-409-9505 \n \nWebsite: https://equitashealth.com/locations/akron-health-center/  \n \nOnline Scheduling: https://equitashealth.formstack.com/forms/requestanappointment  \n \nAddress: 636 W. Exchange St., Akron, OH 44302 \n \nBusiness Hours (Medical Care): Mon, Tues, Thurs, Fri: 8:00A-5:00P   |||   Weds: 9:00A-6:00P \n \nBusiness Hours (Pharmacy): Mon, Tues, Thurs, Fri: 9:00A-5:00P   |||   Weds: 10:00A-6:00P",
+                    "background_image": "AHHgenericbg.jpg",
+                    "descriptive_audio": ""
+                }
+            ],
+            "media_pages": []
         },
         {
-          "title": "CONTACT & HOURS",
-          "description": "Phone: 330-409-9505 \n \nWebsite: https://equitashealth.com/locations/akron-health-center/  \n \nOnline Scheduling: https://equitashealth.formstack.com/forms/requestanappointment  \n \nAddress: 636 W. Exchange St., Akron, OH 44302 \n \nBusiness Hours (Medical Care): Mon, Tues, Thurs, Fri: 8:00A-5:00P   |||   Weds: 9:00A-6:00P \n \nBusiness Hours (Pharmacy): Mon, Tues, Thurs, Fri: 9:00A-5:00P   |||   Weds: 10:00A-6:00P",
-          "background_image": "AHHgenericbg.jpg",
-          "descriptive_audio": ""
-        }
-      ],
-      "media_pages": []
-    },
-    {
-      "name": "Planned Parenthood – Akron Health Center",
-      "position": "2",
-      "latitude": "41.0836153",
-      "longitude": "-81.5349756",
-      "overlay": "",
-      "virtual_object": "",
-      "isSubHotspot": false,
-      "panorama_image": "360akronplannedparenthood-l.jpg",
-      "overlay_size": 5,
-      "overlay_offset_x": 0,
-      "overlay_offset_y": 0,
-      "start_audio": "",
-      "main_pages": [
-        {
-          "title": "SERVICES",
-          "description": "The Planned Parenthood Akron Health Center provides a variety of health and sex education services, including Birth Control, Emergency Contraception, Gender-Affirming Care, HIV Services, Pregnancy Testing and Planning, Prenatal and Postpartum Services, STD Testing and Treatment, Sexual and Reproductive Concerns, Vaccines, and Wellness and Preventative Care. In addition to scheduled appointments, Pregnancy Tests, Emergency Contraception, and Birth Control Refills are available on a walk-in basis during all business hours. Finally, guests can fill birth control prescriptions at their health center instead of the pharmacy. \n  \nServices through the Planned Parenthood Akron Health Center are primarily available on-site in Akron. However, the following services are also available through telehealth: Birth Control Prescriptions, Emergency Contraceptive Prescriptions, Gender-Affirming Care, HIV Services, and STD Testing and Treatment.",
-          "background_image": "AHHgenericbg.jpg",
-          "descriptive_audio": ""
+            "name": "Planned Parenthood \u2013 Akron Health Center",
+            "position": "2",
+            "latitude": "41.0836153",
+            "longitude": "-81.5349756",
+            "overlay": "",
+            "virtual_object": "",
+            "isSubHotspot": false,
+            "panorama_image": "360akronplannedparenthood-l.jpg",
+            "overlay_size": 5,
+            "overlay_offset_x": 0,
+            "overlay_offset_y": 0,
+            "start_audio": "",
+            "main_pages": [
+                {
+                    "title": "SERVICES",
+                    "description": "The Planned Parenthood Akron Health Center provides a variety of health and sex education services, including Birth Control, Emergency Contraception, Gender-Affirming Care, HIV Services, Pregnancy Testing and Planning, Prenatal and Postpartum Services, STD Testing and Treatment, Sexual and Reproductive Concerns, Vaccines, and Wellness and Preventative Care. In addition to scheduled appointments, Pregnancy Tests, Emergency Contraception, and Birth Control Refills are available on a walk-in basis during all business hours. Finally, guests can fill birth control prescriptions at their health center instead of the pharmacy. \n  \nServices through the Planned Parenthood Akron Health Center are primarily available on-site in Akron. However, the following services are also available through telehealth: Birth Control Prescriptions, Emergency Contraceptive Prescriptions, Gender-Affirming Care, HIV Services, and STD Testing and Treatment.",
+                    "background_image": "AHHgenericbg.jpg",
+                    "descriptive_audio": ""
+                },
+                {
+                    "title": "CONTACT & HOURS",
+                    "description": "Phone: 330-535-2671  \n \nFax: 330-537-8141  \n \nWebsite: https://www.plannedparenthood.org/health-center/ohio/akron/44302/akron-health-center-3344-91230   \n \nAddress: 444 W. Exchange St., Akron, OH 44302 \n \nBusiness Hours: Mon: 10:00A-4:00P   |||   Tues, Thurs: 9:00A-6:00P   |||   Weds: 9:00A-4:00P   |||   Fri: 9:00A-3:00P   |||   Sat: 9:00A-2:00P",
+                    "background_image": "AHHgenericbg.jpg",
+                    "descriptive_audio": ""
+                }
+            ],
+            "media_pages": []
         },
         {
-          "title": "CONTACT & HOURS",
-          "description": "Phone: 330-535-2671  \n \nFax: 330-537-8141  \n \nWebsite: https://www.plannedparenthood.org/health-center/ohio/akron/44302/akron-health-center-3344-91230   \n \nAddress: 444 W. Exchange St., Akron, OH 44302 \n \nBusiness Hours: Mon: 10:00A-4:00P   |||   Tues, Thurs: 9:00A-6:00P   |||   Weds: 9:00A-4:00P   |||   Fri: 9:00A-3:00P   |||   Sat: 9:00A-2:00P",
-          "background_image": "AHHgenericbg.jpg",
-          "descriptive_audio": ""
-        }
-      ],
-      "media_pages": []
-    },
-    {
-      "name": "Peter Maurin Center of Akron",
-      "position": "3",
-      "latitude": "41.0570699",
-      "longitude": "-81.5293626",
-      "overlay": "",
-      "virtual_object": "",
-      "isSubHotspot": false,
-      "panorama_image": "360petermaurincenter-l.jpg",
-      "overlay_size": 5,
-      "overlay_offset_x": 0,
-      "overlay_offset_y": 0,
-      "start_audio": "",
-      "main_pages": [
-        {
-          "title": "SERVICES",
-          "description": "The Peter Maurin Center of Akron’s volunteer retired registered nurse offers blood pressure and blood sugar screenings. She also offers information on a variety of common health conditions, such as diabetes and hypertension.  \nAll medical services offered by the Peter Maurin Center of Akron are available on-site in Akron. \n \nThe Peter Maurin Center also offers services in the Shelter, Housing, & Utilities; Transportation; and Food Assistance categories.",
-          "background_image": "AHHgenericbg.jpg",
-          "descriptive_audio": ""
+            "name": "Peter Maurin Center of Akron",
+            "position": "3",
+            "latitude": "41.0570699",
+            "longitude": "-81.5293626",
+            "overlay": "",
+            "virtual_object": "",
+            "isSubHotspot": false,
+            "panorama_image": "360petermaurincenter-l.jpg",
+            "overlay_size": 5,
+            "overlay_offset_x": 0,
+            "overlay_offset_y": 0,
+            "start_audio": "",
+            "main_pages": [
+                {
+                    "title": "SERVICES",
+                    "description": "The Peter Maurin Center of Akron\u2019s volunteer retired registered nurse offers blood pressure and blood sugar screenings. She also offers information on a variety of common health conditions, such as diabetes and hypertension.  \nAll medical services offered by the Peter Maurin Center of Akron are available on-site in Akron. \n \nThe Peter Maurin Center also offers services in the Shelter, Housing, & Utilities; Transportation; and Food Assistance categories.",
+                    "background_image": "AHHgenericbg.jpg",
+                    "descriptive_audio": ""
+                },
+                {
+                    "title": "CONTACT & HOURS",
+                    "description": "Phone: 330-258-9006  \n \nOnline Message: https://www.petermaurincenter.com/contact   \n \nWebsite: https://www.petermaurincenter.com/   \n \nAddress: 1096 Old S. Main St., Akron, OH 44301  \n \nContact Hours: 24/7 \n \nMedical Service Hours: Second and fourth Tuesday of every month, 11:00A-2:00P",
+                    "background_image": "AHHgenericbg.jpg",
+                    "descriptive_audio": ""
+                }
+            ],
+            "media_pages": []
         },
         {
-          "title": "CONTACT & HOURS",
-          "description": "Phone: 330-258-9006  \n \nOnline Message: https://www.petermaurincenter.com/contact   \n \nWebsite: https://www.petermaurincenter.com/   \n \nAddress: 1096 Old S. Main St., Akron, OH 44301  \n \nContact Hours: 24/7 \n \nMedical Service Hours: Second and fourth Tuesday of every month, 11:00A-2:00P",
-          "background_image": "AHHgenericbg.jpg",
-          "descriptive_audio": ""
-        }
-      ],
-      "media_pages": []
-    },
-    {
-      "name": "Cleveland Clinic – Akron General",
-      "position": "4",
-      "latitude": "41.0785562",
-      "longitude": "-81.5317515",
-      "overlay": "",
-      "virtual_object": "",
-      "isSubHotspot": false,
-      "panorama_image": "360akrongeneral-l.jpg",
-      "overlay_size": 5,
-      "overlay_offset_x": 0,
-      "overlay_offset_y": 0,
-      "start_audio": "",
-      "main_pages": [
-        {
-          "title": "SERVICES",
-          "description": "The Cleveland Clinic Akron General Hospital offers a wide variety of medical services, including Primary Care, Specialty Appointments, Emergency Services, Laboratory Services, Imaging Services, Mammography Services, and a Pharmacy. To learn all 47 of the specialties offered at the Cleveland Clinic Akron General Hospital, please visit https://my.clevelandclinic.org/locations/akron-general/specialties.   \n \nServices through the Cleveland Clinic Akron General Hospital are primarily available on-site in Akron. However, some Primary Care and Specialty Appointment offices may offer telehealth services. Discuss telehealth options with each individual department when scheduling.",
-          "background_image": "AHHgenericbg.jpg",
-          "descriptive_audio": ""
+            "name": "Cleveland Clinic \u2013 Akron General",
+            "position": "4",
+            "latitude": "41.0785562",
+            "longitude": "-81.5317515",
+            "overlay": "",
+            "virtual_object": "",
+            "isSubHotspot": false,
+            "panorama_image": "360akrongeneral-l.jpg",
+            "overlay_size": 5,
+            "overlay_offset_x": 0,
+            "overlay_offset_y": 0,
+            "start_audio": "",
+            "main_pages": [
+                {
+                    "title": "SERVICES",
+                    "description": "The Cleveland Clinic Akron General Hospital offers a wide variety of medical services, including Primary Care, Specialty Appointments, Emergency Services, Laboratory Services, Imaging Services, Mammography Services, and a Pharmacy. To learn all 47 of the specialties offered at the Cleveland Clinic Akron General Hospital, please visit https://my.clevelandclinic.org/locations/akron-general/specialties.   \n \nServices through the Cleveland Clinic Akron General Hospital are primarily available on-site in Akron. However, some Primary Care and Specialty Appointment offices may offer telehealth services. Discuss telehealth options with each individual department when scheduling.",
+                    "background_image": "AHHgenericbg.jpg",
+                    "descriptive_audio": ""
+                },
+                {
+                    "title": "CONTACT & HOURS",
+                    "description": "Phone: 330-344-6000  \n \nWebsite: https://my.clevelandclinic.org/locations/akron-general   \n \nAddress: 1 Akron General Ave., Akron, OH 44307  \n \nBusiness Hours (Facility): 24/7  \n \nBusiness Hours (Emergency): 24/7  \n \nBusiness Hours (Specialty Appointments): Varies. See more information by selecting the appropriate specialty at https://my.clevelandclinic.org/locations/akron-general/specialties  \n \nBusiness Hours (Pharmacy):  Mon-Fri: 8:00A-7:00P   |||   Sat: 9:00A-1:00P \n \nBusiness Hours (Laboratory, Appointment Recommended): Mon-Fri: 7:00A-4:00P \n \nBusiness Hours (Imaging): Mon-Fri: 7:00A-6:00P \n \nBusiness Hours (Mammography, Appointment Needed): Mon-Fri: 7:30A-4:00P",
+                    "background_image": "AHHgenericbg.jpg",
+                    "descriptive_audio": ""
+                }
+            ],
+            "media_pages": []
         },
         {
-          "title": "CONTACT & HOURS",
-          "description": "Phone: 330-344-6000  \n \nWebsite: https://my.clevelandclinic.org/locations/akron-general   \n \nAddress: 1 Akron General Ave., Akron, OH 44307  \n \nBusiness Hours (Facility): 24/7  \n \nBusiness Hours (Emergency): 24/7  \n \nBusiness Hours (Specialty Appointments): Varies. See more information by selecting the appropriate specialty at https://my.clevelandclinic.org/locations/akron-general/specialties  \n \nBusiness Hours (Pharmacy):  Mon-Fri: 8:00A-7:00P   |||   Sat: 9:00A-1:00P \n \nBusiness Hours (Laboratory, Appointment Recommended): Mon-Fri: 7:00A-4:00P \n \nBusiness Hours (Imaging): Mon-Fri: 7:00A-6:00P \n \nBusiness Hours (Mammography, Appointment Needed): Mon-Fri: 7:30A-4:00P",
-          "background_image": "AHHgenericbg.jpg",
-          "descriptive_audio": ""
-        }
-      ],
-      "media_pages": []
-    },
-    {
-      "name": "Community AIDS Network & Pride Institute (CANAPI)",
-      "position": "5",
-      "latitude": "41.0960843",
-      "longitude": "-81.5416014",
-      "overlay": "",
-      "virtual_object": "",
-      "isSubHotspot": false,
-      "panorama_image": "360canapi-l.jpg",
-      "overlay_size": 5,
-      "overlay_offset_x": 0,
-      "overlay_offset_y": 0,
-      "start_audio": "",
-      "main_pages": [
-        {
-          "title": "SERVICES",
-          "description": "The Community AIDS Network & Pride Institute (CANAPI) offers free testing for HIV for individuals or couples. Call CANAPI to schedule a testing screen and get tested for HIV, as well as to learn how to reduce your risk of HIV. Walk-in testing is also available on Tuesdays from 5:00P-7:00P. CANAPI can also help connect you with resources that make PrEP more affordable and accessible. \n \nCANAPI also provides services in the Shelter, Housing, & Utilities and Food Assistance categories.",
-          "background_image": "AHHgenericbg.jpg",
-          "descriptive_audio": ""
+            "name": "Community AIDS Network & Pride Institute (CANAPI)",
+            "position": "5",
+            "latitude": "41.0960843",
+            "longitude": "-81.5416014",
+            "overlay": "",
+            "virtual_object": "",
+            "isSubHotspot": false,
+            "panorama_image": "360canapi-l.jpg",
+            "overlay_size": 5,
+            "overlay_offset_x": 0,
+            "overlay_offset_y": 0,
+            "start_audio": "",
+            "main_pages": [
+                {
+                    "title": "SERVICES",
+                    "description": "The Community AIDS Network & Pride Institute (CANAPI) offers free testing for HIV for individuals or couples. Call CANAPI to schedule a testing screen and get tested for HIV, as well as to learn how to reduce your risk of HIV. Walk-in testing is also available on Tuesdays from 5:00P-7:00P. CANAPI can also help connect you with resources that make PrEP more affordable and accessible. \n \nCANAPI also provides services in the Shelter, Housing, & Utilities and Food Assistance categories.",
+                    "background_image": "AHHgenericbg.jpg",
+                    "descriptive_audio": ""
+                },
+                {
+                    "title": "CONTACT & HOURS",
+                    "description": "Phone: 330-252-1559 \n \nWebsite: https://www.canapi.org/ \n \nEmail: info@canapi.org \n \nAddress: 759 W. Market St., 1st Floor, Akron, OH 44303 \n \nBusiness Hours: Mon-Fri 9:00A-5:00P ||| Late Night Walk-in Testing Tues 5:00P-7:00P",
+                    "background_image": "AHHgenericbg.jpg",
+                    "descriptive_audio": ""
+                }
+            ],
+            "media_pages": []
         },
         {
-          "title": "CONTACT & HOURS",
-          "description": "Phone: 330-252-1559 \n \nWebsite: https://www.canapi.org/ \n \nEmail: info@canapi.org \n \nAddress: 759 W. Market St., 1st Floor, Akron, OH 44303 \n \nBusiness Hours: Mon-Fri 9:00A-5:00P ||| Late Night Walk-in Testing Tues 5:00P-7:00P",
-          "background_image": "AHHgenericbg.jpg",
-          "descriptive_audio": ""
-        }
-      ],
-      "media_pages": []
-    },
-    {
-      "name": "Open M Neighborhood Center",
-      "position": "6",
-      "latitude": "41.0612277",
-      "longitude": "-81.533817",
-      "overlay": "",
-      "virtual_object": "",
-      "isSubHotspot": false,
-      "panorama_image": "360openm-.jpg",
-      "overlay_size": 5,
-      "overlay_offset_x": 0,
-      "overlay_offset_y": 0,
-      "start_audio": "",
-      "main_pages": [
-        {
-          "title": "SERVICES",
-          "description": "The Open M Neighborhood Center offers select free medical and dental care, health education, and prescription medications to uninsured adults ages 18-64 living at or below the poverty level in the Greater Akron area. \n \n First, the Medical Clinic provides education and services to advance the health and well-being of our communities that are underserved. The clinic offers primary and specialty care, in-house lab testing and Medicaid assistance. \n \nSecond, the Harry and Fran Donovan Dental Clinic offers exams, x-rays, cleaning, fillings, extractions and more to help patients look and feel their best.  \n \nThird, prescription medications and diabetic supplies are provided for Clinic patients in the OPEN M Pharmacy to help patients manage their health needs. \n \nTo verify your eligibility or to make an appointment, contact 330-434-0110 ext. 413. Leave a message with your name and phone number and your call will be returned within 24-72 hours. \n \nOpen M also offers services in the Work, Legal, & Financial Support and Food Assistance categories.",
-          "background_image": "AHHgenericbg.jpg",
-          "descriptive_audio": ""
+            "name": "Open M Neighborhood Center",
+            "position": "6",
+            "latitude": "41.0612277",
+            "longitude": "-81.533817",
+            "overlay": "",
+            "virtual_object": "",
+            "isSubHotspot": false,
+            "panorama_image": "360openm-.jpg",
+            "overlay_size": 5,
+            "overlay_offset_x": 0,
+            "overlay_offset_y": 0,
+            "start_audio": "",
+            "main_pages": [
+                {
+                    "title": "SERVICES",
+                    "description": "The Open M Neighborhood Center offers select free medical and dental care, health education, and prescription medications to uninsured adults ages 18-64 living at or below the poverty level in the Greater Akron area. \n \n First, the Medical Clinic provides education and services to advance the health and well-being of our communities that are underserved. The clinic offers primary and specialty care, in-house lab testing and Medicaid assistance. \n \nSecond, the Harry and Fran Donovan Dental Clinic offers exams, x-rays, cleaning, fillings, extractions and more to help patients look and feel their best.  \n \nThird, prescription medications and diabetic supplies are provided for Clinic patients in the OPEN M Pharmacy to help patients manage their health needs. \n \nTo verify your eligibility or to make an appointment, contact 330-434-0110 ext. 413. Leave a message with your name and phone number and your call will be returned within 24-72 hours. \n \nOpen M also offers services in the Work, Legal, & Financial Support and Food Assistance categories.",
+                    "background_image": "AHHgenericbg.jpg",
+                    "descriptive_audio": ""
+                },
+                {
+                    "title": "CONTACT & HOURS",
+                    "description": "Phone: 330-434-0110, ext. 413 \n \nEmail: health@openm.org \n \nWebsite: https://www.openm.org/   |||   https://www.openm.org/health  \n \nAddress: 941 Princeton St., Akron, OH 443311 \n \nContact Hours: Mon-Fri 8:00A-4:30P",
+                    "background_image": "AHHgenericbg.jpg",
+                    "descriptive_audio": ""
+                }
+            ],
+            "media_pages": []
         },
         {
-          "title": "CONTACT & HOURS",
-          "description": "Phone: 330-434-0110, ext. 413 \n \nEmail: health@openm.org \n \nWebsite: https://www.openm.org/   |||   https://www.openm.org/health  \n \nAddress: 941 Princeton St., Akron, OH 443311 \n \nContact Hours: Mon-Fri 8:00A-4:30P",
-          "background_image": "AHHgenericbg.jpg",
-          "descriptive_audio": ""
+            "name": "Bayard Rustin LGBTQ+ Center | Akron AIDS Collaborative",
+            "position": "10",
+            "latitude": "41.0882752",
+            "longitude": "-81.5409204",
+            "overlay": "",
+            "virtual_object": "",
+            "isSubHotspot": false,
+            "panorama_image": "360bayardrustin-l.jpg",
+            "overlay_size": 5,
+            "overlay_offset_x": 0,
+            "overlay_offset_y": 0,
+            "start_audio": "",
+            "pin_color": "e63946",
+            "main_pages": [
+                {
+                    "title": "SERVICES",
+                    "description": "The Bayard Rustin Center, home of the Akron AIDS Collaborative (AAC), strengthens advocacy efforts for individuals living with HIV/AIDS and the broader LGBTQ+ community, including those who have experienced stigma tied to their sexual orientation or gender identity. As Ohio's only LGBTQ+ drop-in facility, they offer a wide range of culturally inclusive supports, including HIV testing, medical and housing referrals, a food pantry and clothing closet, community meals, mail order pharmacy services, a banned book library, and, as partners with TransJoy Akron, transgender support services. The AAC team is unwavering in its commitment to fostering a welcoming space where the LGBTQ+ and HIV/AIDS communities can access the support and resources they need to thrive.",
+                    "background_image": "AHHgenericbg.jpg",
+                    "descriptive_audio": ""
+                },
+                {
+                    "title": "CONTACT & HOURS",
+                    "description": "Phone: 330-983-4044 \n \nBayard Rustin Center Website: https://www.rustincenter.org/  \n \nAkron AIDS Collaborative Website: https://ohioaac.org/ \n \nAddress: 652 W. Exchange St., Akron, OH 44302 \n \nBusiness Hours: Mon-Fri 10:00 AM - 4:00 PM",
+                    "background_image": "AHHgenericbg.jpg",
+                    "descriptive_audio": ""
+                }
+            ],
+            "media_pages": []
         }
-      ],
-      "media_pages": []
-    }
-  ]
+    ]
 }

@@ -343,11 +343,13 @@ div[class^="overlay-ctn-"] {
 }
 
 .overlay-ctn-show {
-  left: 0.8em !important;
+  right: 0.8em !important;
+  left: auto !important;
 }
 
 .overlay-ctn-map {
-  right: 0.8em !important;
+  left: 0.8em !important;
+  right: auto !important;
 }
 
 /* All overlay icons — reduce size */
@@ -523,11 +525,13 @@ div[class^="overlay-ctn-"] {
   }
 
   .overlay-ctn-show {
-    left: 0.5em !important;
+    right: 0.5em !important;
+    left: auto !important;
   }
 
   .overlay-ctn-map {
-    right: 0.5em !important;
+    left: 0.5em !important;
+    right: auto !important;
   }
 
   /* Hamburger */
@@ -934,19 +938,6 @@ body.help-body .overlay-icon.closeBtn {
     line-height: 1.7 !important;
   }
 
-  .ahh-content-back {
-    top: 10px;
-    left: 10px;
-    padding: 6px 12px;
-    font-size: 0.8rem;
-    gap: 6px;
-  }
-
-  .ahh-content-back svg {
-    width: 15px;
-    height: 15px;
-  }
-
   body.help-body .title,
   body.help-body h1.title {
     font-size: 1.3em !important;
@@ -966,6 +957,298 @@ body.help-body .overlay-icon.closeBtn {
 
   body.help-body .rules li {
     margin-bottom: 12px !important;
+  }
+}
+
+/* ============================================================
+   PERSISTENT SIDE MENU — Hamburger + Drawer
+   Available on map, services, contact, and help pages
+   ============================================================ */
+
+/* Hide old standalone back button (replaced by drawer menu) */
+.ahh-content-back {
+  display: none !important;
+}
+
+/* --- Hamburger Button --- */
+#ahh-persistent-hamburger {
+  position: fixed;
+  top: 14px;
+  left: 14px;
+  z-index: 10000;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.55);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.15s ease;
+  padding: 0;
+  outline: none;
+}
+
+#ahh-persistent-hamburger:hover {
+  background: rgba(0, 0, 0, 0.75);
+  transform: scale(1.05);
+}
+
+#ahh-persistent-hamburger:active {
+  transform: scale(0.95);
+}
+
+#ahh-persistent-hamburger svg {
+  width: 22px;
+  height: 22px;
+  fill: #fff;
+}
+
+/* --- Overlay backdrop --- */
+#ahh-persistent-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0);
+  z-index: 99998;
+  display: none;
+  transition: background 0.3s ease;
+}
+
+#ahh-persistent-overlay.ahh-overlay-visible {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+/* --- Drawer panel --- */
+#ahh-persistent-drawer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 300px;
+  max-width: 85vw;
+  height: 100%;
+  background: #111;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  z-index: 99999;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+  box-shadow: 4px 0 20px rgba(0, 0, 0, 0.5);
+  overflow-y: auto;
+}
+
+#ahh-persistent-drawer.ahh-drawer-open {
+  transform: translateX(0);
+}
+
+/* --- Drawer header --- */
+.ahh-drawer-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.2em 1.2em 0.8em;
+  border-bottom: 2px solid #333;
+}
+
+.ahh-drawer-title {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.4em;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.ahh-drawer-close-btn {
+  background: none;
+  border: none;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 1.8rem;
+  cursor: pointer;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.2s ease;
+  line-height: 1;
+}
+
+.ahh-drawer-close-btn:hover {
+  color: #fff;
+}
+
+/* --- Organization name --- */
+.ahh-drawer-org {
+  font-family: 'Inter', 'Roboto', sans-serif;
+  font-size: 1.05em;
+  font-weight: 600;
+  color: #8bd2cf;
+  text-align: left;
+  margin: 0;
+  padding: 0.3em 1.4em 1.1em;
+  letter-spacing: 0.03em;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  line-height: 1.35;
+}
+
+/* --- Menu links --- */
+.ahh-drawer-items {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.ahh-drawer-link {
+  display: flex;
+  align-items: center;
+  padding: 1em 1.4em;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+  font-weight: 500;
+  text-decoration: none;
+  color: #fff;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #222;
+  transition: background 0.2s ease;
+  gap: 0.7em;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+}
+
+.ahh-drawer-link:hover,
+.ahh-drawer-link:active {
+  background: #1a1a1a;
+  color: #8bd2cf;
+  text-decoration: none;
+}
+
+/* --- Standalone Back to Map button (bottom-left, outside drawer) --- */
+#ahh-back-to-map {
+  position: fixed;
+  bottom: 16px;
+  left: 16px;
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 10px;
+  padding: 10px 18px;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.15s ease;
+  text-decoration: none;
+  outline: none;
+}
+
+#ahh-back-to-map:hover {
+  background: rgba(0, 0, 0, 0.8);
+  transform: translateX(-2px);
+}
+
+#ahh-back-to-map:active {
+  transform: scale(0.96);
+}
+
+#ahh-back-to-map svg {
+  width: 18px;
+  height: 18px;
+  fill: #8bd2cf;
+  flex-shrink: 0;
+}
+
+/* ============================================================
+   PERSISTENT MENU — Mobile Responsive
+   ============================================================ */
+@media screen and (max-width: 600px) {
+  #ahh-persistent-hamburger {
+    width: 40px;
+    height: 40px;
+    top: 10px;
+    left: 10px;
+    border-radius: 8px;
+  }
+
+  #ahh-persistent-hamburger svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  #ahh-persistent-drawer {
+    width: 270px;
+  }
+
+  .ahh-drawer-title {
+    font-size: 1.2em;
+  }
+
+  .ahh-drawer-link {
+    padding: 0.9em 1.2em;
+    font-size: 0.9em;
+    min-height: 44px;
+  }
+
+  .ahh-drawer-org {
+    font-size: 0.95em;
+    padding: 0.2em 1.2em 0.9em;
+  }
+
+  #ahh-back-to-map {
+    bottom: 12px;
+    left: 12px;
+    padding: 8px 14px;
+    font-size: 0.78rem;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  #ahh-persistent-drawer {
+    width: 240px;
+  }
+
+  #ahh-persistent-hamburger {
+    width: 36px;
+    height: 36px;
+    top: 8px;
+    left: 8px;
+  }
+
+  #ahh-persistent-hamburger svg {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+@media screen and (max-height: 500px) {
+  .ahh-drawer-header {
+    padding: 0.8em 1.2em 0.6em;
+  }
+
+  .ahh-drawer-title {
+    font-size: 1.2em;
+  }
+
+  .ahh-drawer-link {
+    padding: 0.7em 1.4em;
+  }
+
+  .ahh-drawer-org {
+    padding: 0.1em 1.4em 0.6em;
+    font-size: 0.8em;
   }
 }
 

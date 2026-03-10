@@ -1,298 +1,328 @@
 {
-  "project_name": "Shelter, Housing and Utilities",
-  "intro_audio": "",
-  "homepage_image": "mainmenubackground.jpg",
-  "ga_tracking_id": "UA-162868232-1",
-  "hotspots": [
-    {
-      "name": "Community AIDS Network & Pride Institute (CANAPI) (Shelter & Housing, Utilities)",
-      "position": "1",
-      "latitude": "41.0960843",
-      "longitude": "-81.5416014",
-      "overlay": "",
-      "virtual_object": "",
-      "isSubHotspot": false,
-      "panorama_image": "360canapi.jpg",
-      "overlay_size": 5,
-      "overlay_offset_x": 0,
-      "overlay_offset_y": 0,
-      "start_audio": "",
-      "main_pages": [
+    "project_name": "Shelter, Housing and Utilities",
+    "intro_audio": "",
+    "homepage_image": "mainmenubackground.jpg",
+    "ga_tracking_id": "UA-162868232-1",
+    "hotspots": [
         {
-          "title": "SERVICES",
-          "description": "The Community AIDS Network & Pride Institute (CANAPI) offers a variety of housing programs both for people living with HIV, certain disabling conditions, and for LGBTQ+ youth. They also offer financial assistance for rent, mortgage, and/or utility payments to prevent the loss of stable housing for individuals living with HIV/AIDS. \n \nFirst, the Homeless Prevention Short Term Rental Assistance program offers up to 21 weeks per year of financial assistance for people living with HIV/AIDS in the form of rent, mortgage, and/or utility payments to prevent the loss of stable housing. In order to be eligible, applicants must be living with HIV/AIDS and experiencing a documented financial hardship. All funds are paid directly to service providers or landlords and may be limited by the availability of funds and the frequency of assistance. \n \nSecond, the Harmony Place is a permanent supportive housing program for people with low income who are living with certain disabling conditions. Tenants have access to CANAPI support service staff to assist with paperwork, communicating with other agencies, and linkage to services in the community. If you’re interested in learning more about Harmony Place or think it may be a good fit for you, please call 211 and fill out the brief Waiting List application (see https://www.canapi.org/harmony-place). \n \nThird, the Helping Hands Tenant Based Rental Assistance assists households in renting an apartment in Summit or Portage County with the help of a CANAPI subsidy. The Helping Hands program is designed to help clients transition to housing stability with the support and resources they need most to succeed in maintaining a safe, healthy, and stable living situation. If you think the Helping Hands Program may be a good fit for you or your family, please call 211 to get started. \n \nFourth, the Micah Project Rapid Re-Housing matches individuals experiencing homelessness with a CANAPI case manager, who will help them find and secure safe, stable rental housing in the community. Through one-on-one case management, CANAPI helps Micah Program recipients set and achieve goals that make maintaining safe, stable, independent housing a reality for our clients. Call 211 today to get started. \n \nFifth, Shelter + Care is a permanent supportive housing program offered exclusively to households affected by HIV, and at least one additional disabling condition, whose housing needs would otherwise go unmet. If accepted, members of the program will receive an ongoing, income-based housing subsidy, as well as access to resources and support services based on an annual needs assessment. Call 211 today to get started. \n \nSixth, Lavender Landing is a collection of programs that help homeless and at-risk LGBTQ+ young adults (ages 18-29) to achieve housing stability. Rapid Rehousing provides short-term rental assistance at an eligible apartment of the client’s choice along with supportive services; to be eligible for this program, you must literally homeless and low-income. Transitional Housing provides temporary housing and supportive services in a shared living environment; to be eligible, you must be literally homeless. Outreach provides short-term assistance to help you move into permanent housing including but not limited to security deposits, 1st month’s rent, and household supplies; to be eligible, you must be unstably housed or homeless. \n \nIn addition to those housing programs, CANAPI provides up to 21 weeks per year of financial assistance in the form of rent, mortgage, and/or utility payments in order to prevent the loss of stable housing for individuals living with HIV/AIDS. In order to be eligible, applicants must be living with HIV/AIDS and experiencing a documented financial hardship. All funds are paid directly to service providers or landlords and may be limited by the availability of funds and the frequency of assistance. \n \nCANAPI also provides services in the Medical Services and Food Assistance categories.",
-          "background_image": "AHHgenericbg.jpg",
-          "descriptive_audio": ""
+            "name": "Community AIDS Network & Pride Institute (CANAPI) (Shelter & Housing, Utilities)",
+            "position": "1",
+            "latitude": "41.0960843",
+            "longitude": "-81.5416014",
+            "overlay": "",
+            "virtual_object": "",
+            "isSubHotspot": false,
+            "panorama_image": "360canapi.jpg",
+            "overlay_size": 5,
+            "overlay_offset_x": 0,
+            "overlay_offset_y": 0,
+            "start_audio": "",
+            "main_pages": [
+                {
+                    "title": "SERVICES",
+                    "description": "The Community AIDS Network & Pride Institute (CANAPI) offers a variety of housing programs both for people living with HIV, certain disabling conditions, and for LGBTQ+ youth. They also offer financial assistance for rent, mortgage, and/or utility payments to prevent the loss of stable housing for individuals living with HIV/AIDS. \n \nFirst, the Homeless Prevention Short Term Rental Assistance program offers up to 21 weeks per year of financial assistance for people living with HIV/AIDS in the form of rent, mortgage, and/or utility payments to prevent the loss of stable housing. In order to be eligible, applicants must be living with HIV/AIDS and experiencing a documented financial hardship. All funds are paid directly to service providers or landlords and may be limited by the availability of funds and the frequency of assistance. \n \nSecond, the Harmony Place is a permanent supportive housing program for people with low income who are living with certain disabling conditions. Tenants have access to CANAPI support service staff to assist with paperwork, communicating with other agencies, and linkage to services in the community. If you\u2019re interested in learning more about Harmony Place or think it may be a good fit for you, please call 211 and fill out the brief Waiting List application (see https://www.canapi.org/harmony-place). \n \nThird, the Helping Hands Tenant Based Rental Assistance assists households in renting an apartment in Summit or Portage County with the help of a CANAPI subsidy. The Helping Hands program is designed to help clients transition to housing stability with the support and resources they need most to succeed in maintaining a safe, healthy, and stable living situation. If you think the Helping Hands Program may be a good fit for you or your family, please call 211 to get started. \n \nFourth, the Micah Project Rapid Re-Housing matches individuals experiencing homelessness with a CANAPI case manager, who will help them find and secure safe, stable rental housing in the community. Through one-on-one case management, CANAPI helps Micah Program recipients set and achieve goals that make maintaining safe, stable, independent housing a reality for our clients. Call 211 today to get started. \n \nFifth, Shelter + Care is a permanent supportive housing program offered exclusively to households affected by HIV, and at least one additional disabling condition, whose housing needs would otherwise go unmet. If accepted, members of the program will receive an ongoing, income-based housing subsidy, as well as access to resources and support services based on an annual needs assessment. Call 211 today to get started. \n \nSixth, Lavender Landing is a collection of programs that help homeless and at-risk LGBTQ+ young adults (ages 18-29) to achieve housing stability. Rapid Rehousing provides short-term rental assistance at an eligible apartment of the client\u2019s choice along with supportive services; to be eligible for this program, you must literally homeless and low-income. Transitional Housing provides temporary housing and supportive services in a shared living environment; to be eligible, you must be literally homeless. Outreach provides short-term assistance to help you move into permanent housing including but not limited to security deposits, 1st month\u2019s rent, and household supplies; to be eligible, you must be unstably housed or homeless. \n \nIn addition to those housing programs, CANAPI provides up to 21 weeks per year of financial assistance in the form of rent, mortgage, and/or utility payments in order to prevent the loss of stable housing for individuals living with HIV/AIDS. In order to be eligible, applicants must be living with HIV/AIDS and experiencing a documented financial hardship. All funds are paid directly to service providers or landlords and may be limited by the availability of funds and the frequency of assistance. \n \nCANAPI also provides services in the Medical Services and Food Assistance categories.",
+                    "background_image": "AHHgenericbg.jpg",
+                    "descriptive_audio": ""
+                },
+                {
+                    "title": "CONTACT & HOURS",
+                    "description": "Phone: 330-252-1559 \n \nPhone Intake for Harmony Place, Helping Hands, Micah Project, and Shelter + Care: 211 \n \nEmail: info@canapi.org \n \nWebsite: https://www.canapi.org/   |||   https://www.canapi.org/housingandassistance  \n \nAddress: 759 W. Market St., 1st Floor, Akron, OH 44303 \n \nBusiness Hours: Mon-Fri 9:00A-5:00P ||| Late Night Testing Tues 5:00P-7:00P \n211 Hours: 24/7",
+                    "background_image": "AHHgenericbg.jpg",
+                    "descriptive_audio": ""
+                }
+            ],
+            "media_pages": []
         },
         {
-          "title": "CONTACT & HOURS",
-          "description": "Phone: 330-252-1559 \n \nPhone Intake for Harmony Place, Helping Hands, Micah Project, and Shelter + Care: 211 \n \nEmail: info@canapi.org \n \nWebsite: https://www.canapi.org/   |||   https://www.canapi.org/housingandassistance  \n \nAddress: 759 W. Market St., 1st Floor, Akron, OH 44303 \n \nBusiness Hours: Mon-Fri 9:00A-5:00P ||| Late Night Testing Tues 5:00P-7:00P \n211 Hours: 24/7",
-          "background_image": "AHHgenericbg.jpg",
-          "descriptive_audio": ""
-        }
-      ],
-      "media_pages": []
-    },
-    {
-      "name": "Street Outreach Services (SOS) – ShelterCare",
-      "position": "2",
-      "latitude": "41.1040479",
-      "longitude": "-81.516234",
-      "overlay": "",
-      "virtual_object": "",
-      "isSubHotspot": false,
-      "panorama_image": "360sossheltercare.jpg",
-      "overlay_size": 5,
-      "overlay_offset_x": 0,
-      "overlay_offset_y": 0,
-      "start_audio": "",
-      "main_pages": [
-        {
-          "title": "SERVICES",
-          "description": "Street Outreach Services (SOS) offers street-based and drop-in services to individuals ages 16-24 experiencing homelessness in Summit County to assist them in securing safe, stable housing.  \n \nFirst, the SOS drop-in center provides access to case management, hot meals, grocery items, clothing, personal care and hygiene items, laundry and shower facilities, household items, bus passes, transportation to essential appointments, support in securing emergency shelter, crisis support, on-site support groups, linkage to supportive services, and employment support. \nSecond, the Bridges Program of Ohio provides direct services including housing support, case management and independent living skills to young adults who have aged out of foster care in Ohio. Young adult participation in Bridges is voluntary, and young adults may apply to enroll (or re-enroll) in Bridges at any point before their 21st birthday \n \nThird, Rapid Re-Housing provides short-term rental assistance and case management. The goals are to help young adults obtain housing quickly, increase self-sufficiency, and stay housed. \n \nFourth, the Faith-Based Infant and Maternal Health Supports Program provides support to pregnant and parenting youth/young adults (up to 12 months postpartum) between the ages of 14-24 living in Summit County to address health inequities and improve infant and maternal health outcomes. \n \nSOS also provides services in the Mental Health, Addiction, & Family Services; Work, Financial, & Legal Support; Transportation; and Food Assistance categories.",
-          "background_image": "AHHgenericbg.jpg",
-          "descriptive_audio": ""
+            "name": "Street Outreach Services (SOS) \u2013 ShelterCare",
+            "position": "2",
+            "latitude": "41.1040479",
+            "longitude": "-81.516234",
+            "overlay": "",
+            "virtual_object": "",
+            "isSubHotspot": false,
+            "panorama_image": "360sossheltercare.jpg",
+            "overlay_size": 5,
+            "overlay_offset_x": 0,
+            "overlay_offset_y": 0,
+            "start_audio": "",
+            "main_pages": [
+                {
+                    "title": "SERVICES",
+                    "description": "Street Outreach Services (SOS) offers street-based and drop-in services to individuals ages 16-24 experiencing homelessness in Summit County to assist them in securing safe, stable housing.  \n \nFirst, the SOS drop-in center provides access to case management, hot meals, grocery items, clothing, personal care and hygiene items, laundry and shower facilities, household items, bus passes, transportation to essential appointments, support in securing emergency shelter, crisis support, on-site support groups, linkage to supportive services, and employment support. \nSecond, the Bridges Program of Ohio provides direct services including housing support, case management and independent living skills to young adults who have aged out of foster care in Ohio. Young adult participation in Bridges is voluntary, and young adults may apply to enroll (or re-enroll) in Bridges at any point before their 21st birthday \n \nThird, Rapid Re-Housing provides short-term rental assistance and case management. The goals are to help young adults obtain housing quickly, increase self-sufficiency, and stay housed. \n \nFourth, the Faith-Based Infant and Maternal Health Supports Program provides support to pregnant and parenting youth/young adults (up to 12 months postpartum) between the ages of 14-24 living in Summit County to address health inequities and improve infant and maternal health outcomes. \n \nSOS also provides services in the Mental Health, Addiction, & Family Services; Work, Financial, & Legal Support; Transportation; and Food Assistance categories.",
+                    "background_image": "AHHgenericbg.jpg",
+                    "descriptive_audio": ""
+                },
+                {
+                    "title": "CONTACT & HOURS",
+                    "description": "Phone: 234-571-2807 \n \nWebsite: https://sc72.org/  \n \nAddress: 39 W. Cuyahoga Falls Ave., Akron, OH 44310 \n \nBusiness Hours: Mon, Sat 12:00P-4:00P   |||   Tues 12:00P-8:00P   |||   Weds, Thurs 1:00P-8:00P   |||   Fri by appointment only 9:00A-4:00P",
+                    "background_image": "AHHgenericbg.jpg",
+                    "descriptive_audio": ""
+                }
+            ],
+            "media_pages": []
         },
         {
-          "title": "CONTACT & HOURS",
-          "description": "Phone: 234-571-2807 \n \nWebsite: https://sc72.org/  \n \nAddress: 39 W. Cuyahoga Falls Ave., Akron, OH 44310 \n \nBusiness Hours: Mon, Sat 12:00P-4:00P   |||   Tues 12:00P-8:00P   |||   Weds, Thurs 1:00P-8:00P   |||   Fri by appointment only 9:00A-4:00P",
-          "background_image": "AHHgenericbg.jpg",
-          "descriptive_audio": ""
-        }
-      ],
-      "media_pages": []
-    },
-    {
-      "name": "Hope & Healing Survivor Resource Center Emergency Shelter",
-      "position": "3",
-      "latitude": "41.0707451",
-      "longitude": "-81.4887486",
-      "overlay": "",
-      "virtual_object": "",
-      "isSubHotspot": false,
-      "panorama_image": "360hopehealingsurvivorcenter.jpg",
-      "overlay_size": 5,
-      "overlay_offset_x": 0,
-      "overlay_offset_y": 0,
-      "start_audio": "",
-      "main_pages": [
-        {
-          "title": "SERVICES",
-          "description": "Hope and Healing offers safe, 24/7 shelter services for survivors fleeing abusive relationships in secure, staffed buildings that provide safety 24 hours a day. These shelters offer communal living with bed spaces in private, dorm-style rooms, three meals per day, and basic clothing, laundry, and hygiene supplies. The shelters are available to women, men, youth, and children of any age, gender, or ethnicity who are fleeing abusive relationships. During their stay in the shelters, survivors have access to many support groups, goal planning, housing assistance, and job readiness support. For immediate assistance, call the Hope and Healing hotline at 330-374-1111. \n \nThe Hope & Health Survivor Resource Center also offers services in the Mental Health, Addiction, & Family Services category.",
-          "background_image": "AHHgenericbg.jpg",
-          "descriptive_audio": ""
+            "name": "Hope & Healing Survivor Resource Center Emergency Shelter",
+            "position": "3",
+            "latitude": "41.0707451",
+            "longitude": "-81.4887486",
+            "overlay": "",
+            "virtual_object": "",
+            "isSubHotspot": false,
+            "panorama_image": "360hopehealingsurvivorcenter.jpg",
+            "overlay_size": 5,
+            "overlay_offset_x": 0,
+            "overlay_offset_y": 0,
+            "start_audio": "",
+            "main_pages": [
+                {
+                    "title": "SERVICES",
+                    "description": "Hope and Healing offers safe, 24/7 shelter services for survivors fleeing abusive relationships in secure, staffed buildings that provide safety 24 hours a day. These shelters offer communal living with bed spaces in private, dorm-style rooms, three meals per day, and basic clothing, laundry, and hygiene supplies. The shelters are available to women, men, youth, and children of any age, gender, or ethnicity who are fleeing abusive relationships. During their stay in the shelters, survivors have access to many support groups, goal planning, housing assistance, and job readiness support. For immediate assistance, call the Hope and Healing hotline at 330-374-1111. \n \nThe Hope & Health Survivor Resource Center also offers services in the Mental Health, Addiction, & Family Services category.",
+                    "background_image": "AHHgenericbg.jpg",
+                    "descriptive_audio": ""
+                },
+                {
+                    "title": "CONTACT & HOURS",
+                    "description": "24/7 Emergency Hotline: 330-374-1111  \n \nBusiness Phone (Summit County): 330-374-0740 \n \nBusiness Phone (Medina County): 330-374-0740 \n \nWebsite: https://hopeandhealingresources.org/ \n \nSummit Address: 974 E. Market St., Akron, OH 44305 \n \nSummit Business Hours: Mon-Fri 8:00A-4:00P \n \nMedina Address: 225 E Liberty, Medina, OH 44256 \n \nMedina Business Hours: By appointment only",
+                    "background_image": "AHHgenericbg.jpg",
+                    "descriptive_audio": ""
+                }
+            ],
+            "media_pages": []
         },
         {
-          "title": "CONTACT & HOURS",
-          "description": "24/7 Emergency Hotline: 330-374-1111  \n \nBusiness Phone (Summit County): 330-374-0740 \n \nBusiness Phone (Medina County): 330-374-0740 \n \nWebsite: https://hopeandhealingresources.org/ \n \nSummit Address: 974 E. Market St., Akron, OH 44305 \n \nSummit Business Hours: Mon-Fri 8:00A-4:00P \n \nMedina Address: 225 E Liberty, Medina, OH 44256 \n \nMedina Business Hours: By appointment only",
-          "background_image": "AHHgenericbg.jpg",
-          "descriptive_audio": ""
-        }
-      ],
-      "media_pages": []
-    },
-    {
-      "name": "Access Shelter",
-      "position": "4",
-      "latitude": "41.08864",
-      "longitude": "-81.525155",
-      "overlay": "",
-      "virtual_object": "",
-      "isSubHotspot": false,
-      "panorama_image": "360accessshelter.jpg",
-      "overlay_size": 5,
-      "overlay_offset_x": 0,
-      "overlay_offset_y": 0,
-      "start_audio": "",
-      "main_pages": [
-        {
-          "title": "SERVICES",
-          "description": "Access Shelter provides emergency housing, meals, laundry facilities, and supportive services to women and children experiencing a housing crisis. Services for shelter residents include case management, crisis counseling, health assessments, and more. Access participates in a coordinated entry process through calling the Homeless Hotline at 330-615-0577 to be connected to one of their safe, clean, and secure shelters, which offer single rooms and family rooms to accommodate individuals with or without children.",
-          "background_image": "AHHgenericbg.jpg",
-          "descriptive_audio": ""
+            "name": "Access Shelter",
+            "position": "4",
+            "latitude": "41.08864",
+            "longitude": "-81.525155",
+            "overlay": "",
+            "virtual_object": "",
+            "isSubHotspot": false,
+            "panorama_image": "360accessshelter.jpg",
+            "overlay_size": 5,
+            "overlay_offset_x": 0,
+            "overlay_offset_y": 0,
+            "start_audio": "",
+            "main_pages": [
+                {
+                    "title": "SERVICES",
+                    "description": "Access Shelter provides emergency housing, meals, laundry facilities, and supportive services to women and children experiencing a housing crisis. Services for shelter residents include case management, crisis counseling, health assessments, and more. Access participates in a coordinated entry process through calling the Homeless Hotline at 330-615-0577 to be connected to one of their safe, clean, and secure shelters, which offer single rooms and family rooms to accommodate individuals with or without children.",
+                    "background_image": "AHHgenericbg.jpg",
+                    "descriptive_audio": ""
+                },
+                {
+                    "title": "CONTACT & HOURS",
+                    "description": "Phone: 330-376-0997 \n \nHomeless Hotline: 330-615-0577 \n \nWebsite: http://www.access-shelter.org/ \n \nAddress: 230 W. Market St., Akron, OH 44303 \n \nBusiness Hours: Mon-Fri 8:00A-5:00P \n \nHomeless Hotline Hours: Mon-Fri 8:00A-5:00P",
+                    "background_image": "AHHgenericbg.jpg",
+                    "descriptive_audio": ""
+                }
+            ],
+            "media_pages": []
         },
         {
-          "title": "CONTACT & HOURS",
-          "description": "Phone: 330-376-0997 \n \nHomeless Hotline: 330-615-0577 \n \nWebsite: http://www.access-shelter.org/ \n \nAddress: 230 W. Market St., Akron, OH 44303 \n \nBusiness Hours: Mon-Fri 8:00A-5:00P \n \nHomeless Hotline Hours: Mon-Fri 8:00A-5:00P",
-          "background_image": "AHHgenericbg.jpg",
-          "descriptive_audio": ""
-        }
-      ],
-      "media_pages": []
-    },
-    {
-      "name": "Legacy III Supportive Housing for Women",
-      "position": "5",
-      "latitude": "41.0959086",
-      "longitude": "-81.5405322",
-      "overlay": "",
-      "virtual_object": "",
-      "isSubHotspot": false,
-      "panorama_image": "360legacyiiisupportivehousing.jpg",
-      "overlay_size": 5,
-      "overlay_offset_x": 0,
-      "overlay_offset_y": 0,
-      "start_audio": "",
-      "main_pages": [
-        {
-          "title": "SERVICES",
-          "description": "Legacy III Supportive Housing for Women offers supportive housing services to homeless women in Summit County who are in recovery from chronic substance abuse, mental health disorders, or physical disabilities. They offer transitional, rapid re-housing, and permanent housing programming. \n \nFirst, Pathways to Freedom is a combined Transitional and Rapid Re-Housing program that allows Legacy III to provide emergency housing while preparing the participants for permanent housing.  Initially, participants live onsite in the transitional housing facility. This is a shared living environment that provides 24-hour-a-day staff supervision; meals and snacks; transportation; laundry equipment and supplies; intensive case management; referrals to other mainstream resources; and other ancillary services. Participants are then assisted in securing permanent housing. \n \nSecond, Brubaker, Humble Beginnings, and Pathways to Freedom are permanent housing programs that allow participants to live independently in the community.  Through intensive case management services, participants are assisted in securing a one-bedroom apartment within the Summit County, Ohio area where they are able to live in their own unit.  Housing placement services are at the core of the programs and provide a security deposit, monthly rental assistance, utility assistance, moving costs, transportation, linkage to other mainstream resources, and other ancillary services.  The maximum length of participation is long-term. \n \nTo be referred to Legacy III for participation in any of their programs, individuals must begin by calling the Homeless Hotline at 330-615-0577.",
-          "background_image": "AHHgenericbg.jpg",
-          "descriptive_audio": ""
+            "name": "Legacy III Supportive Housing for Women",
+            "position": "5",
+            "latitude": "41.0959086",
+            "longitude": "-81.5405322",
+            "overlay": "",
+            "virtual_object": "",
+            "isSubHotspot": false,
+            "panorama_image": "360legacyiiisupportivehousing.jpg",
+            "overlay_size": 5,
+            "overlay_offset_x": 0,
+            "overlay_offset_y": 0,
+            "start_audio": "",
+            "main_pages": [
+                {
+                    "title": "SERVICES",
+                    "description": "Legacy III Supportive Housing for Women offers supportive housing services to homeless women in Summit County who are in recovery from chronic substance abuse, mental health disorders, or physical disabilities. They offer transitional, rapid re-housing, and permanent housing programming. \n \nFirst, Pathways to Freedom is a combined Transitional and Rapid Re-Housing program that allows Legacy III to provide emergency housing while preparing the participants for permanent housing.  Initially, participants live onsite in the transitional housing facility. This is a shared living environment that provides 24-hour-a-day staff supervision; meals and snacks; transportation; laundry equipment and supplies; intensive case management; referrals to other mainstream resources; and other ancillary services. Participants are then assisted in securing permanent housing. \n \nSecond, Brubaker, Humble Beginnings, and Pathways to Freedom are permanent housing programs that allow participants to live independently in the community.  Through intensive case management services, participants are assisted in securing a one-bedroom apartment within the Summit County, Ohio area where they are able to live in their own unit.  Housing placement services are at the core of the programs and provide a security deposit, monthly rental assistance, utility assistance, moving costs, transportation, linkage to other mainstream resources, and other ancillary services.  The maximum length of participation is long-term. \n \nTo be referred to Legacy III for participation in any of their programs, individuals must begin by calling the Homeless Hotline at 330-615-0577.",
+                    "background_image": "AHHgenericbg.jpg",
+                    "descriptive_audio": ""
+                },
+                {
+                    "title": "CONTACT & HOURS",
+                    "description": "Phone: 330-375-0071 \n \nHomeless Hotline: 330-615-0577 \n \nWebsite: https://legacyiii.org/ \n \nOnline contact: https://legacyiii.org/contact-us/  \n \nAddress: 87 S. Arlington St., Akron, OH 44306 \n \nBusiness Hours: Mon-Fri 8:00A-4:00P \n \nHomeless Hotline Hours: Mon-Fri 8:00am-4:00pm",
+                    "background_image": "AHHgenericbg.jpg",
+                    "descriptive_audio": ""
+                }
+            ],
+            "media_pages": []
         },
         {
-          "title": "CONTACT & HOURS",
-          "description": "Phone: 330-375-0071 \n \nHomeless Hotline: 330-615-0577 \n \nWebsite: https://legacyiii.org/ \n \nOnline contact: https://legacyiii.org/contact-us/  \n \nAddress: 87 S. Arlington St., Akron, OH 44306 \n \nBusiness Hours: Mon-Fri 8:00A-4:00P \n \nHomeless Hotline Hours: Mon-Fri 8:00am-4:00pm",
-          "background_image": "AHHgenericbg.jpg",
-          "descriptive_audio": ""
-        }
-      ],
-      "media_pages": []
-    },
-    {
-      "name": "Peter Maurin Center of Akron",
-      "position": "6",
-      "latitude": "41.0570699",
-      "longitude": "-81.5293626",
-      "overlay": "",
-      "virtual_object": "",
-      "isSubHotspot": false,
-      "panorama_image": "360petermaurincenter.jpg",
-      "overlay_size": 5,
-      "overlay_offset_x": 0,
-      "overlay_offset_y": 0,
-      "start_audio": "",
-      "main_pages": [
-        {
-          "title": "SERVICES",
-          "description": "The Peter Maurin Center provides emergency overnight shelter any evening when the temperature outside drops below 15° F. They also provide emergency lodging to homeless women in a motel until they can identify transitional housing. Their Community Center also provides seasonal clothing, personal hygiene products, bicycles, and if able, guidance on personal matters. \n \nThe Peter Maurin Center also offers services in the Medical Care, Transportation, and Food Assistance categories.",
-          "background_image": "AHHgenericbg.jpg",
-          "descriptive_audio": ""
+            "name": "Peter Maurin Center of Akron",
+            "position": "6",
+            "latitude": "41.0570699",
+            "longitude": "-81.5293626",
+            "overlay": "",
+            "virtual_object": "",
+            "isSubHotspot": false,
+            "panorama_image": "360petermaurincenter.jpg",
+            "overlay_size": 5,
+            "overlay_offset_x": 0,
+            "overlay_offset_y": 0,
+            "start_audio": "",
+            "main_pages": [
+                {
+                    "title": "SERVICES",
+                    "description": "The Peter Maurin Center provides emergency overnight shelter any evening when the temperature outside drops below 15\u00b0 F. They also provide emergency lodging to homeless women in a motel until they can identify transitional housing. Their Community Center also provides seasonal clothing, personal hygiene products, bicycles, and if able, guidance on personal matters. \n \nThe Peter Maurin Center also offers services in the Medical Care, Transportation, and Food Assistance categories.",
+                    "background_image": "AHHgenericbg.jpg",
+                    "descriptive_audio": ""
+                },
+                {
+                    "title": "CONTACT & HOURS",
+                    "description": "Phone: 330-258-9006 \n \nWebsite: https://www.petermaurincenter.com/ \n \nAddress: 1096 S. Main St., Akron, OH 44301 \n \nBusiness Hours: Mon-Fri 8:00A-5:00P \n \nEmergency Shelter Hours: 7:00P-8:00A any night where the temperature is below 15\u00b0 F \n \nHygeine Distribution Hours: Second and fourth Tues of every month, 11:00A-12:30P \n \nClothing Distribution: Tues, Fri, and Sun 11:00A-12:30P \n \nDrop-in Center (with Soup Kitchen): Tues, Fri, Sun 11:00A-2:00P",
+                    "background_image": "AHHgenericbg.jpg",
+                    "descriptive_audio": ""
+                }
+            ],
+            "media_pages": []
         },
         {
-          "title": "CONTACT & HOURS",
-          "description": "Phone: 330-258-9006 \n \nWebsite: https://www.petermaurincenter.com/ \n \nAddress: 1096 S. Main St., Akron, OH 44301 \n \nBusiness Hours: Mon-Fri 8:00A-5:00P \n \nEmergency Shelter Hours: 7:00P-8:00A any night where the temperature is below 15° F \n \nHygeine Distribution Hours: Second and fourth Tues of every month, 11:00A-12:30P \n \nClothing Distribution: Tues, Fri, and Sun 11:00A-12:30P \n \nDrop-in Center (with Soup Kitchen): Tues, Fri, Sun 11:00A-2:00P",
-          "background_image": "AHHgenericbg.jpg",
-          "descriptive_audio": ""
-        }
-      ],
-      "media_pages": []
-    },
-    {
-      "name": "Summit County Continuum of Care",
-      "position": "7",
-      "latitude": "41.0843467",
-      "longitude": "-81.5168308",
-      "overlay": "",
-      "virtual_object": "",
-      "isSubHotspot": false,
-      "panorama_image": "360summitcocontinuumofcare.jpg",
-      "overlay_size": 5,
-      "overlay_offset_x": 0,
-      "overlay_offset_y": 0,
-      "start_audio": "",
-      "main_pages": [
-        {
-          "title": "SERVICES",
-          "description": "The Summit County Continuum of Care (SCCoC) promotes a community-wide commitment to the goal of ending homelessness. They fund 28 housing programs from transitional to permanent housing, with many dedicated to serving specific populations, such as individuals living with HIV/AIDS. They assist anyone in Summit County who needs access to resources and support in obtaining and maintaining safe, decent, and affordable housing. SCCoC participates in a centralized intake process by calling 211 to get matched with one of their housing programs. Visit https://summitcoc.org/get-help/ for more information about shelter and housing programming in Summit County.",
-          "background_image": "AHHgenericbg.jpg",
-          "descriptive_audio": ""
+            "name": "Summit County Continuum of Care",
+            "position": "7",
+            "latitude": "41.0843467",
+            "longitude": "-81.5168308",
+            "overlay": "",
+            "virtual_object": "",
+            "isSubHotspot": false,
+            "panorama_image": "360summitcocontinuumofcare.jpg",
+            "overlay_size": 5,
+            "overlay_offset_x": 0,
+            "overlay_offset_y": 0,
+            "start_audio": "",
+            "main_pages": [
+                {
+                    "title": "SERVICES",
+                    "description": "The Summit County Continuum of Care (SCCoC) promotes a community-wide commitment to the goal of ending homelessness. They fund 28 housing programs from transitional to permanent housing, with many dedicated to serving specific populations, such as individuals living with HIV/AIDS. They assist anyone in Summit County who needs access to resources and support in obtaining and maintaining safe, decent, and affordable housing. SCCoC participates in a centralized intake process by calling 211 to get matched with one of their housing programs. Visit https://summitcoc.org/get-help/ for more information about shelter and housing programming in Summit County.",
+                    "background_image": "AHHgenericbg.jpg",
+                    "descriptive_audio": ""
+                },
+                {
+                    "title": "CONTACT & HOURS",
+                    "description": "Centralized Housing Intake: 211 \n \nPhone: 234-312-0833 \n \nWebsite: http://www.summitcoc.org/ \n \nHelp Page: https://summitcoc.org/get-help/  \n \nAddress: 23 S. Main St., Akron, OH 44308 \n \nBusiness Hours: Mon-Fri 8:00A-4:30P \n \nCentralized Intake Hours: 24/7",
+                    "background_image": "AHHgenericbg.jpg",
+                    "descriptive_audio": ""
+                }
+            ],
+            "media_pages": []
         },
         {
-          "title": "CONTACT & HOURS",
-          "description": "Centralized Housing Intake: 211 \n \nPhone: 234-312-0833 \n \nWebsite: http://www.summitcoc.org/ \n \nHelp Page: https://summitcoc.org/get-help/  \n \nAddress: 23 S. Main St., Akron, OH 44308 \n \nBusiness Hours: Mon-Fri 8:00A-4:30P \n \nCentralized Intake Hours: 24/7",
-          "background_image": "AHHgenericbg.jpg",
-          "descriptive_audio": ""
-        }
-      ],
-      "media_pages": []
-    },
-    {
-      "name": "United Disability Services – Akron",
-      "position": "8",
-      "latitude": "41.0833389",
-      "longitude": "-81.5172646",
-      "overlay": "",
-      "virtual_object": "",
-      "isSubHotspot": false,
-      "panorama_image": "360udservices.jpg",
-      "overlay_size": 5,
-      "overlay_offset_x": 0,
-      "overlay_offset_y": 0,
-      "start_audio": "",
-      "main_pages": [
-        {
-          "title": "SERVICES",
-          "description": "United Disability Services (UDS) offers support services for individuals living with physical, cognitive, and/or developmental disabilities, including community living services for people with disabilities and their caregivers. \n \nServices come in two forms. First, Residential Services provides services in a variety of settings including shared living and semi-independent living depending on the needs and preferences of the individuals served. Second, Shared Living is when an individual, couple or family in the community opens their home to a person with a disability to live together and share life experiences. The person with a disability becomes a part of the family, and a member of the community, as they participate in social events and activities together. \n \nFor more information on any of UDS Akron’s Respite and Community Living Programs, call 330-762-9755 or contact them at https://www.udsakron.org/contact/. \n \nUDS Akron also provides services in the Work, Financial, & Legal Support; Disability Resources; and Transportation categories.",
-          "background_image": "AHHgenericbg.jpg",
-          "descriptive_audio": ""
+            "name": "United Disability Services \u2013 Akron",
+            "position": "8",
+            "latitude": "41.0833389",
+            "longitude": "-81.5172646",
+            "overlay": "",
+            "virtual_object": "",
+            "isSubHotspot": false,
+            "panorama_image": "360udservices.jpg",
+            "overlay_size": 5,
+            "overlay_offset_x": 0,
+            "overlay_offset_y": 0,
+            "start_audio": "",
+            "main_pages": [
+                {
+                    "title": "SERVICES",
+                    "description": "United Disability Services (UDS) offers support services for individuals living with physical, cognitive, and/or developmental disabilities, including community living services for people with disabilities and their caregivers. \n \nServices come in two forms. First, Residential Services provides services in a variety of settings including shared living and semi-independent living depending on the needs and preferences of the individuals served. Second, Shared Living is when an individual, couple or family in the community opens their home to a person with a disability to live together and share life experiences. The person with a disability becomes a part of the family, and a member of the community, as they participate in social events and activities together. \n \nFor more information on any of UDS Akron\u2019s Respite and Community Living Programs, call 330-762-9755 or contact them at https://www.udsakron.org/contact/. \n \nUDS Akron also provides services in the Work, Financial, & Legal Support; Disability Resources; and Transportation categories.",
+                    "background_image": "AHHgenericbg.jpg",
+                    "descriptive_audio": ""
+                },
+                {
+                    "title": "CONTACT & HOURS",
+                    "description": "Phone: 330-762-9755 \n \nWebsite: https://www.udsakron.org/ \n \nAddress: 701 S. Main St., Akron, OH 44311 \n \nBusiness Hours: Mon-Fri 8:00A-4:30P",
+                    "background_image": "AHHgenericbg.jpg",
+                    "descriptive_audio": ""
+                }
+            ],
+            "media_pages": []
         },
         {
-          "title": "CONTACT & HOURS",
-          "description": "Phone: 330-762-9755 \n \nWebsite: https://www.udsakron.org/ \n \nAddress: 701 S. Main St., Akron, OH 44311 \n \nBusiness Hours: Mon-Fri 8:00A-4:30P",
-          "background_image": "AHHgenericbg.jpg",
-          "descriptive_audio": ""
-        }
-      ],
-      "media_pages": []
-    },
-    {
-      "name": "Akron Summit Community Action",
-      "position": "9",
-      "latitude": "41.0879783",
-      "longitude": "-81.5418399",
-      "overlay": "",
-      "virtual_object": "",
-      "isSubHotspot": false,
-      "panorama_image": "360communityaction.jpg",
-      "overlay_size": 5,
-      "overlay_offset_x": 0,
-      "overlay_offset_y": 0,
-      "start_audio": "",
-      "main_pages": [
-        {
-          "title": "SERVICES",
-          "description": "Akron Summit Community Action assists low-income households that are threatened with the loss of basic utilities. They work with individuals and families to complete energy assistance applications and provide a centralized location for submitting required eligibility documentation. Summit County residents must schedule an appointment by calling 330-436-0261 or online at https://app.capappointments.com/. For complete eligibility requirements, please visit https://www.ca-akron.org/energy-assistance/about.",
-          "background_image": "AHHgenericbg.jpg",
-          "descriptive_audio": ""
+            "name": "Akron Summit Community Action",
+            "position": "9",
+            "latitude": "41.0879783",
+            "longitude": "-81.5418399",
+            "overlay": "",
+            "virtual_object": "",
+            "isSubHotspot": false,
+            "panorama_image": "360communityaction.jpg",
+            "overlay_size": 5,
+            "overlay_offset_x": 0,
+            "overlay_offset_y": 0,
+            "start_audio": "",
+            "main_pages": [
+                {
+                    "title": "SERVICES",
+                    "description": "Akron Summit Community Action assists low-income households that are threatened with the loss of basic utilities. They work with individuals and families to complete energy assistance applications and provide a centralized location for submitting required eligibility documentation. Summit County residents must schedule an appointment by calling 330-436-0261 or online at https://app.capappointments.com/. For complete eligibility requirements, please visit https://www.ca-akron.org/energy-assistance/about.",
+                    "background_image": "AHHgenericbg.jpg",
+                    "descriptive_audio": ""
+                },
+                {
+                    "title": "CONTACT & HOURS",
+                    "description": "Phone: 330-436-0261 \n \nWebsite: https://www.ca-akron.org/energy-assistance/about \n \nOnline Appointment Scheduling: https://app.capappointments.com/ \n \nAddress: 670 W. Exchange St., Akron, OH 44302 \n \nBusiness Hours: Mon-Fri 8:00A-5:00P",
+                    "background_image": "AHHgenericbg.jpg",
+                    "descriptive_audio": ""
+                }
+            ],
+            "media_pages": []
         },
         {
-          "title": "CONTACT & HOURS",
-          "description": "Phone: 330-436-0261 \n \nWebsite: https://www.ca-akron.org/energy-assistance/about \n \nOnline Appointment Scheduling: https://app.capappointments.com/ \n \nAddress: 670 W. Exchange St., Akron, OH 44302 \n \nBusiness Hours: Mon-Fri 8:00A-5:00P",
-          "background_image": "AHHgenericbg.jpg",
-          "descriptive_audio": ""
-        }
-      ],
-      "media_pages": []
-    },
-    {
-      "name": "The Salvation Army – Summit County",
-      "position": "10",
-      "latitude": "41.085971",
-      "longitude": "-81.52892",
-      "overlay": "",
-      "virtual_object": "",
-      "isSubHotspot": false,
-      "panorama_image": "360salvationarmy.jpg",
-      "overlay_size": 5,
-      "overlay_offset_x": 0,
-      "overlay_offset_y": 0,
-      "start_audio": "",
-      "main_pages": [
-        {
-          "title": "SERVICES",
-          "description": "The Salvation Army may be able to provide rent assistance and/or up to $200 in gas or electric bill payment assistance for qualified customers in low-income households. Due to limited fund availability, individuals should call the office Monday morning beginning at 9:00A (Tuesday if Monday is a holiday) to see if funding and appointments are available.",
-          "background_image": "AHHgenericbg.jpg",
-          "descriptive_audio": ""
+            "name": "The Salvation Army \u2013\u00a0Summit County",
+            "position": "10",
+            "latitude": "41.085971",
+            "longitude": "-81.52892",
+            "overlay": "",
+            "virtual_object": "",
+            "isSubHotspot": false,
+            "panorama_image": "360salvationarmy.jpg",
+            "overlay_size": 5,
+            "overlay_offset_x": 0,
+            "overlay_offset_y": 0,
+            "start_audio": "",
+            "main_pages": [
+                {
+                    "title": "SERVICES",
+                    "description": "The Salvation Army may be able to provide rent assistance and/or up to $200 in gas or electric bill payment assistance for qualified customers in low-income households. Due to limited fund availability, individuals should call the office Monday morning beginning at 9:00A (Tuesday if Monday is a holiday) to see if funding and appointments are available.",
+                    "background_image": "AHHgenericbg.jpg",
+                    "descriptive_audio": ""
+                },
+                {
+                    "title": "CONTACT & HOURS",
+                    "description": "Phone: 330-762-8481 \n \nWebsite: https://easternusa.salvationarmy.org/northeast-ohio/summit-county/ \n \nAddress: 190 S. Maple St., Akron, OH 44302 \n \nSite Hours: Mon-Fri 9:00A-3:00P \n \nAdministrative Phone Hours: Mon-Fri 9:00A-4:30P",
+                    "background_image": "AHHgenericbg.jpg",
+                    "descriptive_audio": ""
+                }
+            ],
+            "media_pages": []
         },
         {
-          "title": "CONTACT & HOURS",
-          "description": "Phone: 330-762-8481 \n \nWebsite: https://easternusa.salvationarmy.org/northeast-ohio/summit-county/ \n \nAddress: 190 S. Maple St., Akron, OH 44302 \n \nSite Hours: Mon-Fri 9:00A-3:00P \n \nAdministrative Phone Hours: Mon-Fri 9:00A-4:30P",
-          "background_image": "AHHgenericbg.jpg",
-          "descriptive_audio": ""
+            "name": "Bayard Rustin LGBTQ+ Center | Akron AIDS Collaborative",
+            "position": "10",
+            "latitude": "41.0882752",
+            "longitude": "-81.5409204",
+            "overlay": "",
+            "virtual_object": "",
+            "isSubHotspot": false,
+            "panorama_image": "360bayardrustin-l.jpg",
+            "overlay_size": 5,
+            "overlay_offset_x": 0,
+            "overlay_offset_y": 0,
+            "start_audio": "",
+            "pin_color": "e63946",
+            "main_pages": [
+                {
+                    "title": "SERVICES",
+                    "description": "The Bayard Rustin Center, home of the Akron AIDS Collaborative (AAC), strengthens advocacy efforts for individuals living with HIV/AIDS and the broader LGBTQ+ community, including those who have experienced stigma tied to their sexual orientation or gender identity. As Ohio's only LGBTQ+ drop-in facility, they offer a wide range of culturally inclusive supports, including HIV testing, medical and housing referrals, a food pantry and clothing closet, community meals, mail order pharmacy services, a banned book library, and, as partners with TransJoy Akron, transgender support services. The AAC team is unwavering in its commitment to fostering a welcoming space where the LGBTQ+ and HIV/AIDS communities can access the support and resources they need to thrive.",
+                    "background_image": "AHHgenericbg.jpg",
+                    "descriptive_audio": ""
+                },
+                {
+                    "title": "CONTACT & HOURS",
+                    "description": "Phone: 330-983-4044 \n \nBayard Rustin Center Website: https://www.rustincenter.org/  \n \nAkron AIDS Collaborative Website: https://ohioaac.org/ \n \nAddress: 652 W. Exchange St., Akron, OH 44302 \n \nBusiness Hours: Mon-Fri 10:00 AM - 4:00 PM",
+                    "background_image": "AHHgenericbg.jpg",
+                    "descriptive_audio": ""
+                }
+            ],
+            "media_pages": []
         }
-      ],
-      "media_pages": []
-    }
-  ]
+    ]
 }

@@ -1,327 +1,357 @@
 {
-  "project_name": "Food Pantries and Meals",
-  "intro_audio": "",
-  "homepage_image": "mainmenubackground.jpg",
-  "ga_tracking_id": "UA-162868232-1",
-  "hotspots": [
-    {
-      "name": "Salvation Army - Summit County Pantries",
-      "position": "1",
-      "latitude": "41.0860455",
-      "longitude": "-81.5289068",
-      "overlay": "",
-      "virtual_object": "",
-      "isSubHotspot": false,
-      "panorama_image": "360salvationarmy-l.jpg",
-      "overlay_size": 5,
-      "overlay_offset_x": 0,
-      "overlay_offset_y": 0,
-      "start_audio": "",
-      "main_pages": [
+    "project_name": "Food Pantries and Meals",
+    "intro_audio": "",
+    "homepage_image": "mainmenubackground.jpg",
+    "ga_tracking_id": "UA-162868232-1",
+    "hotspots": [
         {
-          "title": "SERVICES",
-          "description": "The Salvation Army of Summit County provides two food panties.  \n \nFirst, their Red Shield Food Pantry is a collaborative program with the Akron-Canton Food Bank that directly distributes food to anyone.  \n \nSecond, their Choice Pantry provides families/individuals with a cart of food including meat, dairy, fresh vegetables, and shelf stable food as available for individuals who have received an official emergency referral through the 211 OR 330-376-4850 InfoLine.",
-          "background_image": "AHHgenericbg.jpg",
-          "descriptive_audio": ""
+            "name": "Salvation Army - Summit County Pantries",
+            "position": "1",
+            "latitude": "41.0860455",
+            "longitude": "-81.5289068",
+            "overlay": "",
+            "virtual_object": "",
+            "isSubHotspot": false,
+            "panorama_image": "360salvationarmy-l.jpg",
+            "overlay_size": 5,
+            "overlay_offset_x": 0,
+            "overlay_offset_y": 0,
+            "start_audio": "",
+            "main_pages": [
+                {
+                    "title": "SERVICES",
+                    "description": "The Salvation Army of Summit County provides two food panties.  \n \nFirst, their Red Shield Food Pantry is a collaborative program with the Akron-Canton Food Bank that directly distributes food to anyone.  \n \nSecond, their Choice Pantry provides families/individuals with a cart of food including meat, dairy, fresh vegetables, and shelf stable food as available for individuals who have received an official emergency referral through the 211 OR 330-376-4850 InfoLine.",
+                    "background_image": "AHHgenericbg.jpg",
+                    "descriptive_audio": ""
+                },
+                {
+                    "title": "CONTACT & HOURS",
+                    "description": "Intake InfoLine: 211   |||   330-376-4850 \n \nRed Shield Food Pantry Phone: 330-762-8481 \n \nWebsite: https://easternusa.salvationarmy.org/northeast-ohio/summit-county/cure-hunger/  \n \nAddress: 1033 Bellows St., Akron, OH 44311 \n \nIntake InfoLine Hours: 24/7 \n \nRed Shield Food Pantry Hours: Second Weds of every month but December, 9:00A-11:00A \n \nEmergency Food Pantry Hours: Mon, Tues, Thurs, and Fri through referral and by appointment (you MUST go through the InfoLine above)",
+                    "background_image": "AHHgenericbg.jpg",
+                    "descriptive_audio": ""
+                }
+            ],
+            "media_pages": []
         },
         {
-          "title": "CONTACT & HOURS",
-          "description": "Intake InfoLine: 211   |||   330-376-4850 \n \nRed Shield Food Pantry Phone: 330-762-8481 \n \nWebsite: https://easternusa.salvationarmy.org/northeast-ohio/summit-county/cure-hunger/  \n \nAddress: 1033 Bellows St., Akron, OH 44311 \n \nIntake InfoLine Hours: 24/7 \n \nRed Shield Food Pantry Hours: Second Weds of every month but December, 9:00A-11:00A \n \nEmergency Food Pantry Hours: Mon, Tues, Thurs, and Fri through referral and by appointment (you MUST go through the InfoLine above)",
-          "background_image": "AHHgenericbg.jpg",
-          "descriptive_audio": ""
-        }
-      ],
-      "media_pages": []
-    },
-    {
-      "name": "Open M Neighborhood Center",
-      "position": "2",
-      "latitude": "41.0612277",
-      "longitude": "-81.533817",
-      "overlay": "",
-      "virtual_object": "",
-      "isSubHotspot": false,
-      "panorama_image": "360openm-l.jpg",
-      "overlay_size": 5,
-      "overlay_offset_x": 0,
-      "overlay_offset_y": 0,
-      "start_audio": "",
-      "main_pages": [
-        {
-          "title": "SERVICES",
-          "description": "The Open M Neighborhood Center has multiple food pantries and a grab-and-go lunch. \n  \nFirst, the Emergency Food Pantry provides participants with a three-day supply of shelf-stable products and fresh foods. Participants are eligible for food every 31 days and must reside in the 44301, 44311, 44224, 44321, 44307, 44320, 44308, or 44203 zip codes. Another person may pick up food for someone else, but you must have a current proxy on file.  \n \nSecond, the Mountain of Food is a one-day, bulk distribution of foods such as produce, meat, breads and more. Participants must bring an ID with an address. No referral or pre-registration is required for this program. If picking up for someone else, you must have a current proxy on file. \n \nThird, the Senior Supplemental Food Program helps improve the health of elderly citizens through supplemental and nutritious food boxes. Participants must meet income guidelines and be pre-registered for the Commodity Supplemental Food Program (learn more at https://jfs.ohio.gov/cash-food-and-refugee-assistance/food-assistance/food-programs/commodity-supplemental-food-program). \n \nFourth, the Blessing Box is an outdoor pantry box stocked with non-perishable sacked meals for those in need of emergency assistance after-hours when the Emergency Food Pantry is closed. \n \nIn addition to those food pantries, Open M’s Grab & Go Lunch provides fresh, healthy meals to the community during the last two weeks of each month. It is provided in partnership with churches, organizations, and community groups who purchase, prepare, and serve each meal. \n \nOpen M also offers services in the Work, Financial, & Legal Support and  Medical Care categories.",
-          "background_image": "AHHgenericbg.jpg",
-          "descriptive_audio": ""
+            "name": "Open M Neighborhood Center",
+            "position": "2",
+            "latitude": "41.0612277",
+            "longitude": "-81.533817",
+            "overlay": "",
+            "virtual_object": "",
+            "isSubHotspot": false,
+            "panorama_image": "360openm-l.jpg",
+            "overlay_size": 5,
+            "overlay_offset_x": 0,
+            "overlay_offset_y": 0,
+            "start_audio": "",
+            "main_pages": [
+                {
+                    "title": "SERVICES",
+                    "description": "The Open M Neighborhood Center has multiple food pantries and a grab-and-go lunch. \n  \nFirst, the Emergency Food Pantry provides participants with a three-day supply of shelf-stable products and fresh foods. Participants are eligible for food every 31 days and must reside in the 44301, 44311, 44224, 44321, 44307, 44320, 44308, or 44203 zip codes. Another person may pick up food for someone else, but you must have a current proxy on file.  \n \nSecond, the Mountain of Food is a one-day, bulk distribution of foods such as produce, meat, breads and more. Participants must bring an ID with an address. No referral or pre-registration is required for this program. If picking up for someone else, you must have a current proxy on file. \n \nThird, the Senior Supplemental Food Program helps improve the health of elderly citizens through supplemental and nutritious food boxes. Participants must meet income guidelines and be pre-registered for the Commodity Supplemental Food Program (learn more at https://jfs.ohio.gov/cash-food-and-refugee-assistance/food-assistance/food-programs/commodity-supplemental-food-program). \n \nFourth, the Blessing Box is an outdoor pantry box stocked with non-perishable sacked meals for those in need of emergency assistance after-hours when the Emergency Food Pantry is closed. \n \nIn addition to those food pantries, Open M\u2019s Grab & Go Lunch provides fresh, healthy meals to the community during the last two weeks of each month. It is provided in partnership with churches, organizations, and community groups who purchase, prepare, and serve each meal. \n \nOpen M also offers services in the Work, Financial, & Legal Support and  Medical Care categories.",
+                    "background_image": "AHHgenericbg.jpg",
+                    "descriptive_audio": ""
+                },
+                {
+                    "title": "CONTACT & HOURS",
+                    "description": "Phone: 330-434-0110, ext. 416 \n \nEmail: food@openm.org \n \nWebsite: https://www.openm.org/   |||   https://www.openm.org/food  \n \nAddress: 941 Princeton St., Akron, OH 443311 \n \nContact Hours: Mon-Fri 8:00A-4:30P \n \nEmergency Food Pantry Hours: Mon-Thurs 11:30A-2:00P   |||   Fri 9:00A-11:00A \n \nMountain of Food Hours: Third Fri of every month, 9:00A-11:00A \n \nSenior Supplemental Food Program: Multiple days within the second week of each month \n \nBlessing Box: Evenings (after 4:30P) every day of the week, as available \n \nGrab & Go Lunch Hours: Last 2 weeks of each month, Mon-Fri 11:30A-1:00P",
+                    "background_image": "AHHgenericbg.jpg",
+                    "descriptive_audio": ""
+                }
+            ],
+            "media_pages": []
         },
         {
-          "title": "CONTACT & HOURS",
-          "description": "Phone: 330-434-0110, ext. 416 \n \nEmail: food@openm.org \n \nWebsite: https://www.openm.org/   |||   https://www.openm.org/food  \n \nAddress: 941 Princeton St., Akron, OH 443311 \n \nContact Hours: Mon-Fri 8:00A-4:30P \n \nEmergency Food Pantry Hours: Mon-Thurs 11:30A-2:00P   |||   Fri 9:00A-11:00A \n \nMountain of Food Hours: Third Fri of every month, 9:00A-11:00A \n \nSenior Supplemental Food Program: Multiple days within the second week of each month \n \nBlessing Box: Evenings (after 4:30P) every day of the week, as available \n \nGrab & Go Lunch Hours: Last 2 weeks of each month, Mon-Fri 11:30A-1:00P",
-          "background_image": "AHHgenericbg.jpg",
-          "descriptive_audio": ""
-        }
-      ],
-      "media_pages": []
-    },
-    {
-      "name": "Peter Maurin Center of Akron",
-      "position": "3",
-      "latitude": "41.0570699",
-      "longitude": "-81.5293626",
-      "overlay": "",
-      "virtual_object": "",
-      "isSubHotspot": false,
-      "panorama_image": "360petermaurincenter-l.jpg",
-      "overlay_size": 5,
-      "overlay_offset_x": 0,
-      "overlay_offset_y": 0,
-      "start_audio": "",
-      "main_pages": [
-        {
-          "title": "SERVICES",
-          "description": "The Peter Maurin Center of Akron offers both a food pantry and an open community lunch. \n \nFirst, the Peter Maurin Center’s food pantry offers canned food, boxed food, fresh meat, milk, fruits, and vegetables when available. If you cannot make it in-person, the Peter Maurin Center’s Matthew 8:20 Outreach Program may be able to travel out into the field and deliver meals and supplies to your home. If you need this service, contact the Peter Maurin Center directly. \n \nSecond, the Peter Maurin Center offers an open community lunch every Tuesday, Friday, and Sunday from 11:00A-2:00P at their Community Center. \n \nThe Peter Maurin Center also offers services in the Shelter, Housing, & Utilities; Medical Care; and Transportation categories.",
-          "background_image": "AHHgenericbg.jpg",
-          "descriptive_audio": ""
+            "name": "Peter Maurin Center of Akron",
+            "position": "3",
+            "latitude": "41.0570699",
+            "longitude": "-81.5293626",
+            "overlay": "",
+            "virtual_object": "",
+            "isSubHotspot": false,
+            "panorama_image": "360petermaurincenter-l.jpg",
+            "overlay_size": 5,
+            "overlay_offset_x": 0,
+            "overlay_offset_y": 0,
+            "start_audio": "",
+            "main_pages": [
+                {
+                    "title": "SERVICES",
+                    "description": "The Peter Maurin Center of Akron offers both a food pantry and an open community lunch. \n \nFirst, the Peter Maurin Center\u2019s food pantry offers canned food, boxed food, fresh meat, milk, fruits, and vegetables when available. If you cannot make it in-person, the Peter Maurin Center\u2019s Matthew 8:20 Outreach Program may be able to travel out into the field and deliver meals and supplies to your home. If you need this service, contact the Peter Maurin Center directly. \n \nSecond, the Peter Maurin Center offers an open community lunch every Tuesday, Friday, and Sunday from 11:00A-2:00P at their Community Center. \n \nThe Peter Maurin Center also offers services in the Shelter, Housing, & Utilities; Medical Care; and Transportation categories.",
+                    "background_image": "AHHgenericbg.jpg",
+                    "descriptive_audio": ""
+                },
+                {
+                    "title": "CONTACT & HOURS",
+                    "description": "Phone: 330-258-9006  \n \nOnline Message: https://www.petermaurincenter.com/contact   \n \nWebsite: https://www.petermaurincenter.com/   \n \nAddress: 1096 Old S. Main St., Akron, OH 44301  \n \nContact Hours: 24/7 \n \nDrop-In center (with Lunch): Tues, Fri, and Sun 11:00A-2:00P \n \nFood Pantry Hours: Second and fourth Sat of every month, 10:00A-12:00P",
+                    "background_image": "AHHgenericbg.jpg",
+                    "descriptive_audio": ""
+                }
+            ],
+            "media_pages": []
         },
         {
-          "title": "CONTACT & HOURS",
-          "description": "Phone: 330-258-9006  \n \nOnline Message: https://www.petermaurincenter.com/contact   \n \nWebsite: https://www.petermaurincenter.com/   \n \nAddress: 1096 Old S. Main St., Akron, OH 44301  \n \nContact Hours: 24/7 \n \nDrop-In center (with Lunch): Tues, Fri, and Sun 11:00A-2:00P \n \nFood Pantry Hours: Second and fourth Sat of every month, 10:00A-12:00P",
-          "background_image": "AHHgenericbg.jpg",
-          "descriptive_audio": ""
-        }
-      ],
-      "media_pages": []
-    },
-    {
-      "name": "Church of Our Savior Episcopal",
-      "position": "4",
-      "latitude": "41.0902617",
-      "longitude": "-81.5335779",
-      "overlay": "",
-      "virtual_object": "",
-      "isSubHotspot": false,
-      "panorama_image": "360churchsavior-l.jpg",
-      "overlay_size": 5,
-      "overlay_offset_x": 0,
-      "overlay_offset_y": 0,
-      "start_audio": "",
-      "main_pages": [
-        {
-          "title": "SERVICES",
-          "description": "Church of Our Savior Episcopal offers both a food pantry and two monthly community dinners.  \n \nFirst, The Friendly Pantry is an outreach ministry that distributes non-perishable groceries for free to those in need. Learn more at https://episcopalakron.org/community/. \n \nSecond, Dinner On Us offers a hot meal to be shared with neighbors on the last two Wednesdays of each month. No reservations are needed and children are welcome.",
-          "background_image": "AHHgenericbg.jpg",
-          "descriptive_audio": ""
+            "name": "Church of Our Savior Episcopal",
+            "position": "4",
+            "latitude": "41.0902617",
+            "longitude": "-81.5335779",
+            "overlay": "",
+            "virtual_object": "",
+            "isSubHotspot": false,
+            "panorama_image": "360churchsavior-l.jpg",
+            "overlay_size": 5,
+            "overlay_offset_x": 0,
+            "overlay_offset_y": 0,
+            "start_audio": "",
+            "main_pages": [
+                {
+                    "title": "SERVICES",
+                    "description": "Church of Our Savior Episcopal offers both a food pantry and two monthly community dinners.  \n \nFirst, The Friendly Pantry is an outreach ministry that distributes non-perishable groceries for free to those in need. Learn more at https://episcopalakron.org/community/. \n \nSecond, Dinner On Us offers a hot meal to be shared with neighbors on the last two Wednesdays of each month. No reservations are needed and children are welcome.",
+                    "background_image": "AHHgenericbg.jpg",
+                    "descriptive_audio": ""
+                },
+                {
+                    "title": "CONTACT & HOURS",
+                    "description": "Phone: 330-535-9174 \n \nWebsite: https://episcopalakron.org/  \n \nAddress: 471 Crosby St., Akron, OH 44302 \n \nDinner on Us Hours: Last two Weds of each month; doors open at 5:45P and dinner begins at 6:15P \n \nThe Friendly Pantry Hours: Last Mon of each month, 8:00A; ask during a Dinner on Us or ask a priest/usher on a Sun morning",
+                    "background_image": "AHHgenericbg.jpg",
+                    "descriptive_audio": ""
+                }
+            ],
+            "media_pages": []
         },
         {
-          "title": "CONTACT & HOURS",
-          "description": "Phone: 330-535-9174 \n \nWebsite: https://episcopalakron.org/  \n \nAddress: 471 Crosby St., Akron, OH 44302 \n \nDinner on Us Hours: Last two Weds of each month; doors open at 5:45P and dinner begins at 6:15P \n \nThe Friendly Pantry Hours: Last Mon of each month, 8:00A; ask during a Dinner on Us or ask a priest/usher on a Sun morning",
-          "background_image": "AHHgenericbg.jpg",
-          "descriptive_audio": ""
-        }
-      ],
-      "media_pages": []
-    },
-    {
-      "name": "Good Shepherd Baptist Church",
-      "position": "5",
-      "latitude": "41.0817943",
-      "longitude": "-81.5696132",
-      "overlay": "",
-      "virtual_object": "",
-      "isSubHotspot": false,
-      "panorama_image": "360goodshepherdchurch-l.jpg",
-      "overlay_size": 5,
-      "overlay_offset_x": 0,
-      "overlay_offset_y": 0,
-      "start_audio": "",
-      "main_pages": [
-        {
-          "title": "SERVICES",
-          "description": "The Good Shepherd’s Baptist Church’s Shepherd’s Table provides a food pantry for those in need. You must bring a photo ID to receive food.",
-          "background_image": "AHHgenericbg.jpg",
-          "descriptive_audio": ""
+            "name": "Good Shepherd Baptist Church",
+            "position": "5",
+            "latitude": "41.0817943",
+            "longitude": "-81.5696132",
+            "overlay": "",
+            "virtual_object": "",
+            "isSubHotspot": false,
+            "panorama_image": "360goodshepherdchurch-l.jpg",
+            "overlay_size": 5,
+            "overlay_offset_x": 0,
+            "overlay_offset_y": 0,
+            "start_audio": "",
+            "main_pages": [
+                {
+                    "title": "SERVICES",
+                    "description": "The Good Shepherd\u2019s Baptist Church\u2019s Shepherd\u2019s Table provides a food pantry for those in need. You must bring a photo ID to receive food.",
+                    "background_image": "AHHgenericbg.jpg",
+                    "descriptive_audio": ""
+                },
+                {
+                    "title": "CONTACT & HOURS",
+                    "description": "Website: https://www.facebook.com/GoodShepherdBaptistChurch1010 \n \nAddress: 1010 S. Hawkins Ave., Akron, OH 44320 \n \nFood Pantry Hours: Second and fourth Tues of every month, 12:00P-2:00P",
+                    "background_image": "AHHgenericbg.jpg",
+                    "descriptive_audio": ""
+                }
+            ],
+            "media_pages": []
         },
         {
-          "title": "CONTACT & HOURS",
-          "description": "Website: https://www.facebook.com/GoodShepherdBaptistChurch1010 \n \nAddress: 1010 S. Hawkins Ave., Akron, OH 44320 \n \nFood Pantry Hours: Second and fourth Tues of every month, 12:00P-2:00P",
-          "background_image": "AHHgenericbg.jpg",
-          "descriptive_audio": ""
-        }
-      ],
-      "media_pages": []
-    },
-    {
-      "name": "Community AIDS Network & Pride Institute (CANAPI)",
-      "position": "6",
-      "latitude": "41.0960843",
-      "longitude": "-81.5416014",
-      "overlay": "",
-      "virtual_object": "",
-      "isSubHotspot": false,
-      "panorama_image": "360canapi-l.jpg",
-      "overlay_size": 5,
-      "overlay_offset_x": 0,
-      "overlay_offset_y": 0,
-      "start_audio": "",
-      "main_pages": [
-        {
-          "title": "SERVICES",
-          "description": "The Community AIDS Network & Pride Institute (CANAPI) provides a food pantry for individuals who have HIV, receive less than 80% of the median income in the past two months, and live in either Summit or Portage Country. You MUST bring a photo ID to receive food. \n \nFor your first visit, bring a verification of your HIV+ status, verification of income (e.g., benefit letter, two months of most recent pay stubs for all in your household), and a photo ID. Alternatively, have a participating agency (Equitas Health or the C.A.R.E. Center) fax or email your CANAPI Nutritional Program Referral form with attached verification of HIV+ status and income verification and bring a photo ID. \n \nCANAPI also offers services in the Shelter, Housing, & Utilities and Medical Care categories.",
-          "background_image": "AHHgenericbg.jpg",
-          "descriptive_audio": ""
+            "name": "Community AIDS Network & Pride Institute (CANAPI)",
+            "position": "6",
+            "latitude": "41.0960843",
+            "longitude": "-81.5416014",
+            "overlay": "",
+            "virtual_object": "",
+            "isSubHotspot": false,
+            "panorama_image": "360canapi-l.jpg",
+            "overlay_size": 5,
+            "overlay_offset_x": 0,
+            "overlay_offset_y": 0,
+            "start_audio": "",
+            "main_pages": [
+                {
+                    "title": "SERVICES",
+                    "description": "The Community AIDS Network & Pride Institute (CANAPI) provides a food pantry for individuals who have HIV, receive less than 80% of the median income in the past two months, and live in either Summit or Portage Country. You MUST bring a photo ID to receive food. \n \nFor your first visit, bring a verification of your HIV+ status, verification of income (e.g., benefit letter, two months of most recent pay stubs for all in your household), and a photo ID. Alternatively, have a participating agency (Equitas Health or the C.A.R.E. Center) fax or email your CANAPI Nutritional Program Referral form with attached verification of HIV+ status and income verification and bring a photo ID. \n \nCANAPI also offers services in the Shelter, Housing, & Utilities and Medical Care categories.",
+                    "background_image": "AHHgenericbg.jpg",
+                    "descriptive_audio": ""
+                },
+                {
+                    "title": "CONTACT & HOURS",
+                    "description": "Phone: 330-252-1559 \n \nEmail: info@canapi.org \n \nWebsite: https://www.canapi.org/   |||   https://www.canapi.org/food-pantry  \n \nAddress: 759 W. Market St., 1st Floor, Akron, OH 44303 \n \nBusiness Hours: Mon-Fri 9:00A-5:00P \n \nFood Pantry Hours: 10:00A-12:30P on select bimonthly Thurs; see https://www.canapi.org/food-pantry for dates",
+                    "background_image": "AHHgenericbg.jpg",
+                    "descriptive_audio": ""
+                }
+            ],
+            "media_pages": []
         },
         {
-          "title": "CONTACT & HOURS",
-          "description": "Phone: 330-252-1559 \n \nEmail: info@canapi.org \n \nWebsite: https://www.canapi.org/   |||   https://www.canapi.org/food-pantry  \n \nAddress: 759 W. Market St., 1st Floor, Akron, OH 44303 \n \nBusiness Hours: Mon-Fri 9:00A-5:00P \n \nFood Pantry Hours: 10:00A-12:30P on select bimonthly Thurs; see https://www.canapi.org/food-pantry for dates",
-          "background_image": "AHHgenericbg.jpg",
-          "descriptive_audio": ""
-        }
-      ],
-      "media_pages": []
-    },
-    {
-      "name": "Street Outreach Services (SOS) – ShelterCare",
-      "position": "7",
-      "latitude": "41.1040479",
-      "longitude": "-81.516234",
-      "overlay": "",
-      "virtual_object": "",
-      "isSubHotspot": false,
-      "panorama_image": "360sossheltercare-l.jpg",
-      "overlay_size": 5,
-      "overlay_offset_x": 0,
-      "overlay_offset_y": 0,
-      "start_audio": "",
-      "main_pages": [
-        {
-          "title": "SERVICES",
-          "description": "Street Outreach Services (SOS) offers street-based and drop-in services to individuals ages 16-24 experiencing homelessness in Summit County. Their SOS drop-in center provides access to grocery items, clothing, personal care and hygiene items, and household items, bus passes, in addition to a variety of other services. Their drop-in center can provide hot meals as a part of their comprehensive support services. \n \nSOS also provides services in the Mental Health, Addiction, & Family Services; Shelter, Housing, & Utilities; Work, Financial, & Legal Support; and Transportation categories.",
-          "background_image": "AHHgenericbg.jpg",
-          "descriptive_audio": ""
+            "name": "Street Outreach Services (SOS) \u2013 ShelterCare",
+            "position": "7",
+            "latitude": "41.1040479",
+            "longitude": "-81.516234",
+            "overlay": "",
+            "virtual_object": "",
+            "isSubHotspot": false,
+            "panorama_image": "360sossheltercare-l.jpg",
+            "overlay_size": 5,
+            "overlay_offset_x": 0,
+            "overlay_offset_y": 0,
+            "start_audio": "",
+            "main_pages": [
+                {
+                    "title": "SERVICES",
+                    "description": "Street Outreach Services (SOS) offers street-based and drop-in services to individuals ages 16-24 experiencing homelessness in Summit County. Their SOS drop-in center provides access to grocery items, clothing, personal care and hygiene items, and household items, bus passes, in addition to a variety of other services. Their drop-in center can provide hot meals as a part of their comprehensive support services. \n \nSOS also provides services in the Mental Health, Addiction, & Family Services; Shelter, Housing, & Utilities; Work, Financial, & Legal Support; and Transportation categories.",
+                    "background_image": "AHHgenericbg.jpg",
+                    "descriptive_audio": ""
+                },
+                {
+                    "title": "CONTACT & HOURS",
+                    "description": "Phone: 234-571-2807 \n \nWebsite: https://sc72.org/  \n \nAddress: 39 W. Cuyahoga Falls Ave., Akron, OH 44310 \n \nBusiness Hours: Mon, Sat 12:00P-4:00P   |||   Tues 12:00P-8:00P   |||   Weds, Thurs 1:00P-8:00P   |||   Fri by appointment only 9:00A-4:00P",
+                    "background_image": "AHHgenericbg.jpg",
+                    "descriptive_audio": ""
+                }
+            ],
+            "media_pages": []
         },
         {
-          "title": "CONTACT & HOURS",
-          "description": "Phone: 234-571-2807 \n \nWebsite: https://sc72.org/  \n \nAddress: 39 W. Cuyahoga Falls Ave., Akron, OH 44310 \n \nBusiness Hours: Mon, Sat 12:00P-4:00P   |||   Tues 12:00P-8:00P   |||   Weds, Thurs 1:00P-8:00P   |||   Fri by appointment only 9:00A-4:00P",
-          "background_image": "AHHgenericbg.jpg",
-          "descriptive_audio": ""
-        }
-      ],
-      "media_pages": []
-    },
-    {
-      "name": "St. Bernard Parish",
-      "position": "8",
-      "latitude": "41.0783021",
-      "longitude": "-81.5185747",
-      "overlay": "",
-      "virtual_object": "",
-      "isSubHotspot": false,
-      "panorama_image": "360stbernardparish-l.jpg",
-      "overlay_size": 5,
-      "overlay_offset_x": 0,
-      "overlay_offset_y": 0,
-      "start_audio": "",
-      "main_pages": [
-        {
-          "title": "SERVICES",
-          "description": "St. Bernard Parish provides a food pantry and two individual meal programs. \n \nThe St. Bernard Parish Food Pantry supplies over 300 households each month a three-day supply of non-perishable groceries and available household supplies. \n \nSt. Bernard Parish offers two individual meal programs. First, their Hot Meals Program serves more than 1,000 meals each month in the Social Hall of Sr. Bernard’s church. Second, their Bag Lunch Program provides over 2,000 sack lunches and coffee per month to those going to work or those out-of-work.",
-          "background_image": "AHHgenericbg.jpg",
-          "descriptive_audio": ""
+            "name": "St. Bernard Parish",
+            "position": "8",
+            "latitude": "41.0783021",
+            "longitude": "-81.5185747",
+            "overlay": "",
+            "virtual_object": "",
+            "isSubHotspot": false,
+            "panorama_image": "360stbernardparish-l.jpg",
+            "overlay_size": 5,
+            "overlay_offset_x": 0,
+            "overlay_offset_y": 0,
+            "start_audio": "",
+            "main_pages": [
+                {
+                    "title": "SERVICES",
+                    "description": "St. Bernard Parish provides a food pantry and two individual meal programs. \n \nThe St. Bernard Parish Food Pantry supplies over 300 households each month a three-day supply of non-perishable groceries and available household supplies. \n \nSt. Bernard Parish offers two individual meal programs. First, their Hot Meals Program serves more than 1,000 meals each month in the Social Hall of Sr. Bernard\u2019s church. Second, their Bag Lunch Program provides over 2,000 sack lunches and coffee per month to those going to work or those out-of-work.",
+                    "background_image": "AHHgenericbg.jpg",
+                    "descriptive_audio": ""
+                },
+                {
+                    "title": "CONTACT & HOURS",
+                    "description": "Phone: 330-253-5161 \n \nWebsite: https://stbernardakron.org/hunger-programs  \n \nAddress: 44 University Ave., Akorn, OH 44308 \n \nFood Pantry Hours: Thurs 9:00A-10:30A \n \nHot Meal Hours: Second, fourth, and fifth Weds and Sun of each month at 5:00P in the Social Hall of the Sr. Bernard church \n \nBag Lunch Hours: Mon-Fri 8:00A-9:00A in the Corbett Center (AKA the Bologna House) adjacent to the church",
+                    "background_image": "AHHgenericbg.jpg",
+                    "descriptive_audio": ""
+                }
+            ],
+            "media_pages": []
         },
         {
-          "title": "CONTACT & HOURS",
-          "description": "Phone: 330-253-5161 \n \nWebsite: https://stbernardakron.org/hunger-programs  \n \nAddress: 44 University Ave., Akorn, OH 44308 \n \nFood Pantry Hours: Thurs 9:00A-10:30A \n \nHot Meal Hours: Second, fourth, and fifth Weds and Sun of each month at 5:00P in the Social Hall of the Sr. Bernard church \n \nBag Lunch Hours: Mon-Fri 8:00A-9:00A in the Corbett Center (AKA the Bologna House) adjacent to the church",
-          "background_image": "AHHgenericbg.jpg",
-          "descriptive_audio": ""
-        }
-      ],
-      "media_pages": []
-    },
-    {
-      "name": "Annunciation Greek Orthodox Church",
-      "position": "9",
-      "latitude": "41.07863",
-      "longitude": "-81.5089147",
-      "overlay": "",
-      "virtual_object": "",
-      "isSubHotspot": false,
-      "panorama_image": "360annunciationgochurch-l.jpg",
-      "overlay_size": 5,
-      "overlay_offset_x": 0,
-      "overlay_offset_y": 0,
-      "start_audio": "",
-      "main_pages": [
-        {
-          "title": "SERVICES",
-          "description": "The Annunciation Greek Orthodox Church’s Good Samaritans Outreach Program offers groceries three times a month. On the third Thurs and fourth Tues of every month, a hot meal and a clothing pantry are also available during the food pantry hours.",
-          "background_image": "AHHgenericbg.jpg",
-          "descriptive_audio": ""
+            "name": "Annunciation Greek Orthodox Church",
+            "position": "9",
+            "latitude": "41.07863",
+            "longitude": "-81.5089147",
+            "overlay": "",
+            "virtual_object": "",
+            "isSubHotspot": false,
+            "panorama_image": "360annunciationgochurch-l.jpg",
+            "overlay_size": 5,
+            "overlay_offset_x": 0,
+            "overlay_offset_y": 0,
+            "start_audio": "",
+            "main_pages": [
+                {
+                    "title": "SERVICES",
+                    "description": "The Annunciation Greek Orthodox Church\u2019s Good Samaritans Outreach Program offers groceries three times a month. On the third Thurs and fourth Tues of every month, a hot meal and a clothing pantry are also available during the food pantry hours.",
+                    "background_image": "AHHgenericbg.jpg",
+                    "descriptive_audio": ""
+                },
+                {
+                    "title": "CONTACT & HOURS",
+                    "description": "Phone: (330) 434-0000 \n \nOffice email: office@annunciationakron.org  \n \nWebsite: https://www.annunciationakron.org/outreach  \n \nAddress: 129 S. Union St., Akron, OH 44304 \n \nOffice Hours: Mon-Fri 8:00A-4:00P \n \nFood Pantry Hours: Second Weds of every month, 8:00A   |||   Third Thurs and Fourth Tues of every month, 5:00P-6:30P \n \nHot Meal Hours: Third Thurs and Fourth Tues of every month, 5:00P-6:30P",
+                    "background_image": "AHHgenericbg.jpg",
+                    "descriptive_audio": ""
+                }
+            ],
+            "media_pages": []
         },
         {
-          "title": "CONTACT & HOURS",
-          "description": "Phone: (330) 434-0000 \n \nOffice email: office@annunciationakron.org  \n \nWebsite: https://www.annunciationakron.org/outreach  \n \nAddress: 129 S. Union St., Akron, OH 44304 \n \nOffice Hours: Mon-Fri 8:00A-4:00P \n \nFood Pantry Hours: Second Weds of every month, 8:00A   |||   Third Thurs and Fourth Tues of every month, 5:00P-6:30P \n \nHot Meal Hours: Third Thurs and Fourth Tues of every month, 5:00P-6:30P",
-          "background_image": "AHHgenericbg.jpg",
-          "descriptive_audio": ""
-        }
-      ],
-      "media_pages": []
-    },
-    {
-      "name": "Sarah’s House",
-      "position": "10",
-      "latitude": "41.0772131",
-      "longitude": "-81.5293354",
-      "overlay": "",
-      "virtual_object": "",
-      "isSubHotspot": false,
-      "panorama_image": "360sarahshouse-l.jpg",
-      "overlay_size": 5,
-      "overlay_offset_x": 0,
-      "overlay_offset_y": 0,
-      "start_audio": "",
-      "main_pages": [
-        {
-          "title": "SERVICES",
-          "description": "Sarah’s House offers a food pantry on the first Sunday and third Saturday of each month. To receive services, you must bring a mask, a photo ID, and bags/boxes. Other essential household items are also available. Quantities of food may be limited. On the third Sat of each month, a hot meal is available to-go during the food pantry.",
-          "background_image": "AHHgenericbg.jpg",
-          "descriptive_audio": ""
+            "name": "Sarah\u2019s House",
+            "position": "10",
+            "latitude": "41.0772131",
+            "longitude": "-81.5293354",
+            "overlay": "",
+            "virtual_object": "",
+            "isSubHotspot": false,
+            "panorama_image": "360sarahshouse-l.jpg",
+            "overlay_size": 5,
+            "overlay_offset_x": 0,
+            "overlay_offset_y": 0,
+            "start_audio": "",
+            "main_pages": [
+                {
+                    "title": "SERVICES",
+                    "description": "Sarah\u2019s House offers a food pantry on the first Sunday and third Saturday of each month. To receive services, you must bring a mask, a photo ID, and bags/boxes. Other essential household items are also available. Quantities of food may be limited. On the third Sat of each month, a hot meal is available to-go during the food pantry.",
+                    "background_image": "AHHgenericbg.jpg",
+                    "descriptive_audio": ""
+                },
+                {
+                    "title": "CONTACT & HOURS",
+                    "description": "Phone: 330-535-7272 \n \nWebsite: https://sarahshouseakron1.org/food-giveaways \n \nAddress: 414 Pine St., Akron, OH 44307 \n \nOffice Hours: Mon-Fri 9:00A-5:00P \n \nFood Pantry Hours: First Sun of each month, 3:00P   |||   Third Sat of each month, 8:00A \n \nTo-Go Hot Meal Hours: Third Sat of each month, 8:00A",
+                    "background_image": "AHHgenericbg.jpg",
+                    "descriptive_audio": ""
+                }
+            ],
+            "media_pages": []
         },
         {
-          "title": "CONTACT & HOURS",
-          "description": "Phone: 330-535-7272 \n \nWebsite: https://sarahshouseakron1.org/food-giveaways \n \nAddress: 414 Pine St., Akron, OH 44307 \n \nOffice Hours: Mon-Fri 9:00A-5:00P \n \nFood Pantry Hours: First Sun of each month, 3:00P   |||   Third Sat of each month, 8:00A \n \nTo-Go Hot Meal Hours: Third Sat of each month, 8:00A",
-          "background_image": "AHHgenericbg.jpg",
-          "descriptive_audio": ""
-        }
-      ],
-      "media_pages": []
-    },
-    {
-      "name": "Gennesaret Family Nutrition Center",
-      "position": "11",
-      "latitude": "41.0839166",
-      "longitude": "-81.5338333",
-      "overlay": "",
-      "virtual_object": "",
-      "isSubHotspot": false,
-      "panorama_image": "360gennesaret-l.jpg",
-      "overlay_size": 5,
-      "overlay_offset_x": 0,
-      "overlay_offset_y": 0,
-      "start_audio": "",
-      "main_pages": [
-        {
-          "title": "SERVICES",
-          "description": "Serves a bi-weekly packed meal for people in need in Summit County.",
-          "background_image": "AHHgenericbg.jpg",
-          "descriptive_audio": ""
+            "name": "Gennesaret Family Nutrition Center",
+            "position": "11",
+            "latitude": "41.0839166",
+            "longitude": "-81.5338333",
+            "overlay": "",
+            "virtual_object": "",
+            "isSubHotspot": false,
+            "panorama_image": "360gennesaret-l.jpg",
+            "overlay_size": 5,
+            "overlay_offset_x": 0,
+            "overlay_offset_y": 0,
+            "start_audio": "",
+            "main_pages": [
+                {
+                    "title": "SERVICES",
+                    "description": "Serves a bi-weekly packed meal for people in need in Summit County.",
+                    "background_image": "AHHgenericbg.jpg",
+                    "descriptive_audio": ""
+                },
+                {
+                    "title": "CONTACT & HOURS",
+                    "description": "Phone: 330-379-1057 \n \nEmail: bobdirgo@hotmail.com  \n \nWebsite: https://gennesaret.bizland.com/  \n \nAddress: 419 W. Exchange St., Akron, OH 44302 \n \nPacked Meal Hours: Tues 10:00A-11:00A, Sat 11:03A-12:30P",
+                    "background_image": "AHHgenericbg.jpg",
+                    "descriptive_audio": ""
+                }
+            ],
+            "media_pages": []
         },
         {
-          "title": "CONTACT & HOURS",
-          "description": "Phone: 330-379-1057 \n \nEmail: bobdirgo@hotmail.com  \n \nWebsite: https://gennesaret.bizland.com/  \n \nAddress: 419 W. Exchange St., Akron, OH 44302 \n \nPacked Meal Hours: Tues 10:00A-11:00A, Sat 11:03A-12:30P",
-          "background_image": "AHHgenericbg.jpg",
-          "descriptive_audio": ""
+            "name": "Bayard Rustin LGBTQ+ Center | Akron AIDS Collaborative",
+            "position": "10",
+            "latitude": "41.0882752",
+            "longitude": "-81.5409204",
+            "overlay": "",
+            "virtual_object": "",
+            "isSubHotspot": false,
+            "panorama_image": "360bayardrustin-l.jpg",
+            "overlay_size": 5,
+            "overlay_offset_x": 0,
+            "overlay_offset_y": 0,
+            "start_audio": "",
+            "pin_color": "e63946",
+            "main_pages": [
+                {
+                    "title": "SERVICES",
+                    "description": "The Bayard Rustin Center, home of the Akron AIDS Collaborative (AAC), strengthens advocacy efforts for individuals living with HIV/AIDS and the broader LGBTQ+ community, including those who have experienced stigma tied to their sexual orientation or gender identity. As Ohio's only LGBTQ+ drop-in facility, they offer a wide range of culturally inclusive supports, including HIV testing, medical and housing referrals, a food pantry and clothing closet, community meals, mail order pharmacy services, a banned book library, and, as partners with TransJoy Akron, transgender support services. The AAC team is unwavering in its commitment to fostering a welcoming space where the LGBTQ+ and HIV/AIDS communities can access the support and resources they need to thrive.",
+                    "background_image": "AHHgenericbg.jpg",
+                    "descriptive_audio": ""
+                },
+                {
+                    "title": "CONTACT & HOURS",
+                    "description": "Phone: 330-983-4044 \n \nBayard Rustin Center Website: https://www.rustincenter.org/  \n \nAkron AIDS Collaborative Website: https://ohioaac.org/ \n \nAddress: 652 W. Exchange St., Akron, OH 44302 \n \nBusiness Hours: Mon-Fri 10:00 AM - 4:00 PM",
+                    "background_image": "AHHgenericbg.jpg",
+                    "descriptive_audio": ""
+                }
+            ],
+            "media_pages": []
         }
-      ],
-      "media_pages": []
-    }
-  ]
+    ]
 }

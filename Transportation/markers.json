@@ -1,153 +1,183 @@
 {
-  "project_name": "Transportation",
-  "intro_audio": "",
-  "homepage_image": "mainmenubackground.jpg",
-  "ga_tracking_id": "UA-162868232-1",
-  "hotspots": [
-    {
-      "name": "Metro RTA",
-      "position": "1",
-      "latitude": "41.0493675",
-      "longitude": "-81.5407619",
-      "overlay": "",
-      "virtual_object": "",
-      "isSubHotspot": false,
-      "panorama_image": "360metrobus-l.jpg",
-      "overlay_size": 5,
-      "overlay_offset_x": 0,
-      "overlay_offset_y": 0,
-      "start_audio": "",
-      "main_pages": [
+    "project_name": "Transportation",
+    "intro_audio": "",
+    "homepage_image": "mainmenubackground.jpg",
+    "ga_tracking_id": "UA-162868232-1",
+    "hotspots": [
         {
-          "title": "SERVICES",
-          "description": "Metro RTA is the public transit agency serving Summit County and the city of Akron. For routes and schedules, trip planning, bus tracking, and more, please visit https://www.yourmetrobus.org/.",
-          "background_image": "AHHgenericbg.jpg",
-          "descriptive_audio": ""
+            "name": "Metro RTA",
+            "position": "1",
+            "latitude": "41.0493675",
+            "longitude": "-81.5407619",
+            "overlay": "",
+            "virtual_object": "",
+            "isSubHotspot": false,
+            "panorama_image": "360metrobus-l.jpg",
+            "overlay_size": 5,
+            "overlay_offset_x": 0,
+            "overlay_offset_y": 0,
+            "start_audio": "",
+            "main_pages": [
+                {
+                    "title": "SERVICES",
+                    "description": "Metro RTA is the public transit agency serving Summit County and the city of Akron. For routes and schedules, trip planning, bus tracking, and more, please visit https://www.yourmetrobus.org/.",
+                    "background_image": "AHHgenericbg.jpg",
+                    "descriptive_audio": ""
+                },
+                {
+                    "title": "CONTACT & HOURS",
+                    "description": "Phone: 330-762-0341 \n \nWebsite: https://www.yourmetrobus.org/ \n \nAddress: 416 Kenmore Blvd., Akron, OH 44301 \n \nBusiness Hours: Mon-Fri 8:00A-4:00P",
+                    "background_image": "AHHgenericbg.jpg",
+                    "descriptive_audio": ""
+                }
+            ],
+            "media_pages": []
         },
         {
-          "title": "CONTACT & HOURS",
-          "description": "Phone: 330-762-0341 \n \nWebsite: https://www.yourmetrobus.org/ \n \nAddress: 416 Kenmore Blvd., Akron, OH 44301 \n \nBusiness Hours: Mon-Fri 8:00A-4:00P",
-          "background_image": "AHHgenericbg.jpg",
-          "descriptive_audio": ""
-        }
-      ],
-      "media_pages": []
-    },
-    {
-      "name": "Metro SCAT",
-      "position": "2",
-      "latitude": "41.0493675",
-      "longitude": "-81.5407619",
-      "overlay": "",
-      "virtual_object": "",
-      "isSubHotspot": false,
-      "panorama_image": "360metrobus-l.jpg",
-      "overlay_size": 5,
-      "overlay_offset_x": 0,
-      "overlay_offset_y": 0,
-      "start_audio": "",
-      "main_pages": [
-        {
-          "title": "SERVICES",
-          "description": "Metro SCAT is a weekday origin-to-destination shared ride service for qualified riders within Summit County. SCAT uses small buses and vans to transport passengers to and from their desired endpoint (work, higher educational institutions, medical appointments), and these trips are scheduled in advance. To be eligible, riders must be 62 years of age or older and/or have a temporary or permanent disability that prevents them from using fixed-route services.  \n \nTo register for SCAT services, please call 330-376-5353. Once registered and approved, please call 330-376-8458 Mon-Fri between 7:00A-5:00P at least one day before the trip to schedule a ride. \n \nFor more information on how to schedule a trip, visit https://www.yourmetrobus.org/metro-scat-trip-scheduling.aspx.",
-          "background_image": "AHHgenericbg.jpg",
-          "descriptive_audio": ""
+            "name": "Metro SCAT",
+            "position": "2",
+            "latitude": "41.0493675",
+            "longitude": "-81.5407619",
+            "overlay": "",
+            "virtual_object": "",
+            "isSubHotspot": false,
+            "panorama_image": "360metrobus-l.jpg",
+            "overlay_size": 5,
+            "overlay_offset_x": 0,
+            "overlay_offset_y": 0,
+            "start_audio": "",
+            "main_pages": [
+                {
+                    "title": "SERVICES",
+                    "description": "Metro SCAT is a weekday origin-to-destination shared ride service for qualified riders within Summit County. SCAT uses small buses and vans to transport passengers to and from their desired endpoint (work, higher educational institutions, medical appointments), and these trips are scheduled in advance. To be eligible, riders must be 62 years of age or older and/or have a temporary or permanent disability that prevents them from using fixed-route services.  \n \nTo register for SCAT services, please call 330-376-5353. Once registered and approved, please call 330-376-8458 Mon-Fri between 7:00A-5:00P at least one day before the trip to schedule a ride. \n \nFor more information on how to schedule a trip, visit https://www.yourmetrobus.org/metro-scat-trip-scheduling.aspx.",
+                    "background_image": "AHHgenericbg.jpg",
+                    "descriptive_audio": ""
+                },
+                {
+                    "title": "CONTACT & HOURS",
+                    "description": "Phone: 330-376-5353   |||   Toll-free 800-227-9905 \n \nScheduling Line: 330-376-8458 \n \nWebsite: https://www.yourmetrobus.org/metro-drives.aspx \n \nAddress: 416 Kenmore Blvd., Akron, OH 44301 \n \nScheduling Line Hours: Mon-Fri 7:00A-5:00P \n \nService Hours: Varies by location; call to confirm",
+                    "background_image": "AHHgenericbg.jpg",
+                    "descriptive_audio": ""
+                }
+            ],
+            "media_pages": []
         },
         {
-          "title": "CONTACT & HOURS",
-          "description": "Phone: 330-376-5353   |||   Toll-free 800-227-9905 \n \nScheduling Line: 330-376-8458 \n \nWebsite: https://www.yourmetrobus.org/metro-drives.aspx \n \nAddress: 416 Kenmore Blvd., Akron, OH 44301 \n \nScheduling Line Hours: Mon-Fri 7:00A-5:00P \n \nService Hours: Varies by location; call to confirm",
-          "background_image": "AHHgenericbg.jpg",
-          "descriptive_audio": ""
-        }
-      ],
-      "media_pages": []
-    },
-    {
-      "name": "Peter Maurin Center of Akron",
-      "position": "3",
-      "latitude": "41.0570699",
-      "longitude": "-81.5293626",
-      "overlay": "",
-      "virtual_object": "",
-      "isSubHotspot": false,
-      "panorama_image": "360petermaurincenter-l.jpg",
-      "overlay_size": 5,
-      "overlay_offset_x": 0,
-      "overlay_offset_y": 0,
-      "start_audio": "",
-      "main_pages": [
-        {
-          "title": "SERVICES",
-          "description": "The Peter Maurin Center of Akron offers both bus passes and a bicycle program. Public bus transportation can be provided for legal and medical appointments, job interviews, and as a warm place during the winter. Their Bike Program provides reconditioned bicycles to individuals who don’t have a means of transportation. \n \nThe Peter Maurin Center also offers services in the Shelter, Housing, & Utilities; Medical Care; and Food Assistance categories.",
-          "background_image": "AHHgenericbg.jpg",
-          "descriptive_audio": ""
+            "name": "Peter Maurin Center of Akron",
+            "position": "3",
+            "latitude": "41.0570699",
+            "longitude": "-81.5293626",
+            "overlay": "",
+            "virtual_object": "",
+            "isSubHotspot": false,
+            "panorama_image": "360petermaurincenter-l.jpg",
+            "overlay_size": 5,
+            "overlay_offset_x": 0,
+            "overlay_offset_y": 0,
+            "start_audio": "",
+            "main_pages": [
+                {
+                    "title": "SERVICES",
+                    "description": "The Peter Maurin Center of Akron offers both bus passes and a bicycle program. Public bus transportation can be provided for legal and medical appointments, job interviews, and as a warm place during the winter. Their Bike Program provides reconditioned bicycles to individuals who don\u2019t have a means of transportation. \n \nThe Peter Maurin Center also offers services in the Shelter, Housing, & Utilities; Medical Care; and Food Assistance categories.",
+                    "background_image": "AHHgenericbg.jpg",
+                    "descriptive_audio": ""
+                },
+                {
+                    "title": "CONTACT & HOURS",
+                    "description": "Phone: 330-258-9006  \n \nOnline Message: https://www.petermaurincenter.com/contact   \n \nWebsite: https://www.petermaurincenter.com/   \n \nAddress: 1096 Old S. Main St., Akron, OH 44301  \n \nContact Hours: 24/7 \n \nDrop-in Center: Tues, Fri, Sun 11:00A-2:00P",
+                    "background_image": "AHHgenericbg.jpg",
+                    "descriptive_audio": ""
+                }
+            ],
+            "media_pages": []
         },
         {
-          "title": "CONTACT & HOURS",
-          "description": "Phone: 330-258-9006  \n \nOnline Message: https://www.petermaurincenter.com/contact   \n \nWebsite: https://www.petermaurincenter.com/   \n \nAddress: 1096 Old S. Main St., Akron, OH 44301  \n \nContact Hours: 24/7 \n \nDrop-in Center: Tues, Fri, Sun 11:00A-2:00P",
-          "background_image": "AHHgenericbg.jpg",
-          "descriptive_audio": ""
-        }
-      ],
-      "media_pages": []
-    },
-    {
-      "name": "Street Outreach Services (S.O.S.) – ShelterCare",
-      "position": "4",
-      "latitude": "41.1040479",
-      "longitude": "-81.516234",
-      "overlay": "",
-      "virtual_object": "",
-      "isSubHotspot": false,
-      "panorama_image": "360sossheltercare-l.jpg",
-      "overlay_size": 5,
-      "overlay_offset_x": 0,
-      "overlay_offset_y": 0,
-      "start_audio": "",
-      "main_pages": [
-        {
-          "title": "SERVICES",
-          "description": "Street Outreach Services (SOS) offers street-based and drop-in services to individuals ages 16-24 experiencing homelessness in Summit County. The SOS drop-in center provides access to bus passes and transportation to essential appointments, in addition to a variety of other services. \n \nSOS also provides services in the Mental Health, Addiction, & Family Services; Shelter, Housing, & Utilities; Work, Financial, & Legal Support; and Food Assistance categories.",
-          "background_image": "AHHgenericbg.jpg",
-          "descriptive_audio": ""
+            "name": "Street Outreach Services (S.O.S.) \u2013 ShelterCare",
+            "position": "4",
+            "latitude": "41.1040479",
+            "longitude": "-81.516234",
+            "overlay": "",
+            "virtual_object": "",
+            "isSubHotspot": false,
+            "panorama_image": "360sossheltercare-l.jpg",
+            "overlay_size": 5,
+            "overlay_offset_x": 0,
+            "overlay_offset_y": 0,
+            "start_audio": "",
+            "main_pages": [
+                {
+                    "title": "SERVICES",
+                    "description": "Street Outreach Services (SOS) offers street-based and drop-in services to individuals ages 16-24 experiencing homelessness in Summit County. The SOS drop-in center provides access to bus passes and transportation to essential appointments, in addition to a variety of other services. \n \nSOS also provides services in the Mental Health, Addiction, & Family Services; Shelter, Housing, & Utilities; Work, Financial, & Legal Support; and Food Assistance categories.",
+                    "background_image": "AHHgenericbg.jpg",
+                    "descriptive_audio": ""
+                },
+                {
+                    "title": "CONTACT & HOURS",
+                    "description": "Phone: 234-571-2807 \n \nWebsite: https://sc72.org/  \n \nAddress: 39 W. Cuyahoga Falls Ave., Akron, OH 44310 \n \nBusiness Hours: Mon, Sat 12:00P-4:00P   |||   Tues 12:00P-8:00P   |||   Weds, Thurs 1:00P-8:00P   |||   Fri by appointment only 9:00A-4:00P",
+                    "background_image": "AHHgenericbg.jpg",
+                    "descriptive_audio": ""
+                }
+            ],
+            "media_pages": []
         },
         {
-          "title": "CONTACT & HOURS",
-          "description": "Phone: 234-571-2807 \n \nWebsite: https://sc72.org/  \n \nAddress: 39 W. Cuyahoga Falls Ave., Akron, OH 44310 \n \nBusiness Hours: Mon, Sat 12:00P-4:00P   |||   Tues 12:00P-8:00P   |||   Weds, Thurs 1:00P-8:00P   |||   Fri by appointment only 9:00A-4:00P",
-          "background_image": "AHHgenericbg.jpg",
-          "descriptive_audio": ""
-        }
-      ],
-      "media_pages": []
-    },
-    {
-      "name": "United Disability Services – Akron",
-      "position": "5",
-      "latitude": "41.0833389",
-      "longitude": "-81.5172646",
-      "overlay": "",
-      "virtual_object": "",
-      "isSubHotspot": false,
-      "panorama_image": "360udservices-l.jpg",
-      "overlay_size": 5,
-      "overlay_offset_x": 0,
-      "overlay_offset_y": 0,
-      "start_audio": "",
-      "main_pages": [
-        {
-          "title": "SERVICES",
-          "description": "United Disability Services (UDS) offers support services for individuals living with physical, cognitive, and/or developmental disabilities, including some transportation assistance. They provide transportation to their adult day programming, Non-Emergency Transportation (NET) for qualified individuals to medical appointments, and special event transportation on a contractual basis. For more information, visit https://www.udsakron.org/programs-services/transportation-services-disabled/. For eligibility requirements, contact Transportation at 330-762-9755. \n \nUDS Akron also provides services in the Shelter, Housing, & Utilities; Work, Financial, & Legal Support; and Disability Resources categories.",
-          "background_image": "AHHgenericbg.jpg",
-          "descriptive_audio": ""
+            "name": "United Disability Services \u2013 Akron",
+            "position": "5",
+            "latitude": "41.0833389",
+            "longitude": "-81.5172646",
+            "overlay": "",
+            "virtual_object": "",
+            "isSubHotspot": false,
+            "panorama_image": "360udservices-l.jpg",
+            "overlay_size": 5,
+            "overlay_offset_x": 0,
+            "overlay_offset_y": 0,
+            "start_audio": "",
+            "main_pages": [
+                {
+                    "title": "SERVICES",
+                    "description": "United Disability Services (UDS) offers support services for individuals living with physical, cognitive, and/or developmental disabilities, including some transportation assistance. They provide transportation to their adult day programming, Non-Emergency Transportation (NET) for qualified individuals to medical appointments, and special event transportation on a contractual basis. For more information, visit https://www.udsakron.org/programs-services/transportation-services-disabled/. For eligibility requirements, contact Transportation at 330-762-9755. \n \nUDS Akron also provides services in the Shelter, Housing, & Utilities; Work, Financial, & Legal Support; and Disability Resources categories.",
+                    "background_image": "AHHgenericbg.jpg",
+                    "descriptive_audio": ""
+                },
+                {
+                    "title": "CONTACT & HOURS",
+                    "description": "Phone: 330-762-9755 \n \nWebsite: https://www.udsakron.org/ \n \nAddress: 701 S. Main St., Akron, OH 44311 \n \nBusiness Hours: Mon-Fri 8:00A-4:30P",
+                    "background_image": "AHHgenericbg.jpg",
+                    "descriptive_audio": ""
+                }
+            ],
+            "media_pages": []
         },
         {
-          "title": "CONTACT & HOURS",
-          "description": "Phone: 330-762-9755 \n \nWebsite: https://www.udsakron.org/ \n \nAddress: 701 S. Main St., Akron, OH 44311 \n \nBusiness Hours: Mon-Fri 8:00A-4:30P",
-          "background_image": "AHHgenericbg.jpg",
-          "descriptive_audio": ""
+            "name": "Bayard Rustin LGBTQ+ Center | Akron AIDS Collaborative",
+            "position": "10",
+            "latitude": "41.0882752",
+            "longitude": "-81.5409204",
+            "overlay": "",
+            "virtual_object": "",
+            "isSubHotspot": false,
+            "panorama_image": "360bayardrustin-l.jpg",
+            "overlay_size": 5,
+            "overlay_offset_x": 0,
+            "overlay_offset_y": 0,
+            "start_audio": "",
+            "pin_color": "e63946",
+            "main_pages": [
+                {
+                    "title": "SERVICES",
+                    "description": "The Bayard Rustin Center, home of the Akron AIDS Collaborative (AAC), strengthens advocacy efforts for individuals living with HIV/AIDS and the broader LGBTQ+ community, including those who have experienced stigma tied to their sexual orientation or gender identity. As Ohio's only LGBTQ+ drop-in facility, they offer a wide range of culturally inclusive supports, including HIV testing, medical and housing referrals, a food pantry and clothing closet, community meals, mail order pharmacy services, a banned book library, and, as partners with TransJoy Akron, transgender support services. The AAC team is unwavering in its commitment to fostering a welcoming space where the LGBTQ+ and HIV/AIDS communities can access the support and resources they need to thrive.",
+                    "background_image": "AHHgenericbg.jpg",
+                    "descriptive_audio": ""
+                },
+                {
+                    "title": "CONTACT & HOURS",
+                    "description": "Phone: 330-983-4044 \n \nBayard Rustin Center Website: https://www.rustincenter.org/  \n \nAkron AIDS Collaborative Website: https://ohioaac.org/ \n \nAddress: 652 W. Exchange St., Akron, OH 44302 \n \nBusiness Hours: Mon-Fri 10:00 AM - 4:00 PM",
+                    "background_image": "AHHgenericbg.jpg",
+                    "descriptive_audio": ""
+                }
+            ],
+            "media_pages": []
         }
-      ],
-      "media_pages": []
-    }
-  ]
+    ]
 }

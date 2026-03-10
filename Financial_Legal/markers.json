@@ -1,356 +1,386 @@
 {
-  "project_name": "Financial and Legal Support",
-  "intro_audio": "",
-  "homepage_image": "mainmenubackground.jpg",
-  "ga_tracking_id": "UA-162868232-1",
-  "hotspots": [
-    {
-      "name": "Akron Urban League",
-      "position": "1",
-      "latitude": "41.0725709",
-      "longitude": "-81.5397443",
-      "overlay": "",
-      "virtual_object": "",
-      "isSubHotspot": false,
-      "panorama_image": "360akronurbanleague-l.jpg",
-      "overlay_size": 5,
-      "overlay_offset_x": 0,
-      "overlay_offset_y": 0,
-      "start_audio": "",
-      "main_pages": [
+    "project_name": "Financial and Legal Support",
+    "intro_audio": "",
+    "homepage_image": "mainmenubackground.jpg",
+    "ga_tracking_id": "UA-162868232-1",
+    "hotspots": [
         {
-          "title": "SERVICES",
-          "description": "Akron Urban League offers a variety of employment services with a focus on job placement for new workers, job retention for those currently employed, and career mobility.  \n \nFirst, the Workforce Development programs assist adults age 18 and older in preparing for, finding, maintaining, and advancing employment opportunities. The Akron Urban League provides career coaching, a career exploration assessment, resume building, interview preparation, developing soft skills, and ancillary services to support job seekers with barriers to employment. They also provide a Neighborhood Ambassador Program of professional development that can pair you with like-minded people in the business world through mentorship. \n \nSecond, the Minority Business Assistance Center (MBAC) connects entrepreneurs and emerging business owners to resources, opportunities, and contract procurement information to help them achieve, scale, and market success. The Akron MBAC offers free assistance to minorities, women, and small disadvantaged businesses in Summit, Stark, Wayne, Richland, Ashland, Carroll, Harrison, Holmes, and Tuscarawas counties. \n \nThird, the Minority Contractor Capital Access Program (MCCAP) is a collaboration between the Western Reserve Community Fund and the Akron Urban League that provides financial and technical assistance to Akron and Summit County-based minority, women, LGBTQ+, Veteran and Disabled-owned businesses in the construction trades. Eligible businesses apply and are evaluated based on need, experience, and growth potential. Once accepted, those businesses are given the opportunity to apply for financial assistance in the form of short-term loans to pay for costs related to specific construction contracts. Participants are also connected to educational resources including training and certification programs that will help their business grow. \n \nFourth, the Career Clothing Closet provides free resources to individuals needing business suits, dresses, shoes, accessories, or other appropriate work attire to wear to interviews or any other professional occasion. \n \nThe Akron Urban League also offers services in the Ex-Offender Services category.",
-          "background_image": "AHHgenericbg.jpg",
-          "descriptive_audio": ""
+            "name": "Akron Urban League",
+            "position": "1",
+            "latitude": "41.0725709",
+            "longitude": "-81.5397443",
+            "overlay": "",
+            "virtual_object": "",
+            "isSubHotspot": false,
+            "panorama_image": "360akronurbanleague-l.jpg",
+            "overlay_size": 5,
+            "overlay_offset_x": 0,
+            "overlay_offset_y": 0,
+            "start_audio": "",
+            "main_pages": [
+                {
+                    "title": "SERVICES",
+                    "description": "Akron Urban League offers a variety of employment services with a focus on job placement for new workers, job retention for those currently employed, and career mobility.  \n \nFirst, the Workforce Development programs assist adults age 18 and older in preparing for, finding, maintaining, and advancing employment opportunities. The Akron Urban League provides career coaching, a career exploration assessment, resume building, interview preparation, developing soft skills, and ancillary services to support job seekers with barriers to employment. They also provide a Neighborhood Ambassador Program of professional development that can pair you with like-minded people in the business world through mentorship. \n \nSecond, the Minority Business Assistance Center (MBAC) connects entrepreneurs and emerging business owners to resources, opportunities, and contract procurement information to help them achieve, scale, and market success. The Akron MBAC offers free assistance to minorities, women, and small disadvantaged businesses in Summit, Stark, Wayne, Richland, Ashland, Carroll, Harrison, Holmes, and Tuscarawas counties. \n \nThird, the Minority Contractor Capital Access Program (MCCAP) is a collaboration between the Western Reserve Community Fund and the Akron Urban League that provides financial and technical assistance to Akron and Summit County-based minority, women, LGBTQ+, Veteran and Disabled-owned businesses in the construction trades. Eligible businesses apply and are evaluated based on need, experience, and growth potential. Once accepted, those businesses are given the opportunity to apply for financial assistance in the form of short-term loans to pay for costs related to specific construction contracts. Participants are also connected to educational resources including training and certification programs that will help their business grow. \n \nFourth, the Career Clothing Closet provides free resources to individuals needing business suits, dresses, shoes, accessories, or other appropriate work attire to wear to interviews or any other professional occasion. \n \nThe Akron Urban League also offers services in the Ex-Offender Services category.",
+                    "background_image": "AHHgenericbg.jpg",
+                    "descriptive_audio": ""
+                },
+                {
+                    "title": "CONTACT & HOURS",
+                    "description": "Phone: 330-434-3101 \n \nWebsite: https://www.akronurbanleague.org/ \n \nAddress: 440 Vernon Odom Blvd., Akron, OH 44307 \n \nBusiness Hours: Mon-Fri 8:00A-4:30P \n \nWalk-in Closet: Tues 9:00A-11:00A   |||   Thurs 2:00P-4:00P",
+                    "background_image": "AHHgenericbg.jpg",
+                    "descriptive_audio": ""
+                }
+            ],
+            "media_pages": []
         },
         {
-          "title": "CONTACT & HOURS",
-          "description": "Phone: 330-434-3101 \n \nWebsite: https://www.akronurbanleague.org/ \n \nAddress: 440 Vernon Odom Blvd., Akron, OH 44307 \n \nBusiness Hours: Mon-Fri 8:00A-4:30P \n \nWalk-in Closet: Tues 9:00A-11:00A   |||   Thurs 2:00P-4:00P",
-          "background_image": "AHHgenericbg.jpg",
-          "descriptive_audio": ""
-        }
-      ],
-      "media_pages": []
-    },
-    {
-      "name": "Ohio Means Jobs – Summit County",
-      "position": "2",
-      "latitude": "41.0998722",
-      "longitude": "-81.4772613",
-      "overlay": "",
-      "virtual_object": "",
-      "isSubHotspot": false,
-      "panorama_image": "360ohiomeansjobssummit-l.jpg",
-      "overlay_size": 5,
-      "overlay_offset_x": 0,
-      "overlay_offset_y": 0,
-      "start_audio": "",
-      "main_pages": [
-        {
-          "title": "SERVICES",
-          "description": "Ohio Means Jobs Summit County provides comprehensive employment and training services as home to several workforce providers under one roof for businesses and job seekers. They also provide vocational assessments, youth and veteran employment programs, and special programs detailed in the Workforce Innovation and Opportunities Act, including skills assessments, on-the-job-training opportunities, and career workshops. \n \nOhio Means Jobs Summit County also provides services in the Ex-Offender Services Category.",
-          "background_image": "AHHgenericbg.jpg",
-          "descriptive_audio": ""
+            "name": "Ohio Means Jobs \u2013 Summit County",
+            "position": "2",
+            "latitude": "41.0998722",
+            "longitude": "-81.4772613",
+            "overlay": "",
+            "virtual_object": "",
+            "isSubHotspot": false,
+            "panorama_image": "360ohiomeansjobssummit-l.jpg",
+            "overlay_size": 5,
+            "overlay_offset_x": 0,
+            "overlay_offset_y": 0,
+            "start_audio": "",
+            "main_pages": [
+                {
+                    "title": "SERVICES",
+                    "description": "Ohio Means Jobs Summit County provides comprehensive employment and training services as home to several workforce providers under one roof for businesses and job seekers. They also provide vocational assessments, youth and veteran employment programs, and special programs detailed in the Workforce Innovation and Opportunities Act, including skills assessments, on-the-job-training opportunities, and career workshops. \n \nOhio Means Jobs Summit County also provides services in the Ex-Offender Services Category.",
+                    "background_image": "AHHgenericbg.jpg",
+                    "descriptive_audio": ""
+                },
+                {
+                    "title": "CONTACT & HOURS",
+                    "description": "Phone: 330-633-1050 \n \nWebsite: https://ohiomeansjobs.ohio.gov/   |||    https://ohiomeansjobs.ohio.gov/job-seekers/find-a-job/local-help/summit-county \n \nAddress: 1040 E. Tallmadge Ave., Akron, OH 44310 \n \nBusiness Hours: Mon-Fri 8:00A-4:00P by appointment only",
+                    "background_image": "AHHgenericbg.jpg",
+                    "descriptive_audio": ""
+                }
+            ],
+            "media_pages": []
         },
         {
-          "title": "CONTACT & HOURS",
-          "description": "Phone: 330-633-1050 \n \nWebsite: https://ohiomeansjobs.ohio.gov/   |||    https://ohiomeansjobs.ohio.gov/job-seekers/find-a-job/local-help/summit-county \n \nAddress: 1040 E. Tallmadge Ave., Akron, OH 44310 \n \nBusiness Hours: Mon-Fri 8:00A-4:00P by appointment only",
-          "background_image": "AHHgenericbg.jpg",
-          "descriptive_audio": ""
-        }
-      ],
-      "media_pages": []
-    },
-    {
-      "name": "Street Outreach Services (SOS) – ShelterCare",
-      "position": "3",
-      "latitude": "41.1040479",
-      "longitude": "-81.516234",
-      "overlay": "",
-      "virtual_object": "",
-      "isSubHotspot": false,
-      "panorama_image": "360sossheltercare-l.jpg",
-      "overlay_size": 5,
-      "overlay_offset_x": 0,
-      "overlay_offset_y": 0,
-      "start_audio": "",
-      "main_pages": [
-        {
-          "title": "SERVICES",
-          "description": "Street Outreach Services (SOS) offers street-based and drop-in services to individuals ages 16-24 experiencing homelessness in Summit County. The SOS drop-in center provides access to employment support and many other services. \n \nSOS also provides services in the Mental Health, Addiction, & Family Services; Shelter, Housing, & Utilities; Transportation; and Food Assistance categories.",
-          "background_image": "AHHgenericbg.jpg",
-          "descriptive_audio": ""
+            "name": "Street Outreach Services (SOS) \u2013\u00a0ShelterCare",
+            "position": "3",
+            "latitude": "41.1040479",
+            "longitude": "-81.516234",
+            "overlay": "",
+            "virtual_object": "",
+            "isSubHotspot": false,
+            "panorama_image": "360sossheltercare-l.jpg",
+            "overlay_size": 5,
+            "overlay_offset_x": 0,
+            "overlay_offset_y": 0,
+            "start_audio": "",
+            "main_pages": [
+                {
+                    "title": "SERVICES",
+                    "description": "Street Outreach Services (SOS) offers street-based and drop-in services to individuals ages 16-24 experiencing homelessness in Summit County. The SOS drop-in center provides access to employment support and many other services. \n \nSOS also provides services in the Mental Health, Addiction, & Family Services; Shelter, Housing, & Utilities; Transportation; and Food Assistance categories.",
+                    "background_image": "AHHgenericbg.jpg",
+                    "descriptive_audio": ""
+                },
+                {
+                    "title": "CONTACT & HOURS",
+                    "description": "Phone: 234-571-2807 \n \nWebsite: https://sc72.org/  \n \nAddress: 39 W. Cuyahoga Falls Ave., Akron, OH 44310 \n \nBusiness Hours: Mon, Sat 12:00P-4:00P   |||   Tues 12:00P-8:00P   |||   Weds, Thurs 1:00P-8:00P   |||   Fri by appointment only 9:00A-4:00P",
+                    "background_image": "AHHgenericbg.jpg",
+                    "descriptive_audio": ""
+                }
+            ],
+            "media_pages": []
         },
         {
-          "title": "CONTACT & HOURS",
-          "description": "Phone: 234-571-2807 \n \nWebsite: https://sc72.org/  \n \nAddress: 39 W. Cuyahoga Falls Ave., Akron, OH 44310 \n \nBusiness Hours: Mon, Sat 12:00P-4:00P   |||   Tues 12:00P-8:00P   |||   Weds, Thurs 1:00P-8:00P   |||   Fri by appointment only 9:00A-4:00P",
-          "background_image": "AHHgenericbg.jpg",
-          "descriptive_audio": ""
-        }
-      ],
-      "media_pages": []
-    },
-    {
-      "name": "University of Akron Clinic for Individual and Family Counseling",
-      "position": "4",
-      "latitude": "41.0803473",
-      "longitude": "-81.5069401",
-      "overlay": "",
-      "virtual_object": "",
-      "isSubHotspot": false,
-      "panorama_image": "360uacounseling-l.jpg",
-      "overlay_size": 5,
-      "overlay_offset_x": 0,
-      "overlay_offset_y": 0,
-      "start_audio": "",
-      "main_pages": [
-        {
-          "title": "SERVICES",
-          "description": "The University of Akron (UA) Clinic for Individual and Family Counseling offers outpatient individual, couples, family, and group counseling services. Their outpatient counseling services include a wide variety of specialties, including career exploration and planning. Utilizing trauma-informed care, their focus is on holistic wellness and personal growth and on promoting a culture of safety, empowerment and healing. \n \nThe UA Clinic for Individual and Family Counseling also offers services in the Mental Health, Addiction, & Family Services category.",
-          "background_image": "AHHgenericbg.jpg",
-          "descriptive_audio": ""
+            "name": "University of Akron Clinic for Individual and Family Counseling",
+            "position": "4",
+            "latitude": "41.0803473",
+            "longitude": "-81.5069401",
+            "overlay": "",
+            "virtual_object": "",
+            "isSubHotspot": false,
+            "panorama_image": "360uacounseling-l.jpg",
+            "overlay_size": 5,
+            "overlay_offset_x": 0,
+            "overlay_offset_y": 0,
+            "start_audio": "",
+            "main_pages": [
+                {
+                    "title": "SERVICES",
+                    "description": "The University of Akron (UA) Clinic for Individual and Family Counseling offers outpatient individual, couples, family, and group counseling services. Their outpatient counseling services include a wide variety of specialties, including career exploration and planning. Utilizing trauma-informed care, their focus is on holistic wellness and personal growth and on promoting a culture of safety, empowerment and healing. \n \nThe UA Clinic for Individual and Family Counseling also offers services in the Mental Health, Addiction, & Family Services category.",
+                    "background_image": "AHHgenericbg.jpg",
+                    "descriptive_audio": ""
+                },
+                {
+                    "title": "CONTACT & HOURS",
+                    "description": "Phone: 330-972-6822 \n \nWebsite: http://www.uakron.edu/cifc \n \nIntake Webform: https://akron.qualtrics.com/jfe/form/SV_9uCkrOaZFmV4mtn \n \nAddress: 27 S. Forge St., 2nd Floor, Akron, OH 44325 \n \nBusiness Hours: Mon-Thurs 10:00A-9:00P by appointment only",
+                    "background_image": "AHHgenericbg.jpg",
+                    "descriptive_audio": ""
+                }
+            ],
+            "media_pages": []
         },
         {
-          "title": "CONTACT & HOURS",
-          "description": "Phone: 330-972-6822 \n \nWebsite: http://www.uakron.edu/cifc \n \nIntake Webform: https://akron.qualtrics.com/jfe/form/SV_9uCkrOaZFmV4mtn \n \nAddress: 27 S. Forge St., 2nd Floor, Akron, OH 44325 \n \nBusiness Hours: Mon-Thurs 10:00A-9:00P by appointment only",
-          "background_image": "AHHgenericbg.jpg",
-          "descriptive_audio": ""
-        }
-      ],
-      "media_pages": []
-    },
-    {
-      "name": "United Disability Services – Akron",
-      "position": "5",
-      "latitude": "41.0833389",
-      "longitude": "-81.5172646",
-      "overlay": "",
-      "virtual_object": "",
-      "isSubHotspot": false,
-      "panorama_image": "360udservices-l.jpg",
-      "overlay_size": 5,
-      "overlay_offset_x": 0,
-      "overlay_offset_y": 0,
-      "start_audio": "",
-      "main_pages": [
-        {
-          "title": "SERVICES",
-          "description": "United Disability Services (UDS) offers support services for individuals living with physical, cognitive, and/or developmental disabilities, including multiple employment services. \n \nFirst, Community Employment Services are provided to individuals referred by Opportunities for Ohioan with Disabilities (OOD) or their County Board of Developmental Disabilities. Contact your local authority for assistance. \n \nSecond, UDS Akron offers Pre-Employment Transition Services to help students with disabilities as early as age 14. The brief, introductory topics, up to 8 hours each, include Job Exploration Counseling; Work-Based Learning; Counseling on Post-Secondary Opportunities; Workplace Readiness Training; and Instruction in Self-Advocacy. If the student has an open OOD case, he/she should discuss with their OOD counselor a referral for these services. If the student does not have an open OOD case, staff from the student’s school can request services from UDS by submitting a Request for Pre-ETS Form (https://www.udsakron.org/wp-content/uploads/School-Request-for-Services-Form.docx). \n \nThird, the Summer Youth Career Exploration is a three-week service for students ages 14 and over. Students visit a different employer each day, accompanied by a job coach. Each employer designs an interactive program allowing students to tour the company, meet and talk with employees about their jobs, and even try out job tasks. \n \nFouth, the Summer Youth Work Experience is a five-week service for students ages 14 and over. Students are placed at an employer site in the community with a job coach. Students learn vocational skills and have appropriate work behaviors reinforced while gaining paid work experience. \n \nUDS Akron also provides services in the Shelter, Housing, & Utilities; Disability Resources; and Transportation categories.",
-          "background_image": "AHHgenericbg.jpg",
-          "descriptive_audio": ""
+            "name": "United Disability Services \u2013\u00a0Akron",
+            "position": "5",
+            "latitude": "41.0833389",
+            "longitude": "-81.5172646",
+            "overlay": "",
+            "virtual_object": "",
+            "isSubHotspot": false,
+            "panorama_image": "360udservices-l.jpg",
+            "overlay_size": 5,
+            "overlay_offset_x": 0,
+            "overlay_offset_y": 0,
+            "start_audio": "",
+            "main_pages": [
+                {
+                    "title": "SERVICES",
+                    "description": "United Disability Services (UDS) offers support services for individuals living with physical, cognitive, and/or developmental disabilities, including multiple employment services. \n \nFirst, Community Employment Services are provided to individuals referred by Opportunities for Ohioan with Disabilities (OOD) or their County Board of Developmental Disabilities. Contact your local authority for assistance. \n \nSecond, UDS Akron offers Pre-Employment Transition Services to help students with disabilities as early as age 14. The brief, introductory topics, up to 8 hours each, include Job Exploration Counseling; Work-Based Learning; Counseling on Post-Secondary Opportunities; Workplace Readiness Training; and Instruction in Self-Advocacy. If the student has an open OOD case, he/she should discuss with their OOD counselor a referral for these services. If the student does not have an open OOD case, staff from the student\u2019s school can request services from UDS by submitting a Request for Pre-ETS Form (https://www.udsakron.org/wp-content/uploads/School-Request-for-Services-Form.docx). \n \nThird, the Summer Youth Career Exploration is a three-week service for students ages 14 and over. Students visit a different employer each day, accompanied by a job coach. Each employer designs an interactive program allowing students to tour the company, meet and talk with employees about their jobs, and even try out job tasks. \n \nFouth, the Summer Youth Work Experience is a five-week service for students ages 14 and over. Students are placed at an employer site in the community with a job coach. Students learn vocational skills and have appropriate work behaviors reinforced while gaining paid work experience. \n \nUDS Akron also provides services in the Shelter, Housing, & Utilities; Disability Resources; and Transportation categories.",
+                    "background_image": "AHHgenericbg.jpg",
+                    "descriptive_audio": ""
+                },
+                {
+                    "title": "CONTACT & HOURS",
+                    "description": "Phone: 330-762-9755 \n \nWebsite: https://www.udsakron.org/ \n \nAddress: 701 S. Main St., Akron, OH 44311 \n \nBusiness Hours: Mon-Fri 8:00A-4:30P",
+                    "background_image": "AHHgenericbg.jpg",
+                    "descriptive_audio": ""
+                }
+            ],
+            "media_pages": []
         },
         {
-          "title": "CONTACT & HOURS",
-          "description": "Phone: 330-762-9755 \n \nWebsite: https://www.udsakron.org/ \n \nAddress: 701 S. Main St., Akron, OH 44311 \n \nBusiness Hours: Mon-Fri 8:00A-4:30P",
-          "background_image": "AHHgenericbg.jpg",
-          "descriptive_audio": ""
-        }
-      ],
-      "media_pages": []
-    },
-    {
-      "name": "Open M Neighborhood Center",
-      "position": "6",
-      "latitude": "41.0612277",
-      "longitude": "-81.533817",
-      "overlay": "",
-      "virtual_object": "",
-      "isSubHotspot": false,
-      "panorama_image": "360openm-l.jpg",
-      "overlay_size": 5,
-      "overlay_offset_x": 0,
-      "overlay_offset_y": 0,
-      "start_audio": "",
-      "main_pages": [
-        {
-          "title": "SERVICES",
-          "description": "The Open M Neighborhood Center offers multiples forms of employment support. \n \nFirst, Job Readiness Workshops are offered to job seekers who need additional support. This program focuses on barrier identification and resolution, soft skills training, job readiness, and job retention. Complete with mock interviews and resume support, this program is intended to help participants prepare for interviews, land a job, and keep it. \n \nSecond, Open M’s Employment Services team provide one on one support, from the first day you arrive until securing employment and beyond. Employment Specialists provide assessments and instruction on a variety of topics including communication skills, conflict resolution, and professional development. There is also access to tablets and free Wi-Fi to search and apply for jobs. Once hired, the relationship continues for future career development and mentoring. \n \nThird, Open M can connect you with their Employer Partners to identify local career opportunities from over fifty locations. \n \nFourth, Peer Mentoring Groups convene bi-monthly to support ongoing personal and professional development, including financial empowerment, following employment. These sessions help participants set and organize both long-term and short-term goals. Meetings are conducted virtually or in person at varied times to accommodate diverse work schedules. \n \nOpen M also offers services in the Medical Care and Food Assistance categories.",
-          "background_image": "AHHgenericbg.jpg",
-          "descriptive_audio": ""
+            "name": "Open M Neighborhood Center",
+            "position": "6",
+            "latitude": "41.0612277",
+            "longitude": "-81.533817",
+            "overlay": "",
+            "virtual_object": "",
+            "isSubHotspot": false,
+            "panorama_image": "360openm-l.jpg",
+            "overlay_size": 5,
+            "overlay_offset_x": 0,
+            "overlay_offset_y": 0,
+            "start_audio": "",
+            "main_pages": [
+                {
+                    "title": "SERVICES",
+                    "description": "The Open M Neighborhood Center offers multiples forms of employment support. \n \nFirst, Job Readiness Workshops are offered to job seekers who need additional support. This program focuses on barrier identification and resolution, soft skills training, job readiness, and job retention. Complete with mock interviews and resume support, this program is intended to help participants prepare for interviews, land a job, and keep it. \n \nSecond, Open M\u2019s Employment Services team provide one on one support, from the first day you arrive until securing employment and beyond. Employment Specialists provide assessments and instruction on a variety of topics including communication skills, conflict resolution, and professional development. There is also access to tablets and free Wi-Fi to search and apply for jobs. Once hired, the relationship continues for future career development and mentoring. \n \nThird, Open M can connect you with their Employer Partners to identify local career opportunities from over fifty locations. \n \nFourth, Peer Mentoring Groups convene bi-monthly to support ongoing personal and professional development, including financial empowerment, following employment. These sessions help participants set and organize both long-term and short-term goals. Meetings are conducted virtually or in person at varied times to accommodate diverse work schedules. \n \nOpen M also offers services in the Medical Care and Food Assistance categories.",
+                    "background_image": "AHHgenericbg.jpg",
+                    "descriptive_audio": ""
+                },
+                {
+                    "title": "CONTACT & HOURS",
+                    "description": "Phone: 330-434-0110, ext. 423 \n \nWebsite: https://www.openm.org/   |||   https://www.openm.org/employment \n \nAddress: 941 Princeton St., Akron, OH 443311 \n \nContact Hours: Mon-Fri 8:00A-4:30P",
+                    "background_image": "AHHgenericbg.jpg",
+                    "descriptive_audio": ""
+                }
+            ],
+            "media_pages": []
         },
         {
-          "title": "CONTACT & HOURS",
-          "description": "Phone: 330-434-0110, ext. 423 \n \nWebsite: https://www.openm.org/   |||   https://www.openm.org/employment \n \nAddress: 941 Princeton St., Akron, OH 443311 \n \nContact Hours: Mon-Fri 8:00A-4:30P",
-          "background_image": "AHHgenericbg.jpg",
-          "descriptive_audio": ""
-        }
-      ],
-      "media_pages": []
-    },
-    {
-      "name": "Akron Financial Empowerment Center",
-      "position": "7",
-      "latitude": "41.0419783",
-      "longitude": "-81.5614092",
-      "overlay": "",
-      "virtual_object": "",
-      "isSubHotspot": false,
-      "panorama_image": "360financialempowermentcenter-l.jpg",
-      "overlay_size": 5,
-      "overlay_offset_x": 0,
-      "overlay_offset_y": 0,
-      "start_audio": "",
-      "main_pages": [
-        {
-          "title": "SERVICES",
-          "description": "The Financial Empowerment Center, part of United Way of Summit County, provides a judgment-free environment to receive financial counseling, including banking access, tax preparation (free for households that earn less than $67,000 per year!), and more. Counselors work with clients to help them navigate financial challenges, create budgets, improve credit scores, or reduce debt.  \n \nFree one-on-one financial counseling appointments are available in-person or virtually by phone or video.",
-          "background_image": "AHHgenericbg.jpg",
-          "descriptive_audio": ""
+            "name": "Akron Financial Empowerment Center",
+            "position": "7",
+            "latitude": "41.0419783",
+            "longitude": "-81.5614092",
+            "overlay": "",
+            "virtual_object": "",
+            "isSubHotspot": false,
+            "panorama_image": "360financialempowermentcenter-l.jpg",
+            "overlay_size": 5,
+            "overlay_offset_x": 0,
+            "overlay_offset_y": 0,
+            "start_audio": "",
+            "main_pages": [
+                {
+                    "title": "SERVICES",
+                    "description": "The Financial Empowerment Center, part of United Way of Summit County, provides a judgment-free environment to receive financial counseling, including banking access, tax preparation (free for households that earn less than $67,000 per year!), and more. Counselors work with clients to help them navigate financial challenges, create budgets, improve credit scores, or reduce debt.  \n \nFree one-on-one financial counseling appointments are available in-person or virtually by phone or video.",
+                    "background_image": "AHHgenericbg.jpg",
+                    "descriptive_audio": ""
+                },
+                {
+                    "title": "CONTACT & HOURS",
+                    "description": "Phone: 330-685-9430 \n \nWebsite: https://www.uwsummitmedina.org/services/financial-empowerment-center/ \n \nOnline Appointment Scheduling: https://app.acuityscheduling.com/schedule/f54f6fa3/?categories%5B%5D=%20FEC%20Financial%20Counseling \n \nSummit County Address: 37 N. High St., Akron, OH 44308 \n \nBusiness Hours: Mon-Thurs 8:00A-5:00P",
+                    "background_image": "AHHgenericbg.jpg",
+                    "descriptive_audio": ""
+                }
+            ],
+            "media_pages": []
         },
         {
-          "title": "CONTACT & HOURS",
-          "description": "Phone: 330-685-9430 \n \nWebsite: https://www.uwsummitmedina.org/services/financial-empowerment-center/ \n \nOnline Appointment Scheduling: https://app.acuityscheduling.com/schedule/f54f6fa3/?categories%5B%5D=%20FEC%20Financial%20Counseling \n \nSummit County Address: 37 N. High St., Akron, OH 44308 \n \nBusiness Hours: Mon-Thurs 8:00A-5:00P",
-          "background_image": "AHHgenericbg.jpg",
-          "descriptive_audio": ""
-        }
-      ],
-      "media_pages": []
-    },
-    {
-      "name": "Pride Through Empowerment Foundation",
-      "position": "8",
-      "latitude": "41.0767092",
-      "longitude": "-81.5217319",
-      "overlay": "",
-      "virtual_object": "",
-      "isSubHotspot": false,
-      "panorama_image": "360pridethroughempowerment-l.jpg",
-      "overlay_size": 5,
-      "overlay_offset_x": 0,
-      "overlay_offset_y": 0,
-      "start_audio": "",
-      "main_pages": [
-        {
-          "title": "SERVICES",
-          "description": "The Pride Through Empowerment Foundation is committed to providing personalized financial education and guidance tailored to each individual’s unique situation. Their goal is to help clients build financial stability through consumer rights education, asset-building strategies, and tools for recovery after financial setbacks. Their individual financial counseling and coaching programming can also guide individuals through credit improvement, how to set and reach savings goals, and more. \n \nIn addition to individual services, the Pride Through Empowerment Foundation offers fee-based consulting services to aid community groups and organizations in the development and evaluation of financial management programs for their client base. They can also provide workshops and webinars on debt management, consumer rights, foreclosure avoidance, homeownership, investments, asset building, money management skill sets, and building, rebuilding, and improving credit.",
-          "background_image": "AHHgenericbg.jpg",
-          "descriptive_audio": ""
+            "name": "Pride Through Empowerment Foundation",
+            "position": "8",
+            "latitude": "41.0767092",
+            "longitude": "-81.5217319",
+            "overlay": "",
+            "virtual_object": "",
+            "isSubHotspot": false,
+            "panorama_image": "360pridethroughempowerment-l.jpg",
+            "overlay_size": 5,
+            "overlay_offset_x": 0,
+            "overlay_offset_y": 0,
+            "start_audio": "",
+            "main_pages": [
+                {
+                    "title": "SERVICES",
+                    "description": "The Pride Through Empowerment Foundation is committed to providing personalized financial education and guidance tailored to each individual\u2019s unique situation. Their goal is to help clients build financial stability through consumer rights education, asset-building strategies, and tools for recovery after financial setbacks. Their individual financial counseling and coaching programming can also guide individuals through credit improvement, how to set and reach savings goals, and more. \n \nIn addition to individual services, the Pride Through Empowerment Foundation offers fee-based consulting services to aid community groups and organizations in the development and evaluation of financial management programs for their client base. They can also provide workshops and webinars on debt management, consumer rights, foreclosure avoidance, homeownership, investments, asset building, money management skill sets, and building, rebuilding, and improving credit.",
+                    "background_image": "AHHgenericbg.jpg",
+                    "descriptive_audio": ""
+                },
+                {
+                    "title": "CONTACT & HOURS",
+                    "description": "Phone: 330-777-3331 \n \nEmail: Creditbuilder.ptef@yahoo.com \n \nWebsite: http://www.pridethroughempowerment.org/ \n \nWeb Contact: https://pridethroughempowerment.org/contact/  \n \nAddress: 333 S. Main St., Ste. 510, Akron, OH 44308 \n \nBusiness Hours: Mon-Fri 10:00A-6:00P by appointment only",
+                    "background_image": "AHHgenericbg.jpg",
+                    "descriptive_audio": ""
+                }
+            ],
+            "media_pages": []
         },
         {
-          "title": "CONTACT & HOURS",
-          "description": "Phone: 330-777-3331 \n \nEmail: Creditbuilder.ptef@yahoo.com \n \nWebsite: http://www.pridethroughempowerment.org/ \n \nWeb Contact: https://pridethroughempowerment.org/contact/  \n \nAddress: 333 S. Main St., Ste. 510, Akron, OH 44308 \n \nBusiness Hours: Mon-Fri 10:00A-6:00P by appointment only",
-          "background_image": "AHHgenericbg.jpg",
-          "descriptive_audio": ""
-        }
-      ],
-      "media_pages": []
-    },
-    {
-      "name": "Plexus LGBT & Allied Chamber of Commerce",
-      "position": "9",
-      "latitude": "41.4840743",
-      "longitude": "-81.7305356",
-      "overlay": "",
-      "virtual_object": "",
-      "isSubHotspot": false,
-      "panorama_image": "360plexuschamberofcommerce-l.jpg",
-      "overlay_size": 5,
-      "overlay_offset_x": 0,
-      "overlay_offset_y": 0,
-      "start_audio": "",
-      "main_pages": [
-        {
-          "title": "SERVICES",
-          "description": "Plexus is the voice for the LGBTQ and allied business communities in Northeast Ohio. They aim to provide advocacy, connections, and education to support individuals’ business and professional growth, advance corporate diversity and inclusion, and promote LGBTQ equality in the region.  \n \nPlexus LGBT & Allied Chamber of Commerce provides certifications for LGBT owned business, connection with other members of Plexus, customized equity and inclusion education and training, and access to the RE/source Real Estate Network, which provides resources for real estate professionals that increase awareness of programs serving both LGBTQ clientele and other underserved populations that are impacted by continued discrimination.",
-          "background_image": "AHHgenericbg.jpg",
-          "descriptive_audio": ""
+            "name": "Plexus LGBT & Allied Chamber of Commerce",
+            "position": "9",
+            "latitude": "41.4840743",
+            "longitude": "-81.7305356",
+            "overlay": "",
+            "virtual_object": "",
+            "isSubHotspot": false,
+            "panorama_image": "360plexuschamberofcommerce-l.jpg",
+            "overlay_size": 5,
+            "overlay_offset_x": 0,
+            "overlay_offset_y": 0,
+            "start_audio": "",
+            "main_pages": [
+                {
+                    "title": "SERVICES",
+                    "description": "Plexus is the voice for the LGBTQ and allied business communities in Northeast Ohio. They aim to provide advocacy, connections, and education to support individuals\u2019 business and professional growth, advance corporate diversity and inclusion, and promote LGBTQ equality in the region.  \n \nPlexus LGBT & Allied Chamber of Commerce provides certifications for LGBT owned business, connection with other members of Plexus, customized equity and inclusion education and training, and access to the RE/source Real Estate Network, which provides resources for real estate professionals that increase awareness of programs serving both LGBTQ clientele and other underserved populations that are impacted by continued discrimination.",
+                    "background_image": "AHHgenericbg.jpg",
+                    "descriptive_audio": ""
+                },
+                {
+                    "title": "CONTACT & HOURS",
+                    "description": "Phone: 216-243-7510 \n \nEmail: info@thinkplexus.org \n \nWebsite: https://www.thinkplexus.org/ \n \nWeb Contact: https://business.thinkplexus.org/info/  \n \nAddress: 6516 Detroit Ave., Suite 9, Cleveland, OH 44102 \n \nBusiness Hours: Mon, Tues, Thurs 10:00A-4:00P",
+                    "background_image": "AHHgenericbg.jpg",
+                    "descriptive_audio": ""
+                }
+            ],
+            "media_pages": []
         },
         {
-          "title": "CONTACT & HOURS",
-          "description": "Phone: 216-243-7510 \n \nEmail: info@thinkplexus.org \n \nWebsite: https://www.thinkplexus.org/ \n \nWeb Contact: https://business.thinkplexus.org/info/  \n \nAddress: 6516 Detroit Ave., Suite 9, Cleveland, OH 44102 \n \nBusiness Hours: Mon, Tues, Thurs 10:00A-4:00P",
-          "background_image": "AHHgenericbg.jpg",
-          "descriptive_audio": ""
-        }
-      ],
-      "media_pages": []
-    },
-    {
-      "name": "Community Legal Aid Services, Inc.",
-      "position": "10",
-      "latitude": "41.08386",
-      "longitude": "-81.5180619",
-      "overlay": "",
-      "virtual_object": "",
-      "isSubHotspot": false,
-      "panorama_image": "360legalaid-l.jpg",
-      "overlay_size": 5,
-      "overlay_offset_x": 0,
-      "overlay_offset_y": 0,
-      "start_audio": "",
-      "main_pages": [
-        {
-          "title": "SERVICES",
-          "description": "Community Legal Aid Services is a nonprofit law firm serving the legal needs of low-income individuals and families in Columbiana, Mahoning, Medina, Portage, Stark, Summit, Trumbull, and Wayne counties. Among their many legal services are asserting tenant rights, helping survivors of domestic violence and assault, and giving people a fresh start by reducing or eliminating debt. For a complete list of services, please visit https://www.communitylegalaid.org/our-work#grid. They do NOT provide assistance in criminal, juvenile offender, or traffic cases.",
-          "background_image": "AHHgenericbg.jpg",
-          "descriptive_audio": ""
+            "name": "Community Legal Aid Services, Inc.",
+            "position": "10",
+            "latitude": "41.08386",
+            "longitude": "-81.5180619",
+            "overlay": "",
+            "virtual_object": "",
+            "isSubHotspot": false,
+            "panorama_image": "360legalaid-l.jpg",
+            "overlay_size": 5,
+            "overlay_offset_x": 0,
+            "overlay_offset_y": 0,
+            "start_audio": "",
+            "main_pages": [
+                {
+                    "title": "SERVICES",
+                    "description": "Community Legal Aid Services is a nonprofit law firm serving the legal needs of low-income individuals and families in Columbiana, Mahoning, Medina, Portage, Stark, Summit, Trumbull, and Wayne counties. Among their many legal services are asserting tenant rights, helping survivors of domestic violence and assault, and giving people a fresh start by reducing or eliminating debt. For a complete list of services, please visit https://www.communitylegalaid.org/our-work#grid. They do NOT provide assistance in criminal, juvenile offender, or traffic cases.",
+                    "background_image": "AHHgenericbg.jpg",
+                    "descriptive_audio": ""
+                },
+                {
+                    "title": "CONTACT & HOURS",
+                    "description": "Phone: 866-584-2350  \n \nLegal HelpLine: 800-998-8454 \n \nWebsite: https://www.communitylegalaid.org/ \n \nOnline Assistance Portal: https://www.communitylegalaid.org/apply  \n \nAddress: 50 South Main St., Suite 800, Akron, OH 44308 \n \nBusiness Hours: Mon-Fri 8:30A-4:30P",
+                    "background_image": "AHHgenericbg.jpg",
+                    "descriptive_audio": ""
+                }
+            ],
+            "media_pages": []
         },
         {
-          "title": "CONTACT & HOURS",
-          "description": "Phone: 866-584-2350  \n \nLegal HelpLine: 800-998-8454 \n \nWebsite: https://www.communitylegalaid.org/ \n \nOnline Assistance Portal: https://www.communitylegalaid.org/apply  \n \nAddress: 50 South Main St., Suite 800, Akron, OH 44308 \n \nBusiness Hours: Mon-Fri 8:30A-4:30P",
-          "background_image": "AHHgenericbg.jpg",
-          "descriptive_audio": ""
-        }
-      ],
-      "media_pages": []
-    },
-    {
-      "name": "Ohio Civil Rights Commission Akron Regional Office",
-      "position": "11",
-      "latitude": "41.0803948",
-      "longitude": "-81.5170186",
-      "overlay": "",
-      "virtual_object": "",
-      "isSubHotspot": false,
-      "panorama_image": "360civilrightscommission-l.jpg",
-      "overlay_size": 5,
-      "overlay_offset_x": 0,
-      "overlay_offset_y": 0,
-      "start_audio": "",
-      "main_pages": [
-        {
-          "title": "SERVICES",
-          "description": "The Ohio Civil Rights Commission has jurisdiction to investigate charges of discrimination in the areas of employment, housing, access to public services and facilities, disability in higher education, and credit. To file a charge in person, please call 330-643-3100 to make an appointment or visit https://civ.ohio.gov/how-to-file-a-charge/filing-a-charge/online to file a charge online.",
-          "background_image": "AHHgenericbg.jpg",
-          "descriptive_audio": ""
+            "name": "Ohio Civil Rights Commission Akron Regional Office",
+            "position": "11",
+            "latitude": "41.0803948",
+            "longitude": "-81.5170186",
+            "overlay": "",
+            "virtual_object": "",
+            "isSubHotspot": false,
+            "panorama_image": "360civilrightscommission-l.jpg",
+            "overlay_size": 5,
+            "overlay_offset_x": 0,
+            "overlay_offset_y": 0,
+            "start_audio": "",
+            "main_pages": [
+                {
+                    "title": "SERVICES",
+                    "description": "The Ohio Civil Rights Commission has jurisdiction to investigate charges of discrimination in the areas of employment, housing, access to public services and facilities, disability in higher education, and credit. To file a charge in person, please call 330-643-3100 to make an appointment or visit https://civ.ohio.gov/how-to-file-a-charge/filing-a-charge/online to file a charge online.",
+                    "background_image": "AHHgenericbg.jpg",
+                    "descriptive_audio": ""
+                },
+                {
+                    "title": "CONTACT & HOURS",
+                    "description": "Phone: 330-643-3100 \n \nWebsite: https://civ.ohio.gov/about/regional-offices/Akron-regional-office \n \nFile a Charge Online: https://civ.ohio.gov/how-to-file-a-charge/filing-a-charge/online \n \nAddress: 172 S. Broadway St., Suite 400, Akron, OH 44308 \n \nBusiness Hours: Mon-Fri 8:00A-5:00P by appointment only",
+                    "background_image": "AHHgenericbg.jpg",
+                    "descriptive_audio": ""
+                }
+            ],
+            "media_pages": []
         },
         {
-          "title": "CONTACT & HOURS",
-          "description": "Phone: 330-643-3100 \n \nWebsite: https://civ.ohio.gov/about/regional-offices/Akron-regional-office \n \nFile a Charge Online: https://civ.ohio.gov/how-to-file-a-charge/filing-a-charge/online \n \nAddress: 172 S. Broadway St., Suite 400, Akron, OH 44308 \n \nBusiness Hours: Mon-Fri 8:00A-5:00P by appointment only",
-          "background_image": "AHHgenericbg.jpg",
-          "descriptive_audio": ""
-        }
-      ],
-      "media_pages": []
-    },
-    {
-      "name": "National Alliance for the Advancement of Colored People (NAACP) Akron Chapter",
-      "position": "12",
-      "latitude": "41.0819555",
-      "longitude": "-81.5277556",
-      "overlay": "",
-      "virtual_object": "",
-      "isSubHotspot": false,
-      "panorama_image": "360naacp-l.jpg",
-      "overlay_size": 5,
-      "overlay_offset_x": 0,
-      "overlay_offset_y": 0,
-      "start_audio": "",
-      "main_pages": [
-        {
-          "title": "SERVICES",
-          "description": "National Alliance for the Advancement of Colored People (NAACP) Akron Chapter works to advance policies and practices that expand human and civil rights, eliminate discrimination, and accelerate the well-being, education, and economic security of Black people and all persons of color. They fight discriminatory policies, practices, and procedures, as well as unlawful misconduct by public officers, private individuals, and companies that threaten civil rights. They can provide legal assistance and advocacy opportunities.",
-          "background_image": "AHHgenericbg.jpg",
-          "descriptive_audio": ""
+            "name": "National Alliance for the Advancement of Colored People (NAACP) Akron Chapter",
+            "position": "12",
+            "latitude": "41.0819555",
+            "longitude": "-81.5277556",
+            "overlay": "",
+            "virtual_object": "",
+            "isSubHotspot": false,
+            "panorama_image": "360naacp-l.jpg",
+            "overlay_size": 5,
+            "overlay_offset_x": 0,
+            "overlay_offset_y": 0,
+            "start_audio": "",
+            "main_pages": [
+                {
+                    "title": "SERVICES",
+                    "description": "National Alliance for the Advancement of Colored People (NAACP) Akron Chapter works to advance policies and practices that expand human and civil rights, eliminate discrimination, and accelerate the well-being, education, and economic security of Black people and all persons of color. They fight discriminatory policies, practices, and procedures, as well as unlawful misconduct by public officers, private individuals, and companies that threaten civil rights. They can provide legal assistance and advocacy opportunities.",
+                    "background_image": "AHHgenericbg.jpg",
+                    "descriptive_audio": ""
+                },
+                {
+                    "title": "CONTACT & HOURS",
+                    "description": "Phone: 330-573-4986 \n \nEmail: akronnaacp@yahoo.com \n \nWebsite: https://www.naacpakron.org/ \n \nAddress: 230 W. Center St., Akron, OH 44302 \n \nBusiness Hours: Mon, Wed, Fri 10:00A-2:00P",
+                    "background_image": "AHHgenericbg.jpg",
+                    "descriptive_audio": ""
+                }
+            ],
+            "media_pages": []
         },
         {
-          "title": "CONTACT & HOURS",
-          "description": "Phone: 330-573-4986 \n \nEmail: akronnaacp@yahoo.com \n \nWebsite: https://www.naacpakron.org/ \n \nAddress: 230 W. Center St., Akron, OH 44302 \n \nBusiness Hours: Mon, Wed, Fri 10:00A-2:00P",
-          "background_image": "AHHgenericbg.jpg",
-          "descriptive_audio": ""
+            "name": "Bayard Rustin LGBTQ+ Center | Akron AIDS Collaborative",
+            "position": "10",
+            "latitude": "41.0882752",
+            "longitude": "-81.5409204",
+            "overlay": "",
+            "virtual_object": "",
+            "isSubHotspot": false,
+            "panorama_image": "360bayardrustin-l.jpg",
+            "overlay_size": 5,
+            "overlay_offset_x": 0,
+            "overlay_offset_y": 0,
+            "start_audio": "",
+            "pin_color": "e63946",
+            "main_pages": [
+                {
+                    "title": "SERVICES",
+                    "description": "The Bayard Rustin Center, home of the Akron AIDS Collaborative (AAC), strengthens advocacy efforts for individuals living with HIV/AIDS and the broader LGBTQ+ community, including those who have experienced stigma tied to their sexual orientation or gender identity. As Ohio's only LGBTQ+ drop-in facility, they offer a wide range of culturally inclusive supports, including HIV testing, medical and housing referrals, a food pantry and clothing closet, community meals, mail order pharmacy services, a banned book library, and, as partners with TransJoy Akron, transgender support services. The AAC team is unwavering in its commitment to fostering a welcoming space where the LGBTQ+ and HIV/AIDS communities can access the support and resources they need to thrive.",
+                    "background_image": "AHHgenericbg.jpg",
+                    "descriptive_audio": ""
+                },
+                {
+                    "title": "CONTACT & HOURS",
+                    "description": "Phone: 330-983-4044 \n \nBayard Rustin Center Website: https://www.rustincenter.org/  \n \nAkron AIDS Collaborative Website: https://ohioaac.org/ \n \nAddress: 652 W. Exchange St., Akron, OH 44302 \n \nBusiness Hours: Mon-Fri 10:00 AM - 4:00 PM",
+                    "background_image": "AHHgenericbg.jpg",
+                    "descriptive_audio": ""
+                }
+            ],
+            "media_pages": []
         }
-      ],
-      "media_pages": []
-    }
-  ]
+    ]
 }

@@ -4,63 +4,58 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Emergency & Support Hotlines</title>
+  <title>Emergency &amp; Support Hotlines</title>
   <style>
-    /* Premium, minimal, professional theme */
     body {
-      background-color: #f7f9fc;
-      color: #333;
+      background-color: #F7F5F2;
+      color: #1e293b;
       font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
       line-height: 1.6;
-      padding: 60px 20px;
+      padding: 0;
       margin: 0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
     }
 
-    .container {
-      max-width: 680px;
+    .page-content {
+      max-width: 780px;
       margin: 0 auto;
-      background: #ffffff;
-      padding: 50px 60px;
-      border-radius: 16px;
-      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.03);
-      border: 1px solid rgba(0, 0, 0, 0.04);
+      padding: 50px 24px 40px;
+      flex: 1 0 auto;
     }
 
     h1 {
       text-align: center;
-      color: #111;
+      color: #1e293b;
       font-family: 'Inter', 'Roboto', sans-serif;
-      font-size: 2.2rem;
-      font-weight: 700;
+      font-size: 2rem;
+      font-weight: 800;
       margin-top: 0;
-      margin-bottom: 40px;
+      margin-bottom: 36px;
       letter-spacing: -0.03em;
     }
 
     .hotline {
-      padding: 24px 0;
-      border-bottom: 1px solid #f0f0f0;
-      display: flex;
-      flex-direction: column;
-    }
-
-    .hotline:last-child {
-      border-bottom: none;
-      padding-bottom: 0;
+      padding: 20px 24px;
+      margin-bottom: 12px;
+      background: #F7F5F2;
+      border-radius: 12px;
+      border: 1px solid rgba(0,0,0,0.04);
     }
 
     .hotline h2 {
       margin: 0 0 4px;
-      font-size: 1.15rem;
-      color: #111;
+      font-size: 1.05rem;
+      color: #1e293b;
       font-weight: 600;
       letter-spacing: -0.01em;
     }
 
     .hotline h3 {
-      margin: 0 0 12px;
-      font-size: 0.9rem;
-      color: #666;
+      margin: 0 0 8px;
+      font-size: 0.85rem;
+      color: #64748b;
       font-weight: 400;
       line-height: 1.4;
     }
@@ -72,129 +67,256 @@
       flex-wrap: wrap;
     }
 
-    a {
+    a.phone-link {
       color: #0d6efd;
       text-decoration: none;
       font-weight: 500;
-      font-size: 0.95rem;
+      font-size: 0.9rem;
       display: inline-flex;
       align-items: center;
+      gap: 6px;
       padding: 8px 16px;
-      background: #f4f8ff;
+      background: #F7F5F2;
       border-radius: 8px;
       transition: all 0.2s ease;
       border: 1px solid rgba(13, 110, 253, 0.1);
     }
 
-    a:hover {
-      background: #e6f0ff;
-      color: #0a58ca;
-      border-color: rgba(13, 110, 253, 0.2);
+    a.phone-link:hover {
+      background: #0d6efd;
+      color: #fff;
+      border-color: #0d6efd;
+    }
+
+    a.phone-link svg {
+      width: 16px;
+      height: 16px;
+      fill: currentColor;
+      flex-shrink: 0;
     }
 
     /* Mobile Responsive */
     @media (max-width: 600px) {
-      body {
-        padding: 30px 15px;
-      }
-
-      .container {
-        padding: 30px 20px;
-        border-radius: 12px;
+      .page-content {
+        padding: 30px 16px 30px;
       }
 
       h1 {
-        font-size: 1.8rem;
-        margin-bottom: 30px;
+        font-size: 1.6rem;
+        margin-bottom: 28px;
       }
 
       .hotline {
-        padding: 20px 0;
+        padding: 16px 18px;
       }
     }
+
+    /* ========== FOOTER ========== */
+    .ahh-footer {
+      background: #F7F5F2;
+      border-top: 1px solid rgba(0,0,0,0.08);
+      color: #475569;
+      padding: 2.5rem 1.5rem 1.5rem;
+      margin-top: 2rem;
+      width: 100%;
+      box-sizing: border-box;
+      margin-top: auto !important;
+    }
+
+    .ahh-footer-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 2rem;
+    }
+
+    .ahh-footer-info {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+
+    .ahh-footer-info h3 {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: #1e293b;
+      margin: 0 0 0.25rem 0;
+    }
+
+    .ahh-footer-info p {
+      font-size: 0.9rem;
+      line-height: 1.6;
+      margin: 0;
+      color: #475569;
+    }
+
+    .ahh-footer-info a {
+      color: #0d6efd;
+      text-decoration: none;
+      transition: color 0.2s;
+      font-weight: 500;
+    }
+
+    .ahh-footer-info a:hover { color: #0a58ca; }
+
+    .ahh-footer-logos {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+    }
+
+    .ahh-footer-logos img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 1px solid rgba(0,0,0,0.1);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      background: #fff;
+      transition: transform 0.3s;
+    }
+
+    .ahh-footer-logos img:hover { transform: scale(1.08); }
+
+    .ahh-footer-bottom {
+      max-width: 1100px;
+      margin: 1.25rem auto 0;
+      padding-top: 1rem;
+      border-top: none;
+      text-align: center;
+      font-size: 0.8rem;
+      color: #64748b;
+      padding-bottom: env(safe-area-inset-bottom, 0px);
+    }
+
+    @media (max-width: 768px) {
+      .ahh-footer {
+        padding-bottom: calc(1.5rem + env(safe-area-inset-bottom, 0px) + 10px);
+      }
+      .ahh-footer-inner {
+        flex-direction: column;
+        text-align: center;
+      }
+      .ahh-footer-logos { justify-content: center; }
+    }
+
+    @media (max-width: 480px) {
+      .ahh-footer {
+        padding-bottom: calc(1.5rem + env(safe-area-inset-bottom, 0px) + 16px);
+      }
+      .ahh-footer-logos img { width: 60px; height: 60px; }
+    }
   </style>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-  <div class="container">
-
-    <h1>Emergency & Support Hotlines</h1>
+  <div class="page-content">
+    <h1>Emergency &amp; Support Hotlines</h1>
 
     <div class="hotline">
       <h2>United Way Summit County for all Basic Needs Resources</h2>
-      <p><a href="tel:211">Call: 211</a></p>
+      <p><a class="phone-link" href="tel:211"><svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>Call: 211</a></p>
     </div>
 
     <div class="hotline">
       <h2>Emergencies</h2>
-      <p><a href="tel:911">Call: 911</a></p>
+      <p><a class="phone-link" href="tel:911"><svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>Call: 911</a></p>
     </div>
 
     <div class="hotline">
       <h2>Suicide and Crisis Hotline</h2>
-      <p><a href="tel:988">Call: 988</a></p>
+      <p><a class="phone-link" href="tel:988"><svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>Call: 988</a></p>
     </div>
 
     <div class="hotline">
       <h2>Summit County Mental Health Crisis Line</h2>
-      <p><a href="tel:3304349144">Call: 330-434-9144</a></p>
-      <p><a href="sms:741741">Text: 741741</a></p>
+      <p><a class="phone-link" href="tel:3304349144"><svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>Call: 330-434-9144</a></p>
+      <p><a class="phone-link" href="sms:741741"><svg viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H6l-2 2V4h16v12z"/></svg>Text: 741741</a></p>
     </div>
 
     <div class="hotline">
       <h2>Alcohol and Other Drug Emergencies</h2>
-      <p><a href="tel:3309967730">Call: 330-996-7730</a></p>
+      <p><a class="phone-link" href="tel:3309967730"><svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>Call: 330-996-7730</a></p>
     </div>
 
     <div class="hotline">
       <h2>Children Mental Health Emergencies</h2>
-      <p><a href="tel:3305437472">Call: 330-543-7472</a></p>
+      <p><a class="phone-link" href="tel:3305437472"><svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>Call: 330-543-7472</a></p>
     </div>
 
     <div class="hotline">
-      <h2>Battered Women’s Shelter Akron</h2>
-      <p><a href="tel:3303741111">Call: 330-374-1111</a></p>
+      <h2>Battered Women's Shelter Akron</h2>
+      <p><a class="phone-link" href="tel:3303741111"><svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>Call: 330-374-1111</a></p>
     </div>
 
     <div class="hotline">
       <h2>Rape Crisis Hotline</h2>
-      <p><a href="tel:3304347273">Call: 330-434-7273</a></p>
+      <p><a class="phone-link" href="tel:3304347273"><svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>Call: 330-434-7273</a></p>
     </div>
 
     <div class="hotline">
       <h2>Victim Assistance Program of Summit County</h2>
-      <p><a href="tel:3303760040">Call: 330-376-0040</a></p>
+      <p><a class="phone-link" href="tel:3303760040"><svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>Call: 330-376-0040</a></p>
     </div>
 
     <div class="hotline">
       <h2>Homeless Hotline</h2>
-      <p><a href="tel:3306150577">Call: 330-615-0577</a></p>
-      <h3>Operated by United Way of Summit County (Monday-Friday 8AM-4PM)</h3>
+      <h3>Operated by United Way of Summit County (Monday–Friday 8AM–4PM)</h3>
+      <p><a class="phone-link" href="tel:3306150577"><svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>Call: 330-615-0577</a></p>
     </div>
 
     <div class="hotline">
       <h2>Runaway/Homeless Youth Hotline</h2>
-      <p><a href="tel:3307847200">Call: 330-784-7200</a></p>
+      <p><a class="phone-link" href="tel:3307847200"><svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>Call: 330-784-7200</a></p>
     </div>
 
     <div class="hotline">
       <h2>LGBT National Hotline</h2>
-      <p><a href="tel:8888434564">Call: 888-843-4564</a></p>
+      <p><a class="phone-link" href="tel:8888434564"><svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>Call: 888-843-4564</a></p>
     </div>
 
     <div class="hotline">
       <h2>Trans Lifeline</h2>
-      <p><a href="tel:8775658860">Call: 877-565-8860</a></p>
+      <p><a class="phone-link" href="tel:8775658860"><svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>Call: 877-565-8860</a></p>
     </div>
 
     <div class="hotline">
       <h2>TrevorLifeline for LGBTQ Youth</h2>
-      <p><a href="tel:8664887386">Call: 866-488-7386</a></p>
+      <p><a class="phone-link" href="tel:8664887386"><svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>Call: 866-488-7386</a></p>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="ahh-footer">
+    <div class="ahh-footer-inner">
+      <div class="ahh-footer-info">
+        <h3>Akron Health Hub</h3>
+        <p>
+          <strong>Address:</strong><br>
+          652 W. Exchange Street, Akron, OH 44302
+        </p>
+        <p>
+          <strong>Phone:</strong><br>
+          <a href="tel:3309834044">(330) 983-4044</a>
+        </p>
+      </div>
+
+      <div class="ahh-footer-logos">
+        <img src="https://www-s3-live.kent.edu/s3fs-root/s3fs-public/styles/_fixed_width_250px/public/Akron%20Health%20Hub%20Logo%20%28transparent%20circle%29.png?VersionId=74IqmKvK1PL_xFuuEPiW0UsRIw6myIdp&itok=rErgEej1"
+          alt="Akron Health Hub Logo">
+        <img src="AAC-Logo.png" alt="AAC Logo">
+      </div>
     </div>
 
-  </div> <!-- Close .container -->
+    <div class="ahh-footer-bottom">
+      &copy; 2026 Akron Health Hub. All rights reserved.
+    </div>
+  </footer>
 
 </body>
 

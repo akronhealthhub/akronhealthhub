@@ -6,91 +6,82 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Help - Akron Health Hub</title>
   <style>
-    /* Premium, minimal, professional theme */
     body {
-      background-color: #f7f9fc;
-      color: #333;
+      background-color: #F7F5F2;
+      color: #1e293b;
       font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
       line-height: 1.6;
-      padding: 60px 20px;
+      padding: 0;
       margin: 0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
     }
 
-    .container {
-      max-width: 680px;
+    .page-content {
+      max-width: 780px;
       margin: 0 auto;
-      background: #ffffff;
-      padding: 50px 60px;
-      border-radius: 16px;
-      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.03);
-      border: 1px solid rgba(0, 0, 0, 0.04);
+      padding: 50px 24px 40px;
+      flex: 1 0 auto;
     }
 
     h1 {
       text-align: center;
-      color: #111;
+      color: #1e293b;
       font-family: 'Inter', 'Roboto', sans-serif;
-      font-size: 2.2rem;
-      font-weight: 700;
+      font-size: 2rem;
+      font-weight: 800;
       margin-top: 0;
-      margin-bottom: 40px;
+      margin-bottom: 36px;
       letter-spacing: -0.03em;
     }
 
     h2 {
-      color: #111;
-      font-size: 1.25rem;
-      margin-top: 40px;
-      margin-bottom: 20px;
-      font-weight: 600;
+      color: #1e293b;
+      font-size: 1.15rem;
+      margin-top: 0;
+      margin-bottom: 16px;
+      font-weight: 700;
       letter-spacing: -0.01em;
     }
 
-    .help-list {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-
-    .help-list>li {
-      padding: 24px 0;
-      border-bottom: 1px solid #f0f0f0;
-      font-size: 1.05rem;
-      color: #444;
+    .help-item {
+      padding: 20px 24px;
+      margin-bottom: 12px;
+      background: #F7F5F2;
+      border-radius: 12px;
+      border: 1px solid rgba(0,0,0,0.04);
+      font-size: 0.95rem;
+      color: #475569;
       line-height: 1.7;
     }
 
-    .help-list>li:last-child {
-      border-bottom: none;
-      padding-bottom: 0;
-    }
-
-    .help-list ul {
-      margin-top: 16px;
+    .help-item ul {
+      margin-top: 12px;
       margin-bottom: 0;
       padding-left: 20px;
       list-style-type: circle;
     }
 
-    .help-list ul li {
-      margin-bottom: 8px;
-      color: #555;
+    .help-item ul li {
+      margin-bottom: 6px;
+      color: #64748b;
     }
 
     strong {
-      color: #111;
+      color: #1e293b;
       font-weight: 600;
     }
 
     img {
       vertical-align: middle;
       height: 22px;
-      margin: 0 8px;
+      margin: 0 6px;
       border-radius: 6px;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
       background: white;
-      padding: 4px;
-      border: 1px solid rgba(0, 0, 0, 0.05);
+      padding: 3px;
+      border: 1px solid rgba(0, 0, 0, 0.06);
     }
 
     .icon {
@@ -100,62 +91,196 @@
 
     /* Mobile Responsive */
     @media (max-width: 600px) {
-      body {
-        padding: 30px 15px;
-      }
-
-      .container {
-        padding: 30px 20px;
-        border-radius: 12px;
+      .page-content {
+        padding: 30px 16px 30px;
       }
 
       h1 {
-        font-size: 1.8rem;
-        margin-bottom: 30px;
+        font-size: 1.6rem;
+        margin-bottom: 28px;
       }
 
-      .help-list>li {
-        padding: 20px 0;
+      .help-item {
+        padding: 16px 18px;
+        font-size: 0.9rem;
       }
     }
+
+    /* ========== FOOTER ========== */
+    .ahh-footer {
+      background: #F7F5F2;
+      border-top: 1px solid rgba(0,0,0,0.08);
+      color: #475569;
+      padding: 2.5rem 1.5rem 1.5rem;
+      margin-top: 2rem;
+      width: 100%;
+      box-sizing: border-box;
+      margin-top: auto !important;
+    }
+
+    .ahh-footer-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 2rem;
+    }
+
+    .ahh-footer-info {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+
+    .ahh-footer-info h3 {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: #1e293b;
+      margin: 0 0 0.25rem 0;
+    }
+
+    .ahh-footer-info p {
+      font-size: 0.9rem;
+      line-height: 1.6;
+      margin: 0;
+      color: #475569;
+    }
+
+    .ahh-footer-info a {
+      color: #0d6efd;
+      text-decoration: none;
+      transition: color 0.2s;
+      font-weight: 500;
+    }
+
+    .ahh-footer-info a:hover { color: #0a58ca; }
+
+    .ahh-footer-logos {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+    }
+
+    .ahh-footer-logos img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 1px solid rgba(0,0,0,0.1);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      background: #fff;
+      transition: transform 0.3s;
+    }
+
+    .ahh-footer-logos img:hover { transform: scale(1.08); }
+
+    .ahh-footer-bottom {
+      max-width: 1100px;
+      margin: 1.25rem auto 0;
+      padding-top: 1rem;
+      border-top: none;
+      text-align: center;
+      font-size: 0.8rem;
+      color: #64748b;
+      padding-bottom: env(safe-area-inset-bottom, 0px);
+    }
+
+    @media (max-width: 768px) {
+      .ahh-footer {
+        padding-bottom: calc(1.5rem + env(safe-area-inset-bottom, 0px) + 10px);
+      }
+      .ahh-footer-inner {
+        flex-direction: column;
+        text-align: center;
+      }
+      .ahh-footer-logos { justify-content: center; }
+    }
+
+    @media (max-width: 480px) {
+      .ahh-footer {
+        padding-bottom: calc(1.5rem + env(safe-area-inset-bottom, 0px) + 16px);
+      }
+      .ahh-footer-logos img { width: 60px; height: 60px; }
+    }
   </style>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-  <div class="container">
+  <div class="page-content">
     <h1>Help Guide</h1>
 
     <h2>How to Use the Akron Health Hub:</h2>
-    <ul class="help-list">
-      <li>Click into a <strong>Service Category Tour</strong> to view a map of organizations that provide services in
-        that category.</li>
 
-      <li>Click on each hotspot <img src="blue-dot.png" alt="Map Pin"> on the map to access Augmented Reality images and
-        information about the services provided at that location.</li>
+    <div class="help-item">
+      Click into a <strong>Service Category Tour</strong> to view a map of organizations that provide services in
+      that category.
+    </div>
 
-      <li>Once in an organization's hotspot, click and drag with your mouse (or swipe on mobile) to look around the 360°
-        image of the location. Arrows have been added to label key details, like the entrance.</li>
+    <div class="help-item">
+      Click on each hotspot <img src="blue-dot.png" alt="Map Pin"> on the map to access Augmented Reality images and
+      information about the services provided at that location.
+    </div>
 
-      <li>Click the <img src="threelines.png" alt="Menu Icon"> to access the <strong>hotspot Menu</strong>. The Menu
-        contains links to the organization's Services and Contact/Hours, as well as:
-        <ul>
-          <li>Hotline information</li>
-          <li>How to use the Akron Health Hub</li>
-          <li>A link to leave us feedback</li>
-        </ul>
-      </li>
+    <div class="help-item">
+      Once in an organization's hotspot, click and drag with your mouse (or swipe on mobile) to look around the 360°
+      image of the location. Arrows have been added to label key details, like the entrance.
+    </div>
 
-      <li>Within the Menu's pages, use the <img src="back.png" alt="Back Icon"> icon to go back to the last page you
-        were on.</li>
+    <div class="help-item">
+      Click the <img src="threelines.png" alt="Menu Icon"> to access the <strong>hotspot Menu</strong>. The Menu
+      contains links to the organization's Services and Contact/Hours, as well as:
+      <ul>
+        <li>Hotline information</li>
+        <li>How to use the Akron Health Hub</li>
+        <li>A link to leave us feedback</li>
+      </ul>
+    </div>
 
-      <li>Click the <img src="eye.png" alt="View Icon"> icon to center your view of the 360° image.</li>
+    <div class="help-item">
+      Within the Menu's pages, use the <img src="back.png" alt="Back Icon"> icon to go back to the last page you
+      were on.
+    </div>
 
-      <li>Click the <img src="map.png" alt="Map Icon"> icon to return to the map of services in the tour you are
-        viewing.</li>
-    </ul>
+    <div class="help-item">
+      Click the <img src="eye.png" alt="View Icon"> icon to center your view of the 360° image.
+    </div>
+
+    <div class="help-item">
+      Click the <img src="map.png" alt="Map Icon"> icon to return to the map of services in the tour you are
+      viewing.
+    </div>
   </div>
+
+  <!-- FOOTER -->
+  <footer class="ahh-footer">
+    <div class="ahh-footer-inner">
+      <div class="ahh-footer-info">
+        <h3>Akron Health Hub</h3>
+        <p>
+          <strong>Address:</strong><br>
+          652 W. Exchange Street, Akron, OH 44302
+        </p>
+        <p>
+          <strong>Phone:</strong><br>
+          <a href="tel:3309834044">(330) 983-4044</a>
+        </p>
+      </div>
+
+      <div class="ahh-footer-logos">
+        <img src="https://www-s3-live.kent.edu/s3fs-root/s3fs-public/styles/_fixed_width_250px/public/Akron%20Health%20Hub%20Logo%20%28transparent%20circle%29.png?VersionId=74IqmKvK1PL_xFuuEPiW0UsRIw6myIdp&itok=rErgEej1"
+          alt="Akron Health Hub Logo">
+        <img src="AAC-Logo.png" alt="AAC Logo">
+      </div>
+    </div>
+
+    <div class="ahh-footer-bottom">
+      &copy; 2026 Akron Health Hub. All rights reserved.
+    </div>
+  </footer>
 
 </body>
 

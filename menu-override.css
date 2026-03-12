@@ -113,13 +113,13 @@ body.homepage .homepage {
   width: 300px !important;
   max-width: 85vw !important;
   height: 100% !important;
-  background: #111 !important;
-  color: #fff !important;
+  background: #F7F5F2 !important;
+  color: #1e293b !important;
   display: flex !important;
   flex-direction: column !important;
   padding: 0 !important;
   overflow-y: auto !important;
-  box-shadow: 4px 0 20px rgba(0, 0, 0, 0.5) !important;
+  box-shadow: 4px 0 20px rgba(0, 0, 0, 0.15) !important;
   animation: slideInLeft 0.25s ease-out forwards;
 }
 
@@ -149,11 +149,11 @@ body.homepage .homepage {
   font-weight: 700 !important;
   letter-spacing: 0.1em !important;
   text-transform: uppercase !important;
-  color: #fff !important;
+  color: #1e293b !important;
   text-align: left !important;
   margin: 0 !important;
   padding: 1.2em 1.2em 0.8em !important;
-  border-bottom: 2px solid #333 !important;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.08) !important;
 }
 
 /* ============================================================
@@ -197,10 +197,10 @@ a[class^="menu-item"] {
   font-size: 1em !important;
   font-weight: 500 !important;
   text-decoration: none !important;
-  color: #fff !important;
+  color: #1e293b !important;
   background: transparent !important;
   border: none !important;
-  border-bottom: 1px solid #222 !important;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06) !important;
   border-radius: 0 !important;
   transition: background 0.2s ease !important;
   gap: 0.7em !important;
@@ -210,13 +210,13 @@ a[class^="menu-item"] {
 
 a[class^="menu-item"]:hover,
 a[class^="menu-item"]:active {
-  background: #1a1a1a !important;
-  color: #8bd2cf !important;
+  background: rgba(13, 110, 253, 0.06) !important;
+  color: #0d6efd !important;
   text-decoration: none !important;
 }
 
 a[class^="menu-item"]:focus {
-  outline: 2px solid #8bd2cf !important;
+  outline: 2px solid #0d6efd !important;
   outline-offset: -2px !important;
 }
 
@@ -247,19 +247,20 @@ a[class^="menu-item"]:focus {
 
 .menu-content .media-menu.library-empty a[class^="menu-item"] {
   border: none !important;
-  border-bottom: 1px solid #222 !important;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06) !important;
 }
 
 /* ============================================================
    CLOSE BUTTON — Top-right of drawer
    ============================================================ */
-.Modal .closeBtn,
-.Overlay .closeBtn {
+/* Target the div container of the React SPA FontAwesome icon */
+.Modal > div:last-child {
   position: absolute !important;
   top: 1em !important;
   right: 0.8em !important;
-  font-size: 1.6rem !important;
-  color: rgba(255, 255, 255, 0.6) !important;
+  font-size: 1.8rem !important;
+  font-family: inherit !important;
+  color: rgba(30, 41, 59, 0.5) !important;
   cursor: pointer !important;
   transition: color 0.2s ease !important;
   z-index: 100000 !important;
@@ -270,11 +271,36 @@ a[class^="menu-item"]:focus {
   justify-content: center !important;
   border-radius: 0 !important;
   background: transparent !important;
+  border: none !important;
+  padding: 0 !important;
+  line-height: 1 !important;
 }
 
-.Modal .closeBtn:hover,
-.Overlay .closeBtn:hover {
-  color: #fff !important;
+.Modal > div:last-child:hover {
+  color: #1e293b !important;
+}
+
+/* Inject the text-based times icon matching the Drawer */
+.Modal > div:last-child::after {
+  content: '\00d7' !important;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
+/* Make the actual SVG completely hidden but stretch to catch React clicks */
+.Modal .closeBtn {
+  opacity: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  margin: 0 !important;
+  cursor: pointer !important;
+  z-index: 10 !important;
 }
 
 /* ============================================================
@@ -312,12 +338,12 @@ a[class^="menu-item"]:focus {
   font-family: 'Inter', 'Roboto', sans-serif;
   font-size: 1.05em;
   font-weight: 600;
-  color: #8bd2cf;
+  color: #0d6efd;
   text-align: left;
   margin: 0;
   padding: 0.3em 1.8em 1.1em;
   letter-spacing: 0.03em;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
   line-height: 1.35;
 }
 
@@ -327,7 +353,7 @@ a[class^="menu-item"]:focus {
 .ahh-menu-divider {
   width: 100%;
   height: 1px;
-  background: #333;
+  background: rgba(0, 0, 0, 0.08);
   margin: 0;
 }
 
@@ -370,8 +396,8 @@ div[class^="overlay-ctn-"] {
 /* Bottom icon containers — styled backgrounds */
 .overlay-ctn-show,
 .overlay-ctn-map {
-  background: rgba(0, 0, 0, 0.55) !important;
-  border: 1px solid rgba(255, 255, 255, 0.18) !important;
+  background: #ffffff !important;
+  border: 1px solid rgba(0, 0, 0, 0.15) !important;
   border-radius: 10px !important;
   width: auto !important;
   height: 44px !important;
@@ -386,13 +412,19 @@ div[class^="overlay-ctn-"] {
 
 .overlay-ctn-show:hover,
 .overlay-ctn-map:hover {
-  background: rgba(0, 0, 0, 0.78) !important;
+  background: #f8fafc !important;
   transform: translateY(-1px) !important;
 }
 
 .overlay-ctn-show .overlay-icon,
 .overlay-ctn-map .overlay-icon {
   font-size: 1.4rem !important;
+  color: #000000 !important;
+}
+
+.overlay-ctn-show .overlay-icon path,
+.overlay-ctn-map .overlay-icon path {
+  stroke: #000000 !important;
 }
 
 /* Text label inside overlay buttons */
@@ -400,7 +432,7 @@ div[class^="overlay-ctn-"] {
   font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
   font-size: 0.78rem;
   font-weight: 500;
-  color: rgba(255, 255, 255, 0.92);
+  color: #000000 !important;
   white-space: nowrap;
   letter-spacing: 0.02em;
   line-height: 1;
@@ -408,7 +440,7 @@ div[class^="overlay-ctn-"] {
 
 .overlay-ctn-show:hover .ahh-btn-label,
 .overlay-ctn-map:hover .ahh-btn-label {
-  color: #8bd2cf;
+  color: #000000 !important;
 }
 
 /* Hotspot title bar — reduce size */
@@ -644,10 +676,17 @@ div[class^="overlay-ctn-"] {
 /* --- Force dark background, remove any background image --- */
 body.scrollable-body {
   background-image: none !important;
-  background: #0e1117 !important;
-  background-color: #0e1117 !important;
+  background: #F7F5F2 !important;
+  background-color: #F7F5F2 !important;
   padding: 0 !important;
   overflow-x: hidden !important;
+  display: flex !important;
+  flex-direction: column !important;
+  min-height: 100vh !important;
+}
+
+#root {
+  flex: 1 0 auto;
 }
 
 /* --- Hide the X close button on content pages (Services/Contact) --- */
@@ -683,7 +722,7 @@ body.scrollable-body div[style*="opacity"] {
   width: 100% !important;
   max-width: 800px !important;
   margin: 0 auto !important;
-  padding: 60px 20px 100px !important;
+  padding: 60px 20px 40px !important;
   transform: none !important;
   background: transparent !important;
   background-color: transparent !important;
@@ -707,12 +746,12 @@ body.scrollable-body h1#title {
   font-family: 'Raleway', sans-serif !important;
   font-size: 1.8em !important;
   font-weight: 700 !important;
-  color: #8bd2cf !important;
+  color: #1e293b !important;
   letter-spacing: 0.08em !important;
   text-transform: uppercase !important;
   margin: 0 0 24px 0 !important;
   padding-bottom: 16px !important;
-  border-bottom: 2px solid rgba(139, 210, 207, 0.3) !important;
+  border-bottom: 2px solid rgba(30, 41, 59, 0.15) !important;
   text-align: left !important;
   background: transparent !important;
 }
@@ -723,7 +762,7 @@ body.scrollable-body p#text {
   font-family: 'Roboto', sans-serif !important;
   font-size: 1.1em !important;
   font-weight: 400 !important;
-  color: #e4e4e7 !important;
+  color: #475569 !important;
   line-height: 1.8 !important;
   text-align: left !important;
   white-space: pre-wrap !important;
@@ -733,14 +772,14 @@ body.scrollable-body p#text {
 
 /* --- Links inside content text --- */
 body.scrollable-body #text a {
-  color: #8bd2cf !important;
+  color: #0d6efd !important;
   text-decoration: underline !important;
   text-underline-offset: 3px !important;
   transition: color 0.2s ease !important;
 }
 
 body.scrollable-body #text a:hover {
-  color: #a8e6cf !important;
+  color: #0a58ca !important;
 }
 
 /* --- Audio footer styling on content pages --- */
@@ -749,10 +788,10 @@ body.scrollable-body #fixed-footer {
   bottom: 0 !important;
   left: 0 !important;
   right: 0 !important;
-  background: rgba(14, 17, 23, 0.95) !important;
+  background: rgba(247, 245, 242, 0.95) !important;
   backdrop-filter: blur(10px) !important;
   -webkit-backdrop-filter: blur(10px) !important;
-  border-top: 1px solid rgba(255, 255, 255, 0.08) !important;
+  border-top: 1px solid rgba(0, 0, 0, 0.08) !important;
   padding: 8px 16px !important;
   z-index: 9999 !important;
 }
@@ -801,11 +840,15 @@ body.scrollable-body #fixed-footer {
    ============================================================ */
 body.help-body {
   background-image: none !important;
-  background: #0e1117 !important;
-  background-color: #0e1117 !important;
+  background: #F7F5F2 !important;
+  background-color: #F7F5F2 !important;
   padding: 0 !important;
+  overflow-x: hidden !important;
   overflow-y: auto !important;
   box-sizing: border-box !important;
+  display: flex !important;
+  flex-direction: column !important;
+  min-height: 100vh !important;
 }
 
 body.help-body .title,
@@ -813,7 +856,7 @@ body.help-body h1.title {
   font-family: 'Raleway', sans-serif !important;
   font-size: 1.8em !important;
   font-weight: 700 !important;
-  color: #8bd2cf !important;
+  color: #1e293b !important;
   letter-spacing: 0.08em !important;
   text-transform: uppercase !important;
   text-align: left !important;
@@ -823,16 +866,17 @@ body.help-body h1.title {
   margin-left: auto !important;
   margin-right: auto !important;
   border: none !important;
-  border-bottom: 2px solid rgba(139, 210, 207, 0.3) !important;
+  border-bottom: 2px solid rgba(30, 41, 59, 0.15) !important;
   padding-bottom: 14px !important;
 }
 
 body.help-body .subtitle,
-body.help-body h2.subtitle {
+body.help-body h2.subtitle,
+body.help-body .subtitle * {
   font-family: 'Roboto', sans-serif !important;
   font-size: 1.1em !important;
   font-weight: 500 !important;
-  color: #e4e4e7 !important;
+  color: #1e293b !important;
   text-align: left !important;
   margin: 0 !important;
   padding: 8px 28px 18px !important;
@@ -846,9 +890,9 @@ body.help-body h2.subtitle {
 body.help-body .rules {
   font-family: 'Roboto', sans-serif !important;
   font-size: 1.05em !important;
-  color: #e4e4e7 !important;
+  color: #475569 !important;
   line-height: 1.8 !important;
-  padding: 20px 20px 100px 20px !important;
+  padding: 20px 20px 40px 20px !important;
   max-width: 800px !important;
   margin: 0 auto !important;
   width: 100% !important;
@@ -858,12 +902,31 @@ body.help-body .rules {
 body.help-body .rules li {
   margin-bottom: 16px !important;
   padding-left: 4px !important;
+  color: #475569 !important;
+}
+
+body.help-body .rules li * {
+  color: #475569 !important;
+}
+
+body.help-body .rules > li:first-child {
+  display: none !important;
+}
+
+body.help-body .rules li svg {
+  width: 1em !important;
+  height: 1em !important;
+  display: inline-block !important;
+  vertical-align: -0.15em !important;
+  margin: 0 4px !important;
+  padding: 0 !important;
 }
 
 /* Make the 1. 2. 3. counter numbers smaller */
 body.help-body .rules > li::before {
   font-size: 1em !important;
   font-weight: 600 !important;
+  color: #1e293b !important;
 }
 
 /* Hide close button on help page */
@@ -879,7 +942,7 @@ body.help-body .overlay-icon.closeBtn {
   body.scrollable-body .textCtn,
   body.scrollable-body main > .textCtn,
   body.scrollable-body main > div[style] {
-    padding: 56px 20px 90px !important;
+    padding: 56px 20px 40px !important;
     max-width: 100% !important;
   }
 
@@ -981,8 +1044,8 @@ body.help-body .overlay-icon.closeBtn {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(0, 0, 0, 0.55);
-  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: rgba(30, 41, 59, 0.65);
+  border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   cursor: pointer;
   transition: background 0.2s ease, transform 0.15s ease;
@@ -991,7 +1054,7 @@ body.help-body .overlay-icon.closeBtn {
 }
 
 #ahh-persistent-hamburger:hover {
-  background: rgba(0, 0, 0, 0.75);
+  background: rgba(30, 41, 59, 0.8);
   transform: scale(1.05);
 }
 
@@ -1031,14 +1094,14 @@ body.help-body .overlay-icon.closeBtn {
   width: 300px;
   max-width: 85vw;
   height: 100%;
-  background: #111;
-  color: #fff;
+  background: #F7F5F2;
+  color: #1e293b;
   display: flex;
   flex-direction: column;
   z-index: 99999;
   transform: translateX(-100%);
   transition: transform 0.3s ease;
-  box-shadow: 4px 0 20px rgba(0, 0, 0, 0.5);
+  box-shadow: 4px 0 20px rgba(0, 0, 0, 0.15);
   overflow-y: auto;
 }
 
@@ -1052,7 +1115,7 @@ body.help-body .overlay-icon.closeBtn {
   align-items: center;
   justify-content: space-between;
   padding: 1.2em 1.2em 0.8em;
-  border-bottom: 2px solid #333;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.08);
 }
 
 .ahh-drawer-title {
@@ -1061,13 +1124,13 @@ body.help-body .overlay-icon.closeBtn {
   font-weight: 700;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: #fff;
+  color: #1e293b;
 }
 
 .ahh-drawer-close-btn {
   background: none;
   border: none;
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(30, 41, 59, 0.5);
   font-size: 1.8rem;
   cursor: pointer;
   padding: 0;
@@ -1081,7 +1144,7 @@ body.help-body .overlay-icon.closeBtn {
 }
 
 .ahh-drawer-close-btn:hover {
-  color: #fff;
+  color: #1e293b;
 }
 
 /* --- Organization name --- */
@@ -1089,12 +1152,12 @@ body.help-body .overlay-icon.closeBtn {
   font-family: 'Inter', 'Roboto', sans-serif;
   font-size: 1.05em;
   font-weight: 600;
-  color: #8bd2cf;
+  color: #0d6efd;
   text-align: left;
   margin: 0;
   padding: 0.3em 1.4em 1.1em;
   letter-spacing: 0.03em;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
   line-height: 1.35;
 }
 
@@ -1113,10 +1176,10 @@ body.help-body .overlay-icon.closeBtn {
   font-size: 1em;
   font-weight: 500;
   text-decoration: none;
-  color: #fff;
+  color: #1e293b;
   background: transparent;
   border: none;
-  border-bottom: 1px solid #222;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
   transition: background 0.2s ease;
   gap: 0.7em;
   text-transform: uppercase;
@@ -1126,8 +1189,8 @@ body.help-body .overlay-icon.closeBtn {
 
 .ahh-drawer-link:hover,
 .ahh-drawer-link:active {
-  background: #1a1a1a;
-  color: #8bd2cf;
+  background: rgba(13, 110, 253, 0.06);
+  color: #0d6efd;
   text-decoration: none;
 }
 
@@ -1140,14 +1203,14 @@ body.help-body .overlay-icon.closeBtn {
   display: flex;
   align-items: center;
   gap: 8px;
-  background: rgba(0, 0, 0, 0.6);
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 10px;
   padding: 10px 18px;
-  color: #fff;
+  color: #000000;
   font-family: 'Roboto', sans-serif;
   font-size: 0.85rem;
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: 0.05em;
   cursor: pointer;
   transition: background 0.2s ease, transform 0.15s ease;
@@ -1156,7 +1219,7 @@ body.help-body .overlay-icon.closeBtn {
 }
 
 #ahh-back-to-map:hover {
-  background: rgba(0, 0, 0, 0.8);
+  background: #f8fafc;
   transform: translateX(-2px);
 }
 
@@ -1167,7 +1230,7 @@ body.help-body .overlay-icon.closeBtn {
 #ahh-back-to-map svg {
   width: 18px;
   height: 18px;
-  fill: #8bd2cf;
+  fill: #000000;
   flex-shrink: 0;
 }
 
@@ -1252,3 +1315,124 @@ body.help-body .overlay-icon.closeBtn {
   }
 }
 
+/* ============================================================
+   SITE FOOTER — Injected on all pages
+   ============================================================ */
+.ahh-site-footer {
+  background: #F7F5F2;
+  border-top: 1px solid rgba(0,0,0,0.08);
+  color: #475569;
+  padding: 2.5rem 1.5rem 1.5rem;
+  font-family: 'Inter', 'Roboto', -apple-system, sans-serif;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: auto !important;
+}
+
+.ahh-site-footer-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.ahh-site-footer-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.ahh-site-footer-info h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin: 0 0 0.25rem 0;
+}
+
+.ahh-site-footer-info p {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin: 0;
+  color: #475569;
+}
+
+.ahh-site-footer-info strong {
+  color: #1e293b;
+}
+
+.ahh-site-footer-info a {
+  color: #0d6efd;
+  text-decoration: none;
+  transition: color 0.2s;
+  font-weight: 500;
+}
+
+.ahh-site-footer-info a:hover {
+  color: #0a58ca;
+}
+
+.ahh-site-footer-logos {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.ahh-site-footer-logos img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  background: #fff;
+  transition: transform 0.3s;
+}
+
+.ahh-site-footer-logos img:hover {
+  transform: scale(1.08);
+}
+
+.ahh-site-footer-bottom {
+  max-width: 1100px;
+  margin: 1.25rem auto 0;
+  padding-top: 1rem;
+  border-top: none;
+  text-align: center;
+  font-size: 0.8rem;
+  color: #64748b;
+  padding-bottom: env(safe-area-inset-bottom, 8px);
+}
+
+/* ============================================================
+   FOOTER — Mobile Responsive
+   Extra bottom margin for mobile browser chrome
+   ============================================================ */
+@media screen and (max-width: 768px) {
+  .ahh-site-footer {
+    padding: 1.5rem 1rem;
+    padding-bottom: calc(1.5rem + env(safe-area-inset-bottom, 0px) + 10px);
+  }
+
+  .ahh-site-footer-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .ahh-site-footer-logos {
+    justify-content: center;
+  }
+
+  .ahh-site-footer-logos img {
+    width: 48px;
+    height: 48px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .ahh-site-footer {
+    padding-bottom: calc(1.5rem + env(safe-area-inset-bottom, 0px) + 16px);
+  }
+}

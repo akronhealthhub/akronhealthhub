@@ -414,16 +414,20 @@
         });
         document.body.appendChild(hamburger);
 
-        // --- Create standalone Back to Map button ---
         var backBtn = document.createElement('button');
         backBtn.id = 'ahh-back-to-map';
         backBtn.innerHTML =
             '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">' +
             '<path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/>' +
             '</svg>' +
-            '<span>BACK TO MAP</span>';
+            '<span>Back to view</span>';
         backBtn.addEventListener('click', function () {
-            navigateSPA('/');
+            var org = getOrgName();
+            if (org) {
+                navigateSPA('/tour?name=' + encodeURIComponent(org));
+            } else {
+                navigateSPA('/');
+            }
         });
         document.body.appendChild(backBtn);
 
@@ -445,6 +449,46 @@
         }
     }
 
+    /**
+     * Inject the site footer on content and help pages.
+     * Skipped on map and 360 tour pages where it would interfere with the UI.
+     */
+    var footerInjected = false;
+    function injectSiteFooter() {
+        if (footerInjected) return;
+        var isContentPage = document.body.classList.contains('scrollable-body');
+        var isHelpPage = document.body.classList.contains('help-body');
+
+        if (!isContentPage && !isHelpPage) return;
+
+        // Don't inject on the 360 tour view
+        if (document.getElementById('container') && document.getElementById('canvas')) return;
+
+        // Check if footer already exists
+        if (document.getElementById('ahh-site-footer')) { footerInjected = true; return; }
+
+        footerInjected = true;
+
+        var footer = document.createElement('footer');
+        footer.id = 'ahh-site-footer';
+        footer.className = 'ahh-site-footer';
+        footer.innerHTML =
+            '<div class="ahh-site-footer-inner">' +
+            '  <div class="ahh-site-footer-info">' +
+            '    <h3>Akron Health Hub</h3>' +
+            '    <p><strong>Address:</strong><br>652 W. Exchange Street, Akron, OH 44302</p>' +
+            '    <p><strong>Phone:</strong><br><a href="tel:3309834044">(330) 983-4044</a></p>' +
+            '  </div>' +
+            '  <div class="ahh-site-footer-logos">' +
+            '    <img src="https://www-s3-live.kent.edu/s3fs-root/s3fs-public/styles/_fixed_width_250px/public/Akron%20Health%20Hub%20Logo%20%28transparent%20circle%29.png?VersionId=74IqmKvK1PL_xFuuEPiW0UsRIw6myIdp&itok=rErgEej1" alt="Akron Health Hub Logo">' +
+            '    <img src="../AAC-Logo.png" alt="AAC Logo">' +
+            '  </div>' +
+            '</div>' +
+            '<div class="ahh-site-footer-bottom">&copy; 2026 Akron Health Hub. All rights reserved.</div>';
+
+        document.body.appendChild(footer);
+    }
+
     function debouncedCheck() {
         if (debounceTimer) return;
         debounceTimer = setTimeout(function () {
@@ -464,6 +508,8 @@
             highlightOwnerMarker();
             // Inject persistent menu on content/map pages
             injectPersistentMenu();
+            // Inject site footer on content/help pages
+            injectSiteFooter();
         }, 150);
     }
 
@@ -486,10 +532,6 @@
 
         // 360 icon SVG
         badge.innerHTML =
-            '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">' +
-            '<path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/>' +
-            '<path d="M15.5 11c.83 0 1.5-.67 1.5-1.5S16.33 8 15.5 8 14 8.67 14 9.5s.67 1.5 1.5 1.5zm-7 0c.83 0 1.5-.67 1.5-1.5S9.33 8 8.5 8 7 8.67 7 9.5 7.67 11 8.5 11zm3.5 6.5c2.33 0 4.31-1.46 5.11-3.5H6.89c.8 2.04 2.78 3.5 5.11 3.5z"/>' +
-            '</svg>' +
             '<span>Drag to view 360°</span>';
 
         container.appendChild(badge);
@@ -580,22 +622,30 @@
         origPushMenu.apply(this, arguments);
         badgeInjected = false;
         overlayBtnsEnhanced = false;
+        footerInjected = false;
+        // Remove old footer so it re-injects on the new page
+        var oldFooter = document.getElementById('ahh-site-footer');
+        if (oldFooter) oldFooter.parentNode.removeChild(oldFooter);
         // Reset menu enhanced so org name gets re-checked
         var mc = document.querySelector('.menu-content');
         if (mc) mc.removeAttribute('data-enhanced');
         // Close persistent drawer on navigation
         closePersistentDrawer();
-        setTimeout(function () { inject360Badge(); enhanceOverlayButtons(); injectPersistentMenu(); }, 600);
+        setTimeout(function () { inject360Badge(); enhanceOverlayButtons(); injectPersistentMenu(); injectSiteFooter(); }, 600);
     };
 
     window.addEventListener('popstate', function () {
         badgeInjected = false;
         overlayBtnsEnhanced = false;
+        footerInjected = false;
+        // Remove old footer so it re-injects on the new page
+        var oldFooter = document.getElementById('ahh-site-footer');
+        if (oldFooter) oldFooter.parentNode.removeChild(oldFooter);
         // Reset menu enhanced so org name gets re-checked
         var mc = document.querySelector('.menu-content');
         if (mc) mc.removeAttribute('data-enhanced');
         // Close persistent drawer on navigation
         closePersistentDrawer();
-        setTimeout(function () { inject360Badge(); enhanceOverlayButtons(); injectPersistentMenu(); }, 600);
+        setTimeout(function () { inject360Badge(); enhanceOverlayButtons(); injectPersistentMenu(); injectSiteFooter(); }, 600);
     });
 })();

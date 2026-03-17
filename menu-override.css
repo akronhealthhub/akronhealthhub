@@ -1094,7 +1094,7 @@ body.help-body .overlay-icon.closeBtn {
   width: 300px;
   max-width: 85vw;
   height: 100%;
-  background: #F7F5F2;
+  background: #F7F5F2 !important;
   color: #1e293b;
   display: flex;
   flex-direction: column;

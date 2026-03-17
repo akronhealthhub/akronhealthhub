@@ -286,6 +286,51 @@
     </div>
   </footer>
 
+
+  
+  
+  <!-- One-time Refresh Button -->
+  <script>
+    (function(){
+      // Only render in the top frame, not inside iframes
+      if (window !== window.top) return;
+      
+      var btn = document.createElement('button');
+      btn.innerHTML = 'Update Site';
+      btn.style.cssText = 'position:fixed; bottom:90px; right:20px; z-index:999999; padding:10px 16px; background:#0d6efd; color:#fff; border:none; border-radius:30px; font-weight:bold; box-shadow:0 4px 12px rgba(0,0,0,0.3); cursor:pointer; font-family:sans-serif; font-size:14px; transition:all 0.3s;';
+      
+      btn.onmouseover = function() { btn.style.transform = 'scale(1.05)'; btn.style.background = '#0b5ed7'; };
+      btn.onmouseout = function() { btn.style.transform = 'scale(1)'; btn.style.background = '#0d6efd'; };
+      
+      btn.onclick = function() {
+        btn.innerHTML = 'Updating...';
+        btn.style.pointerEvents = 'none';
+        btn.style.opacity = '0.8';
+        
+        localStorage.clear();
+        sessionStorage.clear();
+        
+        if ('serviceWorker' in navigator) {
+          navigator.serviceWorker.getRegistrations().then(function(registrations) {
+            for(var i=0; i<registrations.length; i++) registrations[i].unregister();
+          });
+        }
+        if ('caches' in window) {
+          caches.keys().then(function(names) {
+            for(var i=0; i<names.length; i++) {
+              caches.delete(names[i]);
+            }
+          });
+        }
+        document.cookie.split(";").forEach(function(c) { 
+          document.cookie = c.replace(/^ +/, "").replace(/=.*/, "=;expires=" + new Date().toUTCString() + ";path=/"); 
+        });
+        
+        setTimeout(function() { window.location.reload(true); }, 800);
+      };
+      document.body.appendChild(btn);
+    })();
+  </script>
 </body>
 
 </html>

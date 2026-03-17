@@ -315,10 +315,15 @@
 
         // Build menu links from marker's main_pages
         menuItems.innerHTML = '';
+        var addedLinks = {};
 
         if (marker && marker.main_pages) {
             for (var i = 0; i < marker.main_pages.length; i++) {
                 var page = marker.main_pages[i];
+                var t = page.title.toUpperCase();
+                if (addedLinks[t]) continue;
+                addedLinks[t] = true;
+
                 var link = document.createElement('a');
                 link.className = 'ahh-drawer-link';
                 link.textContent = page.title;
@@ -336,16 +341,33 @@
             }
         }
 
+        // Hotlines link
+        if (!addedLinks['HOTLINES']) {
+            var hotlinesLink = document.createElement('a');
+            hotlinesLink.className = 'ahh-drawer-link';
+            hotlinesLink.textContent = 'HOTLINES';
+            hotlinesLink.href = '#';
+            hotlinesLink.addEventListener('click', function (e) {
+                e.preventDefault();
+                navigateSPA('/phonenumbers.html');
+            });
+            menuItems.appendChild(hotlinesLink);
+            addedLinks['HOTLINES'] = true;
+        }
+
         // Help link
-        var helpLink = document.createElement('a');
-        helpLink.className = 'ahh-drawer-link';
-        helpLink.textContent = 'HELP';
-        helpLink.href = '#';
-        helpLink.addEventListener('click', function (e) {
-            e.preventDefault();
-            navigateSPA('/help');
-        });
-        menuItems.appendChild(helpLink);
+        if (!addedLinks['HELP']) {
+            var helpLink = document.createElement('a');
+            helpLink.className = 'ahh-drawer-link';
+            helpLink.textContent = 'HELP';
+            helpLink.href = '#';
+            helpLink.addEventListener('click', function (e) {
+                e.preventDefault();
+                navigateSPA('/help');
+            });
+            menuItems.appendChild(helpLink);
+            addedLinks['HELP'] = true;
+        }
 
     }
 

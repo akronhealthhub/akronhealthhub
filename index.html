@@ -672,27 +672,29 @@
         btn.innerHTML = 'Updating...';
         btn.style.pointerEvents = 'none';
         btn.style.opacity = '0.8';
-        
+
         localStorage.clear();
         sessionStorage.clear();
-        
-        if ('serviceWorker' in navigator) {
-          navigator.serviceWorker.getRegistrations().then(function(registrations) {
-            for(var i=0; i<registrations.length; i++) registrations[i].unregister();
-          });
-        }
-        if ('caches' in window) {
-          caches.keys().then(function(names) {
-            for(var i=0; i<names.length; i++) {
-              caches.delete(names[i]);
-            }
-          });
-        }
-        document.cookie.split(";").forEach(function(c) { 
-          document.cookie = c.replace(/^ +/, "").replace(/=.*/, "=;expires=" + new Date().toUTCString() + ";path=/"); 
+
+        document.cookie.split(";").forEach(function(c) {
+          document.cookie = c.replace(/^ +/, "").replace(/=.*/, "=;expires=" + new Date().toUTCString() + ";path=/");
         });
-        
-        setTimeout(function() { window.location.reload(true); }, 800);
+
+        var swPromise = ('serviceWorker' in navigator)
+          ? navigator.serviceWorker.getRegistrations().then(function(registrations) {
+              return Promise.all(registrations.map(function(r) { return r.unregister(); }));
+            })
+          : Promise.resolve();
+
+        var cachePromise = ('caches' in window)
+          ? caches.keys().then(function(names) {
+              return Promise.all(names.map(function(n) { return caches.delete(n); }));
+            })
+          : Promise.resolve();
+
+        Promise.all([swPromise, cachePromise]).then(function() {
+          window.location.reload(true);
+        });
       };
       document.body.appendChild(btn);
     })();

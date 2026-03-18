@@ -341,20 +341,6 @@
             }
         }
 
-        // Hotlines link
-        if (!addedLinks['HOTLINES']) {
-            var hotlinesLink = document.createElement('a');
-            hotlinesLink.className = 'ahh-drawer-link';
-            hotlinesLink.textContent = 'HOTLINES';
-            hotlinesLink.href = '#';
-            hotlinesLink.addEventListener('click', function (e) {
-                e.preventDefault();
-                navigateSPA('/phonenumbers.html');
-            });
-            menuItems.appendChild(hotlinesLink);
-            addedLinks['HOTLINES'] = true;
-        }
-
         // Help link
         if (!addedLinks['HELP']) {
             var helpLink = document.createElement('a');
@@ -427,8 +413,8 @@
         var hamburger = document.createElement('button');
         hamburger.id = 'ahh-persistent-hamburger';
         hamburger.innerHTML =
-            '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">' +
-            '<path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>' +
+            '<svg viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">' +
+            '<path d="M16 132h416c8.8 0 16-7.2 16-16V76c0-8.8-7.2-16-16-16H16C7.2 60 0 67.2 0 76v40c0 8.8 7.2 16 16 16zm0 160h416c8.8 0 16-7.2 16-16v-40c0-8.8-7.2-16-16-16H16c-8.8 0-16 7.2-16 16v40c0 8.8 7.2 16 16 16zm0 160h416c8.8 0 16-7.2 16-16v-40c0-8.8-7.2-16-16-16H16c-8.8 0-16 7.2-16 16v40c0 8.8 7.2 16 16 16z"/>' +
             '</svg>';
         hamburger.addEventListener('click', function () {
             if (persistentDrawerOpen) closePersistentDrawer();
@@ -638,6 +624,26 @@
         startObserver();
     }
 
+    /**
+     * Wrap plain-text phone numbers in #text elements with tel: links.
+     * Runs after React renders the /main content page.
+     */
+    function wrapPhoneNumbers() {
+        if (!window.location.pathname.endsWith('/main')) return;
+        setTimeout(function () {
+            document.querySelectorAll('#text').forEach(function (el) {
+                if (el.dataset.phonesWrapped) return;
+                var phoneRegex = /(\(?\d{3}\)?[\s.\-]\d{3}[\s.\-]\d{4})/g;
+                if (!phoneRegex.test(el.innerHTML)) return;
+                el.innerHTML = el.innerHTML.replace(phoneRegex, function (phone) {
+                    var digits = phone.replace(/\D/g, '');
+                    return '<a href="tel:' + digits + '">' + phone + '</a>';
+                });
+                el.dataset.phonesWrapped = 'true';
+            });
+        }, 300);
+    }
+
     // Re-try on SPA navigation
     var origPushMenu = history.pushState;
     history.pushState = function () {
@@ -654,6 +660,7 @@
         // Close persistent drawer on navigation
         closePersistentDrawer();
         setTimeout(function () { inject360Badge(); enhanceOverlayButtons(); injectPersistentMenu(); injectSiteFooter(); }, 600);
+        wrapPhoneNumbers();
     };
 
     window.addEventListener('popstate', function () {
@@ -669,5 +676,6 @@
         // Close persistent drawer on navigation
         closePersistentDrawer();
         setTimeout(function () { inject360Badge(); enhanceOverlayButtons(); injectPersistentMenu(); injectSiteFooter(); }, 600);
+        wrapPhoneNumbers();
     });
 })();

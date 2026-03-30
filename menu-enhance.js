@@ -514,6 +514,8 @@
             enhanceHamburger();
             // Highlight owner marker on map
             highlightOwnerMarker();
+            // Add organization names/logos above pins
+            addMarkerLabels();
             // Inject persistent menu on content/map pages
             injectPersistentMenu();
             // Inject site footer on content/help pages
@@ -594,6 +596,182 @@
                 marker.style.animation = 'ahh-pulse 2s ease-in-out infinite';
                 // Do not 'break' if there are multiple overlapping markers for the same org
             }
+        }
+    }
+
+    var collisionTimer = null;
+    function triggerCollisionCheck() {
+        if (collisionTimer) clearTimeout(collisionTimer);
+        collisionTimer = setTimeout(resolveLabelCollisions, 100);
+    }
+
+    function resolveLabelCollisions() {
+        var wrappers = Array.from(document.querySelectorAll('.ahh-marker-label-wrapper'));
+        if (wrappers.length === 0) return;
+
+        var rects = [];
+        wrappers.forEach(function(w) {
+            var label = w.querySelector('.ahh-marker-label');
+            if (!label) return;
+            
+            var rect = label.getBoundingClientRect();
+            if (rect.width === 0 && rect.height === 0) return;
+
+            var isAAC = label.textContent.indexOf('AAC') !== -1;
+            rects.push({ wrapper: w, label: label, rect: rect, isAAC: isAAC });
+        });
+
+        // Priority sort: AAC first, then by Y coordinate (top to bottom)
+        rects.sort(function(a, b) { 
+            if (a.isAAC !== b.isAAC) return a.isAAC ? -1 : 1;
+            return a.rect.top - b.rect.top; 
+        });
+
+        var visibleRects = [];
+        rects.forEach(function(item) {
+            var r1 = item.rect;
+            var padding = 2; // small padding
+            var r1Inflated = {
+                left: r1.left - padding,
+                right: r1.right + padding,
+                top: r1.top - padding,
+                bottom: r1.bottom + padding
+            };
+
+            var overlap = false;
+            for (var i = 0; i < visibleRects.length; i++) {
+                var r2 = visibleRects[i];
+                if (!(r1Inflated.left > r2.right || 
+                      r1Inflated.right < r2.left || 
+                      r1Inflated.top > r2.bottom ||
+                      r1Inflated.bottom < r2.top)) {
+                    overlap = true;
+                    break;
+                }
+            }
+
+            if (overlap && !item.isAAC) {
+                item.label.style.opacity = '0';
+                item.label.style.pointerEvents = 'none';
+            } else {
+                visibleRects.push(r1Inflated);
+                item.label.style.opacity = '1';
+                item.label.style.pointerEvents = 'auto';
+            }
+        });
+    }
+
+    /**
+     * Add custom labels (names and logos) above map pins.
+     */
+    function addMarkerLabels() {
+        var mapContainer = document.querySelector('.leaflet-container');
+        if (!mapContainer) return;
+
+        var markerPane = mapContainer.querySelector('.leaflet-marker-pane');
+        var tooltipPane = mapContainer.querySelector('.leaflet-tooltip-pane') || markerPane;
+        if (!markerPane) return;
+
+        if (!document.getElementById('ahh-marker-label-styles')) {
+            var style = document.createElement('style');
+            style.id = 'ahh-marker-label-styles';
+            style.textContent = 
+                '.ahh-marker-label-wrapper { position: absolute; pointer-events: none; z-index: 1000; transition: transform 0s; } ' +
+                '.ahh-marker-label { position: absolute; bottom: 35px; left: 50%; transform: translateX(-50%); ' +
+                'background: rgba(255, 255, 255, 0.95); padding: 5px 10px; border-radius: 8px; font-family: Roboto, sans-serif; ' +
+                'font-size: 13px; font-weight: bold; color: #1a1a2e; white-space: nowrap; ' +
+                'box-shadow: 0 4px 10px rgba(0,0,0,0.2); border: 1px solid rgba(0,0,0,0.05); ' +
+                'display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; ' +
+                'transition: opacity 0.3s ease; opacity: 1; } ' +
+                '.ahh-marker-label img { max-width: 50px; max-height: 50px; margin-bottom: 4px; border-radius: 4px; object-fit: contain; } ' +
+                '.ahh-marker-label::after { content: ""; position: absolute; top: 100%; left: 50%; margin-left: -6px; ' +
+                'border-width: 6px; border-style: solid; border-color: rgba(255, 255, 255, 0.95) transparent transparent transparent; ' +
+                'filter: drop-shadow(0 2px 2px rgba(0,0,0,0.1)); } ' +
+                '@media (max-width: 768px) { ' +
+                '  .ahh-marker-label { font-size: 11px; padding: 3px 6px; border-radius: 6px; white-space: normal; max-width: 110px; line-height: 1.2; bottom: 30px; } ' +
+                '  .ahh-marker-label img { max-width: 35px; max-height: 35px; margin-bottom: 2px; } ' +
+                '}';
+            document.head.appendChild(style);
+        }
+
+        // 1. Cleanup orphaned labels
+        var existingWrappers = tooltipPane.querySelectorAll('.ahh-marker-label-wrapper');
+        for (var j = 0; j < existingWrappers.length; j++) {
+            var wrapper = existingWrappers[j];
+            var marker = wrapper.ahhMarker;
+            if (!marker || !document.body.contains(marker)) {
+                if (wrapper.parentNode) {
+                    wrapper.parentNode.removeChild(wrapper);
+                }
+                if (marker) {
+                    marker.dataset.hasLabel = 'false';
+                    if (marker.ahhObserver) {
+                        marker.ahhObserver.disconnect();
+                        marker.ahhObserver = null;
+                    }
+                }
+            } else {
+                // Precautionary sync
+                wrapper.style.transform = marker.style.transform;
+                wrapper.style.zIndex = marker.style.zIndex;
+            }
+        }
+
+        // 2. Add labels for new markers
+        var markers = markerPane.querySelectorAll('.leaflet-marker-icon');
+        for (var i = 0; i < markers.length; i++) {
+            var marker = markers[i];
+            var title = marker.getAttribute('title');
+            if (!title) continue;
+
+            if (marker.dataset.hasLabel === 'true') continue;
+            marker.dataset.hasLabel = 'true';
+
+            var wrapper = document.createElement('div');
+            wrapper.className = 'ahh-marker-label-wrapper';
+            wrapper.style.transform = marker.style.transform;
+            wrapper.style.zIndex = marker.style.zIndex;
+            wrapper.ahhMarker = marker;
+
+            var label = document.createElement('div');
+            label.className = 'ahh-marker-label';
+            
+            var displayName = title;
+            // Shorten specific names and inject logos
+            if (title === 'Bayard Rustin LGBTQ+ Center | Akron AIDS Collaborative') {
+                displayName = 'Bayard Rustin | AAC';
+                var logo = document.createElement('img');
+                logo.src = '../AAC-Logo.png'; 
+                label.appendChild(logo);
+            }
+            
+            var textDiv = document.createElement('div');
+            textDiv.textContent = displayName;
+            label.appendChild(textDiv);
+            
+            wrapper.appendChild(label);
+            tooltipPane.appendChild(wrapper);
+
+            // 3. Keep label transform synchronized with map dragging/zooming
+            var observer = new MutationObserver(function(mutations, obs) {
+                var m = mutations[0].target;
+                if (!document.body.contains(m)) {
+                    if (wrapper.parentNode) wrapper.parentNode.removeChild(wrapper);
+                    m.dataset.hasLabel = 'false';
+                    obs.disconnect();
+                    m.ahhObserver = null;
+                    return;
+                }
+                wrapper.style.transform = m.style.transform;
+                wrapper.style.zIndex = m.style.zIndex;
+                triggerCollisionCheck();
+            });
+            observer.observe(marker, { attributes: true, attributeFilter: ['style'] });
+            marker.ahhObserver = observer;
+        }
+
+        if (markers.length > 0 || existingWrappers.length > 0) {
+            triggerCollisionCheck();
         }
     }
 

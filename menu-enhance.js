@@ -737,12 +737,9 @@
             label.className = 'ahh-marker-label';
             
             var displayName = title;
-            // Shorten specific names and inject logos
+            // Shorten specific names
             if (title === 'Bayard Rustin LGBTQ+ Center | Akron AIDS Collaborative') {
                 displayName = 'Bayard Rustin | AAC';
-                var logo = document.createElement('img');
-                logo.src = '../AAC-Logo.png'; 
-                label.appendChild(logo);
             }
             
             var textDiv = document.createElement('div');
